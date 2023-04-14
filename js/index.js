@@ -68,7 +68,7 @@ button.addEventListener("click", cambiarBody);
 function cambiarBody(){
     if(button.checked){
         // menú hamburguesa
-        menu.style.backgroundColor = "##2E2E2E";
+        menu.style.background = "#2E2E2E";
         letrasMenu1.style.color = "white";
         letrasMenu2.style.color = "white";
         letrasMenu3.style.color = "white";
