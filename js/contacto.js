@@ -15,7 +15,7 @@ buttonBody.addEventListener("click", cambiarBody);
 // Cambia el color del body
 function cambiarBody(){
     if(buttonBody.checked){
-        body.style.background = "#424242";
+        body.style.background = "#2E2E2E";
         main.style.background = "#424242";
         main.style.borderRadius = "10px";
     } else{
