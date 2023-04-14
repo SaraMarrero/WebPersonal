@@ -1,0 +1,498 @@
+@media(min-width: 375px) and (max-width: 768px){
+	*{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        width: 85%;
+        margin: 0 auto;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /*---------- HEADER ----------*/
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+		flex-wrap: wrap;
+    }
+
+	header > *{
+		order: 0;
+	}
+
+    .nombre{
+        background-color:#8000FF;
+        color: white;
+        padding: 0.5rem;
+        border-radius: 10px;
+        font-size: 16px;
+		width: 100%;
+		margin-top: 0.5em;
+		text-align: center;
+    }
+
+	.home{
+		width: 55%;
+	}
+
+    ul{
+        display: flex;
+    }
+
+    ul > li{
+        margin: 0.5em;
+        list-style-type: none;
+        font-size: 16px;
+    }
+
+    .menu{
+        text-decoration: none;
+        color: #8000FF;
+        padding: 1rem;
+    }
+    
+    /*----- botón para cambiar el color del body -----*/
+	.content-input input,
+	.content-select select{
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+
+	.content-input input{
+		visibility: hidden;
+		position: absolute;
+		right: 0;
+	}
+
+	.content-input{
+		position: relative;
+		margin-bottom: 30px;
+		padding:5px 0 20px 60px;
+		display: block;
+	}
+
+	.content-input input + i{
+		background: #f0f0f0;
+		border:2px solid rgba(0,0,0,0.2);
+		position: absolute; 
+		left: 0;
+		top: 0;
+	}
+
+	.content-input input[type=checkbox ] + i{
+		width: 52px;
+		height: 30px;
+		border-radius: 15px;
+	}
+
+	.content-input input[type=checkbox] + i:before{
+		content: ''; 
+		width: 26px;
+		height: 26px;
+		background: #fff;
+		border-radius: 50%;
+		position: absolute;
+		z-index: 1;
+		left: 0px;
+		top: 0px;
+		-webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+		box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+	}
+
+	.content-input input[type=checkbox]:checked + i:before{
+		left: 22px;
+		-webkit-box-shadow: -3px 0 3px 0 rgba(0,0,0,0.2);
+		box-shadow: 3px 0 -3px 0 rgba(0,0,0,0.2);
+	}
+
+	.content-input input[type=checkbox]:checked + i{
+        background: #8000FF;
+	}
+
+	.content-input{
+		float: right;
+		margin: 0.5em;
+	}
+
+	/*---------- SECCION PRINCIPAL ----------*/
+	main{
+		display: flex;
+		margin-top: 1em;
+		align-items: center;
+		background-color: #F2F2F2;
+		border-radius: 10px;
+		padding: 2rem;
+		flex-direction: column;
+	}
+
+	.sectionIzquierda{
+		width: 100%;
+	}
+
+	.imgContacto{
+		width: 100%;
+	}
+
+	.sectionDerecha{
+		width: 100%;
+	}
+
+	table{
+		margin: 0 auto;
+		width: 90%;
+		margin-top: 2em;
+	}
+
+	td{
+		padding: 0.5rem;
+	}
+
+	input,textarea{
+		padding: 1rem;
+		border-radius: 10px;
+		border: 2px solid #8000FF;
+		width: 100%;
+	}
+
+	textarea{
+		resize: none;
+	}
+
+	.enviar{
+		padding: 1em;
+		border-radius: 10px;
+		bordeR: hidden;
+		background-color: #8000FF;
+		color: white;
+		float: right;
+	}
+}
+
+@media(min-width: 769px) and (max-width: 1023px){
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        width: 85%;
+        margin: 0 auto;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /*---------- HEADER ----------*/
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nombre{
+        background-color:#8000FF;
+        color: white;
+        padding: 0.5rem;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+
+    ul{
+        display: flex;
+    }
+
+    ul > li{
+        margin: 0.5em;
+        list-style-type: none;
+        font-size: 16px;
+    }
+
+    .menu{
+        text-decoration: none;
+        color: #8000FF;
+        padding: 1rem;
+    }
+    
+    /*----- botón para cambiar el color del body -----*/
+	.content-input input,
+	.content-select select{
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+
+	.content-input input{
+		visibility: hidden;
+		position: absolute;
+		right: 0;
+	}
+
+	.content-input{
+		position: relative;
+		margin-bottom: 30px;
+		padding:5px 0 20px 60px;
+		display: block;
+	}
+
+	.content-input input + i{
+		background: #f0f0f0;
+		border:2px solid rgba(0,0,0,0.2);
+		position: absolute; 
+		left: 0;
+		top: 0;
+	}
+
+	.content-input input[type=checkbox ] + i{
+		width: 52px;
+		height: 30px;
+		border-radius: 15px;
+	}
+
+	.content-input input[type=checkbox] + i:before{
+		content: ''; 
+		width: 26px;
+		height: 26px;
+		background: #fff;
+		border-radius: 50%;
+		position: absolute;
+		z-index: 1;
+		left: 0px;
+		top: 0px;
+		-webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+		box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+	}
+
+	.content-input input[type=checkbox]:checked + i:before{
+		left: 22px;
+		-webkit-box-shadow: -3px 0 3px 0 rgba(0,0,0,0.2);
+		box-shadow: 3px 0 -3px 0 rgba(0,0,0,0.2);
+	}
+
+	.content-input input[type=checkbox]:checked + i{
+        background: #8000FF;
+	}
+
+	.content-input{
+		float: right;
+		margin: 0.5em;
+	}
+
+	/*---------- SECCION PRINCIPAL ----------*/
+	main{
+		display: flex;
+		margin-top: 3em;
+		align-items: center;
+		background-color: #F2F2F2;
+		border-radius: 10px;
+		padding: 2rem;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.sectionIzquierda{
+		width: 50%;
+	}
+
+	.imgContacto{
+		width: 90%;
+	}
+
+	.sectionDerecha{
+		width: 50%;
+	}
+
+	table{
+		margin: 0 auto;
+		width: 90%;
+		margin-top: 2em;
+	}
+
+	td{
+		padding: 0.5rem;
+	}
+
+	input,textarea{
+		padding: 1rem;
+		border-radius: 10px;
+		border: 2px solid #8000FF;
+		width: 100%;
+	}
+
+	textarea{
+		resize: none;
+	}
+
+	.enviar{
+		padding: 1em;
+		border-radius: 10px;
+		bordeR: hidden;
+		background-color: #8000FF;
+		color: white;
+		float: right;
+	}
+}
+
+@media(min-width: 1024px){
+	*{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        width: 85%;
+        margin: 0 auto;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /*---------- HEADER ----------*/
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nombre{
+        background-color:#8000FF;
+        color: white;
+        padding: 0.5rem;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+
+    ul{
+        display: flex;
+    }
+
+    ul > li{
+        margin: 0.5em;
+        list-style-type: none;
+        font-size: 16px;
+    }
+
+    .menu{
+        text-decoration: none;
+        color: #8000FF;
+        padding: 1rem;
+    }
+    
+    /*----- botón para cambiar el color del body -----*/
+	.content-input input,
+	.content-select select{
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+
+	.content-input input{
+		visibility: hidden;
+		position: absolute;
+		right: 0;
+	}
+
+	.content-input{
+		position: relative;
+		margin-bottom: 30px;
+		padding:5px 0 20px 60px;
+		display: block;
+	}
+
+	.content-input input + i{
+		background: #f0f0f0;
+		border:2px solid rgba(0,0,0,0.2);
+		position: absolute; 
+		left: 0;
+		top: 0;
+	}
+
+	.content-input input[type=checkbox ] + i{
+		width: 52px;
+		height: 30px;
+		border-radius: 15px;
+	}
+
+	.content-input input[type=checkbox] + i:before{
+		content: ''; 
+		width: 26px;
+		height: 26px;
+		background: #fff;
+		border-radius: 50%;
+		position: absolute;
+		z-index: 1;
+		left: 0px;
+		top: 0px;
+		-webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+		box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+	}
+
+	.content-input input[type=checkbox]:checked + i:before{
+		left: 22px;
+		-webkit-box-shadow: -3px 0 3px 0 rgba(0,0,0,0.2);
+		box-shadow: 3px 0 -3px 0 rgba(0,0,0,0.2);
+	}
+
+	.content-input input[type=checkbox]:checked + i{
+        background: #8000FF;
+	}
+
+	.content-input{
+		float: right;
+		margin: 0.5em;
+	}
+
+	/*---------- SECCION PRINCIPAL ----------*/
+	main{
+		display: flex;
+		margin-top: 3em;
+		align-items: center;
+		background-color: #F2F2F2;
+		border-radius: 10px;
+		padding: 2rem;
+	}
+
+	.sectionIzquierda{
+		width: 50%;
+	}
+
+	.imgContacto{
+		width: 100%;
+	}
+
+	.sectionDerecha{
+		width: 50%;
+	}
+
+	table{
+		margin: 0 auto;
+		width: 90%;
+	}
+
+	td{
+		padding: 0.5rem;
+	}
+
+	input,textarea{
+		padding: 1rem;
+		border-radius: 10px;
+		border: 2px solid #8000FF;
+		width: 100%;
+	}
+
+	textarea{
+		resize: none;
+	}
+
+	.enviar{
+		padding: 1em;
+		border-radius: 10px;
+		bordeR: hidden;
+		background-color: #8000FF;
+		color: white;
+		float: right;
+	}
+}
+

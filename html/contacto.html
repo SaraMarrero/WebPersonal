@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <title>Contacto</title>
+</head>
+<body id="body">
+    <!---------- HEADER ---------->
+    <header>
+        <p class="nombre">Sara Marrero Miranda</p>
+        <!----- opciones menú ----->
+        <nav>	
+            <ul>
+                <li><a href="../index.html" class="menu">
+                    <img src="../img/home.png" class="home">
+                </a></li>
+            </ul>
+        </nav>
+        <!----- botón de fondo ----->
+        <section class="button">
+            <label class="content-input">
+                <input type="checkbox" name="buttonLuz" id="buttonLuz">
+                <i></i>
+            </label>
+        </section> 
+    </header>
+
+    <main class="main">
+        <section class="sectionIzqueirda">
+            <img src="../img/contacto.png" class="imgContacto">
+        </section>
+
+        <section class="sectionDerecha">
+            <form action="https://formsubmit.co/52ceb9336b22c4c48e9cec87c3ab8d59" method="POST" >
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" class="name" name="nombre" id='nombre' placeholder="Nombre*" required>
+                        </td>
+                    </tr>
+
+                    <tr id="trNombre"></tr>
+
+                    <tr>
+                        <td>
+                            <input type="email" class="email" name="email" id='email' placeholder="Email*" required>
+                        </td>
+                    </tr>
+
+                    <tr id="trEmail"></tr>
+
+                    <tr>
+                        <td>
+                            <input type="text" class="asunto" name="asunto" id='asunto' placeholder="Asunto*" required>
+                        </td>
+                    </tr>
+
+                    <tr id="trAsunto"></tr>
+
+                    <tr>
+                        <td>
+                            <textarea name="mensaje" class="mensaje" id="mensaje" placeholder="Mensaje*" required></textarea>
+                        </td>
+                    </tr>
+
+                    <tr id="trMensaje"></tr>
+
+                    <tr>
+                        <td>
+                            <input type="submit" name="enviar" class="enviar" id="enviar" value="enviar">
+                        </td>
+                    </tr>
+                </table>
+
+
+                <!----- Se redirecciona tras enviar el fomrulario ----->
+                <input type="hidden" name="_next" value="http://127.0.0.1:52187/html/contacto.html">
+
+                <!-- Hace que los usuario no tengan que responder un captcha -->
+                <input type="hidden" name="_captcha" value="false">
+
+            </form>
+        </section>
+    </main>
+
+    <!---------- JAVASCRIPT ---------->
+    <script src="../js/contacto.js"></script>
+</body>
+</html>

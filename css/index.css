@@ -1,0 +1,6674 @@
+@media (min-width: 375px) and (max-width: 480px){
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        width: 95%;
+        margin: 0 auto;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /*---------- HEADER ----------*/
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header > *{
+		order: 0;
+	}
+
+    .nombre{
+        background-color:#8000FF;
+        color: white;
+        padding: 0.5rem;
+        border-radius: 10px;
+        font-size: 16px;
+        order: 2;
+    }
+
+    nav{
+		order: 1;
+		margin-left: 0.5em; 
+	}
+
+    .menu{
+        text-decoration: none;
+        color: #8000FF;
+        padding: 1rem;
+    } 
+
+    .main-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        margin-left: -100%;
+        transition: all 0.2s linear;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 100;
+    }
+    
+    .main-nav.show {
+        margin-left: 0;
+    }
+    
+    .nav-links {
+        background-color: #F2F2F2;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        align-items: center;
+    }
+    
+    .link-item {
+        margin-top: 2rem;
+        color: #444444;
+        text-decoration: none;
+        font-weight: bold;
+        position: relative;
+    }
+
+    .link-item:first-child{
+        margin-top: 5em;
+    }
+    
+    .link-item::after {
+        position: absolute;
+        content: "";
+        bottom: -5px;
+        left: 0;
+        width: 0%;
+        height: 3px;
+        transition: 0.3s ease all;
+    }
+    
+    .link-item:hover::after {
+        width: 100%;
+    }
+    
+    .button-menu {
+        z-index: 200;
+        width: 40px;
+        height: 40px;
+        border: none;
+        display: flex;
+        background: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .button-menu span {
+        width: 90%;
+        height: 3px;
+        margin-top: 0.5em;
+        position: relative;
+        background: #8000FF;
+        border-radius: 3px;
+        transform-origin: 4px 0px;
+        transition: all 0.2s linear;
+    }
+    
+    .button-menu.close span {
+        opacity: 1;
+        transform: rotate(45deg) translate(0px, 0px);
+        background: #8000FF;
+    }
+    
+    .button-menu.close span:nth-child(2) {
+        transform: rotate(-45deg) translate(-8px, 5px);
+    }
+    
+    .button-menu.close span:nth-child(3) {
+        display: none;
+    }
+    
+    @media screen and (min-width: 768px) {
+        .button-menu {
+            display: none;
+        }
+        
+        .main-logo {
+            flex-basis: 30%;
+        }
+        
+        .main-nav {
+            position: static;
+            margin-left: 0;
+            flex-basis: 70%;
+            height: 100%;
+        }
+        
+        .nav-links {
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-end;
+            background: white;
+        }
+        
+        .link-item {
+            display: inline-block;
+            margin-top: 0;
+            margin-right: 2rem;
+        }
+    }
+    
+    /*----- botón para cambiar el color del body -----*/
+    .button{
+        order: 3;
+    }
+
+	.content-input input,
+	.content-select select{
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+
+	.content-input input{
+		visibility: hidden;
+		position: absolute;
+		right: 0;
+	}
+
+	.content-input{
+		position: relative;
+		margin-bottom: 30px;
+		padding:5px 0 20px 60px;
+		display: block;
+	}
+
+	.content-input input + i{
+		background: #f0f0f0;
+		border:2px solid rgba(0,0,0,0.2);
+		position: absolute; 
+		left: 0;
+		top: 0;
+	}
+
+	.content-input input[type=checkbox ] + i{
+		width: 52px;
+		height: 30px;
+		border-radius: 15px;
+	}
+
+	.content-input input[type=checkbox] + i:before{
+		content: ''; 
+		width: 26px;
+		height: 26px;
+		background: #fff;
+		border-radius: 50%;
+		position: absolute;
+		z-index: 1;
+		left: 0px;
+		top: 0px;
+		-webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+		box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+	}
+
+	.content-input input[type=checkbox]:checked + i:before{
+		left: 22px;
+		-webkit-box-shadow: -3px 0 3px 0 rgba(0,0,0,0.2);
+		box-shadow: 3px 0 -3px 0 rgba(0,0,0,0.2);
+	}
+
+	.content-input input[type=checkbox]:checked + i{
+        background: #8000FF;
+	}
+
+	.content-input{
+		float: right;
+		margin: 0.5em;
+	}
+
+    /*---------- SECTION 1 ----------*/
+    .sectionUno{
+        margin-top: 1.5em;
+        width: 100%;
+        height: 450px;
+        display: grid;
+        grid-template-columns: 35% 30% 35%;
+        grid-template-rows: repeat(2, 50%);
+    }
+
+    .div1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background: #F2F2F2;
+        background: linear-gradient(-50deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
+        border-top-left-radius: 10px;
+    }
+
+    .div2{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        background: #F2F2F2;
+        background: linear-gradient(50deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
+        border-top-right-radius: 10px;
+    }
+
+    .texto{
+        grid-column: 2/3;
+        grid-row: 1/3;
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        background-color: #F2F2F2;
+        justify-content: center;
+    }
+
+    .div3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background: #F2F2F2;
+        background: linear-gradient(-130deg, #F2F2F2 63%, rgba(128,0,255,1) 100%); 
+        border-bottom-left-radius: 10px;
+    }
+
+    .div4{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        background: #F2F2F2;
+        background: linear-gradient(-230deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
+        border-bottom-right-radius: 10px;
+    }
+
+    .textoContenido{
+        padding: 1rem;
+        box-shadow: #8000FF 0px 2px 5px -1px, #8000FF 0px 1px 3px -1px;
+        background-color: white;
+        border-radius: 10px;
+        position: absolute;
+        width: 60%;
+        text-align: center;
+    }
+
+    .textoContenido > h1{
+        text-align: center;
+        padding: 0.3rem;
+    }
+    .textoContenido > p{
+        padding-left: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .enlaces{
+        display: flex;
+        width: 50%;
+        float: right;
+    }
+
+    .enlaceGithub{
+        width: 50%;
+    }
+
+    .enlaceLinkedin{
+        width: 50%;
+    }
+
+    .cv{
+        width: 50%;
+    }
+
+    .github{
+        width: 100%;
+    }
+
+    .linkedin{
+        width: 100%;
+    }
+
+    .descargar{
+        width: 90%;
+    }
+
+    /*---------- SECTION 2 ----------*/
+    /*----- titulo -----*/
+    .sectionDos{
+        margin-top: 3em;
+    }
+
+    .h1SectionDos{
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-size: 30px;
+    }
+
+    .hr{
+        width: 50%;
+        margin: 0 auto;
+        color: #8000FF;
+        border: 2px solid;
+    }
+
+    /*----- cards -----*/
+    .articleProyectos{
+        margin-top: 2.5em;
+        display: grid;
+        width: 100%;
+        height: 2200px;
+        grid-template-rows: repeat(5, 20%);
+        grid-template-columns: repeat(1, 100%);
+        margin-bottom: 9em;
+    }
+
+    .iconoProyectos{
+        display: none;
+    }
+
+    /* piedra papel tijera lagarto spock */
+    .divJuego1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 100%;
+        height: 400px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+    }
+
+    .imgJuego1{
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-position: center center;
+        background-image: url(../img/juego1.jpg);
+        margin: 0 auto
+    }
+
+    .divPJuego1{
+        width: 100%;
+        height: 400px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgJuego1:hover .divPJuego1{
+        opacity: 1;
+    }
+
+    .h4Juego1{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 5rem;
+        font-size: 25px;
+    }
+
+    .pJuego1{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 17px;
+    }
+
+    .enlacesJuego1{
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aJuego1{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aJuego1:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /* share car */
+    .divShareCar{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 100%;
+        height: 380px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+    }
+
+    .imgShareCar{
+        width: 100%;
+        height: 380px;
+        background-size: cover;
+        background-position: center center;
+        background-image: url(../img/sharecar.jpg);
+        margin: 0 auto;
+    }
+
+    .divPShareCar{
+        width: 100%;
+        height: 380px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgShareCar:hover .divPShareCar{
+        opacity: 1;
+    }
+
+    .h4ShareCar{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 4rem;
+        font-size: 25px;
+    }
+
+    .pShareCar{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 17px;
+    }
+
+    .enlacesShareCar{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aShareCar{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aShareCar:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /* ies ana luisa benitez */
+    .divIes{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        width: 100%;
+        height: 400px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+        margin-top: -1em;
+    }
+
+    .imgIES{
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-image: url(../img/ies.jpg);
+        margin: 0 auto
+    }
+
+    .divPIES{
+        width: 100%;
+        height: 400px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgIES:hover .divPIES{
+        opacity: 1;
+    }
+
+    .h4IES{
+        text-align: center;
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 4.5rem;
+        font-size: 25px;
+    }
+
+    .pIES{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 17px;
+    }
+
+    .enlacesIES{
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aIES{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aIES:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /* nintendo switch */
+    .divNintendo{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        width: 100%;
+        height: 400px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+    }
+
+    .imgNintendo{
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-image: url(../img/nintendo.jpg);
+        margin: 0 auto;
+    }
+
+    .divPNintendo{
+        width: 100%;
+        height: 400px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgNintendo:hover .divPNintendo{
+        opacity: 1;
+    }
+
+    .h4Nintendo{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 5rem;
+        font-size: 22px;
+    }
+
+    .pNintendo{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 0.5em;
+        font-size: 15px;
+    }
+
+    .enlacesNintendo{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aNintendo{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aNintendo:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /* piedra papel tijera lagarto spock multijugador */
+    .divJuego2{
+        grid-column: 1/2;
+        grid-row: 5/6;
+        width: 100%;
+        height: 522px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+    }
+
+    .imgJuego2{
+        width: 100%;
+        height: 522px;
+        background-size: cover;
+        background-position: center 12%;
+        background-image: url(../img/juego2Movil.jpg);
+        margin: 0 auto;
+    }
+
+    .divPJuego2{
+        width: 100%;
+        height: 522px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgJuego2:hover .divPJuego2{
+        opacity: 1;
+    }
+
+    .h4Juego2{
+        text-align: center;
+        width: 96%;
+        margin: 0 auto;
+        padding-top: 7rem;
+        font-size: 22px;
+    }
+
+    .pJuego2{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 15px;
+    }
+
+    .enlacesJuego2{
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aJuego2{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aJuego2:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /*---------- SECTION 3 ----------*/
+    .section3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3em;
+        margin-bottom: 3em;
+        background-color: #F2F2F2;
+        border-radius: 10px;
+        padding-top: 1rem;
+        padding-bottom :1rem;
+        flex-direction: column;
+    }
+
+    .h1SectionTres{
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-size: 30px;
+    }
+
+    .skills{
+        font-size: 30px;
+        width: 20%;
+        text-align: center;
+    }
+
+    .articleFlechas{
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1em;
+    }
+
+    .flecha{
+        width: 20%;
+        margin: 0 auto;
+        transform: rotate(90deg);
+    }
+
+    .articleSkills{
+        display: grid;
+        grid-template-columns: repeat(3, 33.33333333333333%);
+        grid-template-rows: repeat(4, 25%);
+        width: 90%;
+        align-items: center;
+    }
+
+    /*----- conocimientos -----*/
+    .html{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .css{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .bootstrap{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .javascript{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .php{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .python{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .mysql{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .phpmyadmin{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .sqlite{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .heroku{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .linux{
+        grid-column: 2/3;
+        grid-row: 4/5;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .virtualbox{
+        grid-column: 3/4;
+        grid-row: 4/5;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    /*---------- SECCION DE CONTACTO ----------*/
+    .sectionContacto{
+        display: flex;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;       
+        margin-top: 3em;
+        background-color: #F2F2F2;
+        margin-bottom: 3em;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .final{
+        display: flex;
+        align-items: center;
+    }
+
+    .h1Contacto{
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-size: 25px;
+    }
+
+    .pContacto{
+        font-size: 15px;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .lateralIzquierda{
+        width: 40%;
+        height: 300px;
+        background: rgb(255,255,255);
+        background: linear-gradient(-90deg, #F2F2F2 21%, rgba(128,0,255,1) 100%);
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    .lateralDerecha{
+        width: 40%;
+        height: 300px;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, #F2F2F2 21%, rgba(128,0,255,1) 100%);
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .telefonoIzquierda, .telefonoDerecha{
+        display: none;
+    }
+
+    .hr2{
+        width: 50%;
+        margin: 0 auto;
+        color: #8000FF;
+        border: 2px solid;
+        margin-bottom: 1em;
+    }
+
+    .button-container-1 {
+        border-radius: 10px;
+        position: relative;
+        width: 60%;
+        height: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3vh;
+        overflow: hidden;
+        border: 1px solid;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        transition: 0.5s;
+        letter-spacing: 1px;
+    }
+
+    .button-container-1 button {
+        width: 101%;
+        height: 100%;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        letter-spacing: 1px;
+        background-color: #8000FF;
+        -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+        mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+        -webkit-mask-size: 2300% 100%;
+        mask-size: 2300% 100%;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        -webkit-animation: ani2 0.7s steps(22) forwards;
+        animation: ani2 0.7s steps(22) forwards;
+    }
+
+    .button-container-1 button:hover {
+        -webkit-animation: ani 0.7s steps(22) forwards;
+        animation: ani 0.7s steps(22) forwards;
+    } 
+
+    .mas {
+        position: absolute;
+        color: #8000FF;
+        text-align: center;
+        width: 101%;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        position: absolute;
+        font-size: 20px;
+        margin-top: 12px;
+        overflow: hidden;
+    }
+
+    .aContacteme{
+        text-decoration: none;
+        color: white;
+    }
+
+    @-webkit-keyframes ani {
+        from {
+            -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+        }
+        to {
+            -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+        }
+    }
+
+    @keyframes ani {
+        from {
+            -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+        }
+        to {
+            -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+        }
+    }
+
+    @-webkit-keyframes ani2 {
+        from {
+            -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+        }
+        to {
+            -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+        }
+    }
+
+    @keyframes ani2 {
+        from {
+            -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+        }
+        to {
+            -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+        }
+    }
+
+    a{
+        color: #00ff95;
+    }
+
+    /*---------- FOOTER ----------*/
+    footer{
+        background-color: #8000FF;
+        margin-top: 3em;
+    }
+
+    .descargarFooter{
+        width: 5%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 600px){
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        width: 85%;
+        margin: 0 auto;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /*---------- HEADER ----------*/
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header > *{
+		order: 0;
+	}
+
+    .nombre{
+        background-color:#8000FF;
+        color: white;
+        padding: 0.5rem;
+        border-radius: 10px;
+        font-size: 16px;
+        order: 2;
+    }
+
+    nav{
+		order: 1;
+		margin-left: 0.5em; 
+	}
+
+    .menu{
+        text-decoration: none;
+        color: #8000FF;
+        padding: 1rem;
+    } 
+
+    .main-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        margin-left: -100%;
+        transition: all 0.2s linear;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 100;
+    }
+    
+    .main-nav.show {
+        margin-left: 0;
+    }
+    
+    .nav-links {
+        background-color: #F2F2F2;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        align-items: center;
+    }
+    
+    .link-item {
+        margin-top: 2rem;
+        color: #444444;
+        text-decoration: none;
+        font-weight: bold;
+        position: relative;
+    }
+
+    .link-item:first-child{
+        margin-top: 5em;
+    }
+    
+    .link-item::after {
+        position: absolute;
+        content: "";
+        bottom: -5px;
+        left: 0;
+        width: 0%;
+        height: 3px;
+        transition: 0.3s ease all;
+    }
+    
+    .link-item:hover::after {
+        width: 100%;
+    }
+    
+    .button-menu {
+        z-index: 200;
+        width: 40px;
+        height: 40px;
+        border: none;
+        display: flex;
+        background: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .button-menu span {
+        width: 90%;
+        height: 3px;
+        margin-top: 0.5em;
+        position: relative;
+        background: #8000FF;
+        border-radius: 3px;
+        transform-origin: 4px 0px;
+        transition: all 0.2s linear;
+    }
+    
+    .button-menu.close span {
+        opacity: 1;
+        transform: rotate(45deg) translate(0px, 0px);
+        background: #8000FF;
+    }
+    
+    .button-menu.close span:nth-child(2) {
+        transform: rotate(-45deg) translate(-8px, 5px);
+    }
+    
+    .button-menu.close span:nth-child(3) {
+        display: none;
+    }
+    
+    @media screen and (min-width: 768px) {
+        .button-menu {
+            display: none;
+        }
+        
+        .main-logo {
+            flex-basis: 30%;
+        }
+        
+        .main-nav {
+            position: static;
+            margin-left: 0;
+            flex-basis: 70%;
+            height: 100%;
+        }
+        
+        .nav-links {
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-end;
+            background: white;
+        }
+        
+        .link-item {
+            display: inline-block;
+            margin-top: 0;
+            margin-right: 2rem;
+        }
+    }
+    
+    /*----- botón para cambiar el color del body -----*/
+    .button{
+        order: 3;
+    }
+
+	.content-input input,
+	.content-select select{
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+
+	.content-input input{
+		visibility: hidden;
+		position: absolute;
+		right: 0;
+	}
+
+	.content-input{
+		position: relative;
+		margin-bottom: 30px;
+		padding:5px 0 20px 60px;
+		display: block;
+	}
+
+	.content-input input + i{
+		background: #f0f0f0;
+		border:2px solid rgba(0,0,0,0.2);
+		position: absolute; 
+		left: 0;
+		top: 0;
+	}
+
+	.content-input input[type=checkbox ] + i{
+		width: 52px;
+		height: 30px;
+		border-radius: 15px;
+	}
+
+	.content-input input[type=checkbox] + i:before{
+		content: ''; 
+		width: 26px;
+		height: 26px;
+		background: #fff;
+		border-radius: 50%;
+		position: absolute;
+		z-index: 1;
+		left: 0px;
+		top: 0px;
+		-webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+		box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+	}
+
+	.content-input input[type=checkbox]:checked + i:before{
+		left: 22px;
+		-webkit-box-shadow: -3px 0 3px 0 rgba(0,0,0,0.2);
+		box-shadow: 3px 0 -3px 0 rgba(0,0,0,0.2);
+	}
+
+	.content-input input[type=checkbox]:checked + i{
+        background: #8000FF;
+	}
+
+	.content-input{
+		float: right;
+		margin: 0.5em;
+	}
+
+    /*---------- SECTION 1 ----------*/
+    .sectionUno{
+        margin-top: 1.5em;
+        width: 100%;
+        height: 450px;
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        grid-template-rows: repeat(2, 50%);
+    }
+
+    .div1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background: #F2F2F2;
+        background: linear-gradient(-50deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
+        border-top-left-radius: 10px;
+    }
+
+    .div2{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        background: #F2F2F2;
+        background: linear-gradient(50deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
+        border-top-right-radius: 10px;
+    }
+
+    .texto{
+        grid-column: 2/3;
+        grid-row: 1/3;
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        background-color: #F2F2F2;
+        justify-content: center;
+    }
+
+    .div3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background: #F2F2F2;
+        background: linear-gradient(-130deg, #F2F2F2 63%, rgba(128,0,255,1) 100%); 
+        border-bottom-left-radius: 10px;
+    }
+
+    .div4{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        background: #F2F2F2;
+        background: linear-gradient(-230deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
+        border-bottom-right-radius: 10px;
+    }
+
+    .textoContenido{
+        padding: 1rem;
+        box-shadow: #8000FF 0px 2px 5px -1px, #8000FF 0px 1px 3px -1px;
+        background-color: white;
+        border-radius: 10px;
+        position: absolute;
+        width: 75%;
+        text-align: center;
+    }
+
+    .textoContenido > h1{
+        text-align: center;
+        padding: 0.3rem;
+    }
+    .textoContenido > p{
+        padding-left: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .enlaces{
+        display: flex;
+        width: 40%;
+        float: right;
+    }
+
+    .enlaceGithub{
+        width: 35%;
+    }
+
+    .enlaceLinkedin{
+        width: 35%;
+    }
+
+    .cv{
+        width: 35%;
+    }
+
+    .github{
+        width: 100%;
+    }
+
+    .linkedin{
+        width: 100%;
+    }
+
+    .descargar{
+        width: 90%;
+    }
+
+    /*---------- SECTION 2 ----------*/
+    /*----- titulo -----*/
+    .sectionDos{
+        margin-top: 3em;
+    }
+
+    .h1SectionDos{
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-size: 30px;
+    }
+
+    .hr{
+        width: 50%;
+        margin: 0 auto;
+        color: #8000FF;
+        border: 2px solid;
+    }
+
+    /*----- cards -----*/
+    .articleProyectos{
+        margin-top: 2.5em;
+        display: grid;
+        width: 100%;
+        height: 2150px;
+        grid-template-rows: repeat(5, 20%);
+        grid-template-columns: repeat(1, 100%);
+        margin-bottom: 2em;
+    }
+
+    .iconoProyectos{
+        display: none;
+    }
+
+    /* piedra papel tijera lagarto spock */
+    .divJuego1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 100%;
+        height: 400px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+    }
+
+    .imgJuego1{
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-position: center center;
+        background-image: url(../img/juego1.jpg);
+        margin: 0 auto
+    }
+
+    .divPJuego1{
+        width: 100%;
+        height: 400px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgJuego1:hover .divPJuego1{
+        opacity: 1;
+    }
+
+    .h4Juego1{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 5.5rem;
+        font-size: 25px;
+    }
+
+    .pJuego1{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 17px;
+    }
+
+    .enlacesJuego1{
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aJuego1{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aJuego1:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /* share car */
+    .divShareCar{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 90%;
+        height: 400px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+    }
+
+    .imgShareCar{
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-position: center center;
+        background-image: url(../img/sharecar.jpg);
+        margin: 0 auto;
+    }
+
+    .divPShareCar{
+        width: 100%;
+        height: 400px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgShareCar:hover .divPShareCar{
+        opacity: 1;
+    }
+
+    .h4ShareCar{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 6rem;
+        font-size: 25px;
+    }
+
+    .pShareCar{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 17px;
+    }
+
+    .enlacesShareCar{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aShareCar{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aShareCar:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /* ies ana luisa benitez */
+    .divIes{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        width: 100%;
+        height: 400px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+    }
+
+    .imgIES{
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-image: url(../img/ies.jpg);
+        margin: 0 auto
+    }
+
+    .divPIES{
+        width: 100%;
+        height: 400px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgIES:hover .divPIES{
+        opacity: 1;
+    }
+
+    .h4IES{
+        text-align: center;
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 5rem;
+        font-size: 25px;
+    }
+
+    .pIES{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 17px;
+    }
+
+    .enlacesIES{
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aIES{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aIES:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /* nintendo switch */
+    .divNintendo{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        width: 90%;
+        height: 400px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+    }
+
+    .imgNintendo{
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-image: url(../img/nintendo.jpg);
+        margin: 0 auto;
+    }
+
+    .divPNintendo{
+        width: 100%;
+        height: 400px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgNintendo:hover .divPNintendo{
+        opacity: 1;
+    }
+
+    .h4Nintendo{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 5rem;
+        font-size: 22px;
+    }
+
+    .pNintendo{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 0.5em;
+        font-size: 15px;
+    }
+
+    .enlacesNintendo{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aNintendo{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aNintendo:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /* piedra papel tijera lagarto spock multijugador */
+    .divJuego2{
+        grid-column: 1/2;
+        grid-row: 5/6;
+        width: 100%;
+        height: 400px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+    }
+
+    .imgJuego2{
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-position: center 15%;
+        background-image: url(../img/juego2.jpg);
+        margin: 0 auto;
+    }
+
+    .divPJuego2{
+        width: 100%;
+        height: 400px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgJuego2:hover .divPJuego2{
+        opacity: 1;
+    }
+
+    .h4Juego2{
+        text-align: center;
+        width: 96%;
+        margin: 0 auto;
+        padding-top: 7rem;
+        font-size: 22px;
+    }
+
+    .pJuego2{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 15px;
+    }
+
+    .enlacesJuego2{
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aJuego2{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aJuego2:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /*---------- SECTION 3 ----------*/
+    .section3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3em;
+        margin-bottom: 3em;
+        background-color: #F2F2F2;
+        border-radius: 10px;
+        padding-top: 1rem;
+        padding-bottom :1rem;
+        flex-direction: column;
+    }
+
+    .h1SectionTres{
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-size: 30px;
+    }
+
+    .skills{
+        font-size: 30px;
+        width: 20%;
+        text-align: center;
+    }
+
+    .articleFlechas{
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1em;
+    }
+
+    .flecha{
+        width: 20%;
+        margin: 0 auto;
+        transform: rotate(90deg);
+    }
+
+    .articleSkills{
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(3, 33.33333333333333%);
+        width: 90%;
+        align-items: center;
+    }
+
+    /*----- conocimientos -----*/
+    .html{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .css{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .bootstrap{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .javascript{
+        grid-column: 4/5;
+        grid-row: 1/2;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .php{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .python{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .mysql{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .phpmyadmin{
+        grid-column: 4/5;
+        grid-row: 2/3;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .sqlite{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .heroku{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .linux{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .virtualbox{
+        grid-column: 4/5;
+        grid-row: 3/4;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    /*---------- SECCION DE CONTACTO ----------*/
+    .sectionContacto{
+        display: flex;
+        align-items: center;
+        width: 85%;
+        margin: 0 auto;       
+        margin-top: 3em;
+        background-color: #F2F2F2;
+        margin-bottom: 3em;
+        text-align: center;
+    }
+
+    .final{
+        display: flex;
+        align-items: center;
+    }
+
+    .h1Contacto{
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-size: 30px;
+    }
+
+    .pContacto{
+        font-size: 17px;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .lateralIzquierda{
+        width: 30%;
+        height: 270px;
+        background: rgb(255,255,255);
+        background: linear-gradient(-90deg, #F2F2F2 21%, rgba(128,0,255,1) 100%);
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    .lateralDerecha{
+        width: 30%;
+        height: 270px;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, #F2F2F2 21%, rgba(128,0,255,1) 100%);
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .telefonoIzquierda, .telefonoDerecha{
+        display: none;
+    }
+
+    .hr2{
+        width: 50%;
+        margin: 0 auto;
+        color: #8000FF;
+        border: 2px solid;
+        margin-bottom: 1em;
+    }
+
+    .button-container-1 {
+        border-radius: 10px;
+        position: relative;
+        width: 55%;
+        height: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3vh;
+        overflow: hidden;
+        border: 1px solid;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        transition: 0.5s;
+        letter-spacing: 1px;
+    }
+
+    .button-container-1 button {
+        width: 101%;
+        height: 100%;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        letter-spacing: 1px;
+        background-color: #8000FF;
+        -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+        mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+        -webkit-mask-size: 2300% 100%;
+        mask-size: 2300% 100%;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        -webkit-animation: ani2 0.7s steps(22) forwards;
+        animation: ani2 0.7s steps(22) forwards;
+    }
+
+    .button-container-1 button:hover {
+        -webkit-animation: ani 0.7s steps(22) forwards;
+        animation: ani 0.7s steps(22) forwards;
+    } 
+
+    .mas {
+        position: absolute;
+        color: #8000FF;
+        text-align: center;
+        width: 101%;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        position: absolute;
+        font-size: 20px;
+        margin-top: 12px;
+        overflow: hidden;
+    }
+
+    .aContacteme{
+        text-decoration: none;
+        color: white;
+    }
+
+    @-webkit-keyframes ani {
+        from {
+            -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+        }
+        to {
+            -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+        }
+    }
+
+    @keyframes ani {
+        from {
+            -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+        }
+        to {
+            -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+        }
+    }
+
+    @-webkit-keyframes ani2 {
+        from {
+            -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+        }
+        to {
+            -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+        }
+    }
+
+    @keyframes ani2 {
+        from {
+            -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+        }
+        to {
+            -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+        }
+    }
+
+    a{
+        color: #00ff95;
+    }
+
+    /*---------- FOOTER ----------*/
+    footer{
+        background-color: #8000FF;
+        margin-top: 3em;
+    }
+
+    .descargarFooter{
+        width: 5%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px){
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        width: 85%;
+        margin: 0 auto;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /*---------- HEADER ----------*/
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header > *{
+		order: 0;
+	}
+
+    .nombre{
+        background-color:#8000FF;
+        color: white;
+        padding: 0.5rem;
+        border-radius: 10px;
+        font-size: 16px;
+        order: 2;
+    }
+
+    nav{
+		order: 1;
+		margin-left: 0.5em; 
+	}
+
+    .menu{
+        text-decoration: none;
+        color: #8000FF;
+        padding: 1rem;
+    } 
+
+    .main-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        margin-left: -100%;
+        transition: all 0.2s linear;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 100;
+    }
+    
+    .main-nav.show {
+        margin-left: 0;
+    }
+    
+    .nav-links {
+        background-color: #F2F2F2;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        align-items: center;
+    }
+    
+    .link-item {
+        margin-top: 2rem;
+        color: #444444;
+        text-decoration: none;
+        font-weight: bold;
+        position: relative;
+    }
+
+    .link-item:first-child{
+        margin-top: 5em;
+    }
+    
+    .link-item::after {
+        position: absolute;
+        content: "";
+        bottom: -5px;
+        left: 0;
+        width: 0%;
+        height: 3px;
+        transition: 0.3s ease all;
+    }
+    
+    .link-item:hover::after {
+        width: 100%;
+    }
+    
+    .button-menu {
+        z-index: 200;
+        width: 40px;
+        height: 40px;
+        border: none;
+        display: flex;
+        background: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .button-menu span {
+        width: 90%;
+        height: 3px;
+        margin-top: 0.5em;
+        position: relative;
+        background: #8000FF;
+        border-radius: 3px;
+        transform-origin: 4px 0px;
+        transition: all 0.2s linear;
+    }
+    
+    .button-menu.close span {
+        opacity: 1;
+        transform: rotate(45deg) translate(0px, 0px);
+        background: #8000FF;
+    }
+    
+    .button-menu.close span:nth-child(2) {
+        transform: rotate(-45deg) translate(-8px, 5px);
+    }
+    
+    .button-menu.close span:nth-child(3) {
+        display: none;
+    }
+    
+    @media screen and (min-width: 768px) {
+        .button-menu {
+            display: none;
+        }
+        
+        .main-logo {
+            flex-basis: 30%;
+        }
+        
+        .main-nav {
+            position: static;
+            margin-left: 0;
+            flex-basis: 70%;
+            height: 100%;
+        }
+        
+        .nav-links {
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-end;
+            background: white;
+        }
+        
+        .link-item {
+            display: inline-block;
+            margin-top: 0;
+            margin-right: 2rem;
+        }
+    }
+    
+    /*----- botón para cambiar el color del body -----*/
+    .button{
+        order: 3;
+    }
+
+	.content-input input,
+	.content-select select{
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+
+	.content-input input{
+		visibility: hidden;
+		position: absolute;
+		right: 0;
+	}
+
+	.content-input{
+		position: relative;
+		margin-bottom: 30px;
+		padding:5px 0 20px 60px;
+		display: block;
+	}
+
+	.content-input input + i{
+		background: #f0f0f0;
+		border:2px solid rgba(0,0,0,0.2);
+		position: absolute; 
+		left: 0;
+		top: 0;
+	}
+
+	.content-input input[type=checkbox ] + i{
+		width: 52px;
+		height: 30px;
+		border-radius: 15px;
+	}
+
+	.content-input input[type=checkbox] + i:before{
+		content: ''; 
+		width: 26px;
+		height: 26px;
+		background: #fff;
+		border-radius: 50%;
+		position: absolute;
+		z-index: 1;
+		left: 0px;
+		top: 0px;
+		-webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+		box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+	}
+
+	.content-input input[type=checkbox]:checked + i:before{
+		left: 22px;
+		-webkit-box-shadow: -3px 0 3px 0 rgba(0,0,0,0.2);
+		box-shadow: 3px 0 -3px 0 rgba(0,0,0,0.2);
+	}
+
+	.content-input input[type=checkbox]:checked + i{
+        background: #8000FF;
+	}
+
+	.content-input{
+		float: right;
+		margin: 0.5em;
+	}
+
+    /*---------- SECTION 1 ----------*/
+    .sectionUno{
+        margin-top: 1.5em;
+        width: 100%;
+        height: 450px;
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: repeat(2, 50%);
+    }
+
+    .div1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background: #F2F2F2;
+        background: linear-gradient(-50deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
+        border-top-left-radius: 10px;
+    }
+
+    .div2{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        background: #F2F2F2;
+        background: linear-gradient(50deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
+        border-top-right-radius: 10px;
+    }
+
+    .texto{
+        grid-column: 2/3;
+        grid-row: 1/3;
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        background-color: #F2F2F2;
+    }
+
+    .div3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background: #F2F2F2;
+        background: linear-gradient(-130deg, #F2F2F2 63%, rgba(128,0,255,1) 100%); 
+        border-bottom-left-radius: 10px;
+    }
+
+    .div4{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        background: #F2F2F2;
+        background: linear-gradient(-230deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
+        border-bottom-right-radius: 10px;
+    }
+
+    .textoContenido{
+        padding: 1rem;
+        box-shadow: #8000FF 0px 2px 5px -1px, #8000FF 0px 1px 3px -1px;
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .textoContenido > h1{
+        text-align: center;
+        padding: 0.3rem;
+    }
+    .textoContenido > p{
+        padding-left: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .enlaces{
+        display: flex;
+        width: 40%;
+        float: right;
+    }
+
+    .enlaceGithub{
+        width: 50%;
+    }
+
+    .enlaceLinkedin{
+        width: 50%;
+    }
+
+    .cv{
+        width: 50%;
+    }
+
+    .github{
+        width: 100%;
+    }
+
+    .linkedin{
+        width: 100%;
+    }
+
+    .descargar{
+        width: 90%;
+    }
+
+    /*---------- SECTION 2 ----------*/
+    /*----- titulo -----*/
+    .sectionDos{
+        margin-top: 3em;
+    }
+
+    .h1SectionDos{
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-size: 30px;
+    }
+
+    .hr{
+        width: 50%;
+        margin: 0 auto;
+        color: #8000FF;
+        border: 2px solid;
+    }
+
+    /*----- cards -----*/
+    .articleProyectos{
+        margin-top: 2.5em;
+        display: grid;
+        width: 100%;
+        height: 2150px;
+        grid-template-rows: repeat(5, 20%);
+        grid-template-columns: repeat(1, 100%);
+        margin-bottom: 2em;
+    }
+
+    .iconoProyectos{
+        display: none;
+    }
+
+    /* piedra papel tijera lagarto spock */
+    .divJuego1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 84%;
+        height: 400px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+    }
+
+    .imgJuego1{
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-position: center center;
+        background-image: url(../img/juego1.jpg);
+        margin: 0 auto
+    }
+
+    .divPJuego1{
+        width: 100%;
+        height: 400px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgJuego1:hover .divPJuego1{
+        opacity: 1;
+    }
+
+    .h4Juego1{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 6rem;
+        font-size: 25px;
+    }
+
+    .pJuego1{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 17px;
+    }
+
+    .enlacesJuego1{
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aJuego1{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aJuego1:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /* share car */
+    .divShareCar{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 70%;
+        height: 400px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+    }
+
+    .imgShareCar{
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-position: center center;
+        background-image: url(../img/sharecar.jpg);
+        margin: 0 auto;
+    }
+
+    .divPShareCar{
+        width: 100%;
+        height: 400px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgShareCar:hover .divPShareCar{
+        opacity: 1;
+    }
+
+    .h4ShareCar{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 5rem;
+        font-size: 25px;
+    }
+
+    .pShareCar{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 17px;
+    }
+
+    .enlacesShareCar{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aShareCar{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aShareCar:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /* ies ana luisa benitez */
+    .divIes{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        width: 84%;
+        height: 400px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+    }
+
+    .imgIES{
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-image: url(../img/ies.jpg);
+        margin: 0 auto
+    }
+
+    .divPIES{
+        width: 100%;
+        height: 400px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgIES:hover .divPIES{
+        opacity: 1;
+    }
+
+    .h4IES{
+        text-align: center;
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 5.5rem;
+        font-size: 25px;
+    }
+
+    .pIES{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 17px;
+    }
+
+    .enlacesIES{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aIES{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aIES:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /* nintendo switch */
+    .divNintendo{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        width: 70%;
+        height: 400px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+    }
+
+    .imgNintendo{
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-image: url(../img/nintendo.jpg);
+        margin: 0 auto;
+    }
+
+    .divPNintendo{
+        width: 100%;
+        height: 400px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgNintendo:hover .divPNintendo{
+        opacity: 1;
+    }
+
+    .h4Nintendo{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 5.5rem;
+        font-size: 22px;
+    }
+
+    .pNintendo{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 0.5em;
+        font-size: 15px;
+    }
+
+    .enlacesNintendo{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aNintendo{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aNintendo:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /* piedra papel tijera lagarto spock multijugador */
+    .divJuego2{
+        grid-column: 1/2;
+        grid-row: 5/6;
+        width: 84%;
+        height: 400px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+    }
+
+    .imgJuego2{
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-position: center 15%;
+        background-image: url(../img/juego2.jpg);
+        margin: 0 auto;
+    }
+
+    .divPJuego2{
+        width: 100%;
+        height: 400px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgJuego2:hover .divPJuego2{
+        opacity: 1;
+    }
+
+    .h4Juego2{
+        text-align: center;
+        width: 96%;
+        margin: 0 auto;
+        padding-top: 7rem;
+        font-size: 22px;
+    }
+
+    .pJuego2{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 15px;
+    }
+
+    .enlacesJuego2{
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aJuego2{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aJuego2:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /*---------- SECTION 3 ----------*/
+    .section3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3em;
+        margin-bottom: 3em;
+        background-color: #F2F2F2;
+        border-radius: 10px;
+        padding-top: 1rem;
+        padding-bottom :1rem;
+        flex-direction: column;
+    }
+
+    .h1SectionTres{
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-size: 30px;
+    }
+
+    .skills{
+        font-size: 30px;
+        width: 20%;
+        text-align: center;
+    }
+
+    .articleFlechas{
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1em;
+    }
+
+    .flecha{
+        width: 20%;
+        margin: 0 auto;
+        transform: rotate(90deg);
+    }
+
+    .articleSkills{
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(3, 33.33333333333333%);
+        width: 90%;
+        align-items: center;
+    }
+
+    /*----- conocimientos -----*/
+    .html{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .css{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .bootstrap{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .javascript{
+        grid-column: 4/5;
+        grid-row: 1/2;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .php{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .python{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .mysql{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .phpmyadmin{
+        grid-column: 4/5;
+        grid-row: 2/3;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .sqlite{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .heroku{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .linux{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .virtualbox{
+        grid-column: 4/5;
+        grid-row: 3/4;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    /*---------- SECCION DE CONTACTO ----------*/
+    .sectionContacto{
+        display: flex;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;       
+        margin-top: 3em;
+        background-color: #F2F2F2;
+        margin-bottom: 3em;
+        text-align: center;
+    }
+
+    .final{
+        display: flex;
+        align-items: center;
+    }
+
+    .h1Contacto{
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-size: 30px;
+    }
+
+    .pContacto{
+        font-size: 17px;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .lateralIzquierda{
+        width: 30%;
+        height: 270px;
+        background: rgb(255,255,255);
+        background: linear-gradient(-90deg, #F2F2F2 21%, rgba(128,0,255,1) 100%);
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    .lateralDerecha{
+        width: 30%;
+        height: 270px;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, #F2F2F2 21%, rgba(128,0,255,1) 100%);
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .telefonoIzquierda, .telefonoDerecha{
+        display: none;
+    }
+
+    .hr2{
+        width: 50%;
+        margin: 0 auto;
+        color: #8000FF;
+        border: 2px solid;
+        margin-bottom: 1em;
+    }
+
+    .button-container-1 {
+        border-radius: 10px;
+        position: relative;
+        width: 40%;
+        height: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3vh;
+        overflow: hidden;
+        border: 1px solid;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        transition: 0.5s;
+        letter-spacing: 1px;
+    }
+
+    .button-container-1 button {
+        width: 101%;
+        height: 100%;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        letter-spacing: 1px;
+        background-color: #8000FF;
+        -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+        mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+        -webkit-mask-size: 2300% 100%;
+        mask-size: 2300% 100%;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        -webkit-animation: ani2 0.7s steps(22) forwards;
+        animation: ani2 0.7s steps(22) forwards;
+    }
+
+    .button-container-1 button:hover {
+        -webkit-animation: ani 0.7s steps(22) forwards;
+        animation: ani 0.7s steps(22) forwards;
+    } 
+
+    .mas {
+        position: absolute;
+        color: #8000FF;
+        text-align: center;
+        width: 101%;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        position: absolute;
+        font-size: 20px;
+        margin-top: 12px;
+        overflow: hidden;
+    }
+
+    .aContacteme{
+        text-decoration: none;
+        color: white;
+    }
+
+    @-webkit-keyframes ani {
+        from {
+            -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+        }
+        to {
+            -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+        }
+    }
+
+    @keyframes ani {
+        from {
+            -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+        }
+        to {
+            -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+        }
+    }
+
+    @-webkit-keyframes ani2 {
+        from {
+            -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+        }
+        to {
+            -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+        }
+    }
+
+    @keyframes ani2 {
+        from {
+            -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+        }
+        to {
+            -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+        }
+    }
+
+    a{
+        color: #00ff95;
+    }
+
+    /*---------- FOOTER ----------*/
+    footer{
+        background-color: #8000FF;
+        margin-top: 3em;
+    }
+
+    .descargarFooter{
+        width: 5%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 900px){
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        width: 85%;
+        margin: 0 auto;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /*---------- HEADER ----------*/
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nombre{
+        background-color:#8000FF;
+        color: white;
+        padding: 0.5rem;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+
+    #hr{
+        display: none;
+    }
+
+    .link-item{
+        text-decoration: none;
+        color: #8000FF;
+        padding: 1rem;
+    }
+
+    .link-item:hover{
+        background-color: #8000FF;
+        color: white;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    /*----- botón para cambiar el color del body -----*/
+	.content-input input,
+	.content-select select{
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+
+	.content-input input{
+		visibility: hidden;
+		position: absolute;
+		right: 0;
+	}
+
+	.content-input{
+		position: relative;
+		margin-bottom: 30px;
+		padding:5px 0 20px 60px;
+		display: block;
+	}
+
+	.content-input input + i{
+		background: #f0f0f0;
+		border:2px solid rgba(0,0,0,0.2);
+		position: absolute; 
+		left: 0;
+		top: 0;
+	}
+
+	.content-input input[type=checkbox ] + i{
+		width: 52px;
+		height: 30px;
+		border-radius: 15px;
+	}
+
+	.content-input input[type=checkbox] + i:before{
+		content: ''; 
+		width: 26px;
+		height: 26px;
+		background: #fff;
+		border-radius: 50%;
+		position: absolute;
+		z-index: 1;
+		left: 0px;
+		top: 0px;
+		-webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+		box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+	}
+
+	.content-input input[type=checkbox]:checked + i:before{
+		left: 22px;
+		-webkit-box-shadow: -3px 0 3px 0 rgba(0,0,0,0.2);
+		box-shadow: 3px 0 -3px 0 rgba(0,0,0,0.2);
+	}
+
+	.content-input input[type=checkbox]:checked + i{
+        background: #8000FF;
+	}
+
+	.content-input{
+		float: right;
+		margin: 0.5em;
+	}
+    
+    /*----- botón para cambiar el color del body -----*/
+    .button{
+        order: 3;
+    }
+
+	.content-input input,
+	.content-select select{
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+
+	.content-input input{
+		visibility: hidden;
+		position: absolute;
+		right: 0;
+	}
+
+	.content-input{
+		position: relative;
+		margin-bottom: 30px;
+		padding:5px 0 20px 60px;
+		display: block;
+	}
+
+	.content-input input + i{
+		background: #f0f0f0;
+		border:2px solid rgba(0,0,0,0.2);
+		position: absolute; 
+		left: 0;
+		top: 0;
+	}
+
+	.content-input input[type=checkbox ] + i{
+		width: 52px;
+		height: 30px;
+		border-radius: 15px;
+	}
+
+	.content-input input[type=checkbox] + i:before{
+		content: ''; 
+		width: 26px;
+		height: 26px;
+		background: #fff;
+		border-radius: 50%;
+		position: absolute;
+		z-index: 1;
+		left: 0px;
+		top: 0px;
+		-webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+		box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+	}
+
+	.content-input input[type=checkbox]:checked + i:before{
+		left: 22px;
+		-webkit-box-shadow: -3px 0 3px 0 rgba(0,0,0,0.2);
+		box-shadow: 3px 0 -3px 0 rgba(0,0,0,0.2);
+	}
+
+	.content-input input[type=checkbox]:checked + i{
+        background: #8000FF;
+	}
+
+	.content-input{
+		float: right;
+		margin: 0.5em;
+	}
+
+
+    /*---------- SECTION 1 ----------*/
+    .sectionUno{
+        margin-top: 1.5em;
+        width: 100%;
+        height: 500px;
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: repeat(2, 50%);
+    }
+
+    .div1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background: #F2F2F2;
+        background: linear-gradient(-50deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
+        border-top-left-radius: 10px;
+    }
+
+    .div2{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        background: #F2F2F2;
+        background: linear-gradient(50deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
+        border-top-right-radius: 10px;
+    }
+
+    .texto{
+        grid-column: 2/3;
+        grid-row: 1/3;
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        background-color: #F2F2F2;
+    }
+
+    .div3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background: #F2F2F2;
+        background: linear-gradient(-130deg, #F2F2F2 63%, rgba(128,0,255,1) 100%); 
+        border-bottom-left-radius: 10px;
+    }
+
+    .div4{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        background: #F2F2F2;
+        background: linear-gradient(-230deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
+        border-bottom-right-radius: 10px;
+    }
+
+    .textoContenido{
+        padding: 1rem;
+        box-shadow: #8000FF 0px 2px 5px -1px, #8000FF 0px 1px 3px -1px;
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .textoContenido > h1{
+        text-align: center;
+        padding: 0.3rem;
+    }
+    .textoContenido > p{
+        padding-left: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .enlaces{
+        display: flex;
+        width: 40%;
+        float: right;
+    }
+
+    .enlaceGithub{
+        width: 50%;
+    }
+
+    .enlaceLinkedin{
+        width: 50%;
+    }
+
+    .cv{
+        width: 50%;
+    }
+
+    .github{
+        width: 100%;
+    }
+
+    .linkedin{
+        width: 100%;
+    }
+
+    .descargar{
+        width: 90%;
+    }
+
+    /*---------- SECTION 2 ----------*/
+    /*----- titulo -----*/
+    .sectionDos{
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+    .h1SectionDos{
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-size: 30px;
+    }
+
+    .hr{
+        width: 50%;
+        margin: 0 auto;
+        color: #8000FF;
+        border: 2px solid;
+    }
+
+    /*----- cards -----*/
+    .articleProyectos{
+        margin-top: 1em;
+        display: grid;
+        width: 100%;
+        height: 1100px;
+        grid-template-rows: repeat(3, 33.33333333333333%);
+        grid-template-columns: repeat(2, 50%);
+        margin-bottom: 3em;
+        align-items: center;
+    }
+
+    .iconoProyectos{
+        display: none;
+    }
+
+    /* piedra papel tijera lagarto spock */
+    .divJuego1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 80%;
+        height: 300px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+    }
+
+    .imgJuego1{
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        background-position: center center;
+        background-image: url(../img/juego1.jpg);
+        margin: 0 auto
+    }
+
+    .divPJuego1{
+        width: 100%;
+        height: 300px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgJuego1:hover .divPJuego1{
+        opacity: 1;
+    }
+
+    .h4Juego1{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 3rem;
+        font-size: 25px;
+    }
+
+    .pJuego1{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 17px;
+    }
+
+    .enlacesJuego1{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aJuego1{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aJuego1:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /* share car */
+    .divShareCar{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 80%;
+        height: 300px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+    }
+
+    .imgShareCar{
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        background-position: center center;
+        background-image: url(../img/sharecar.jpg);
+        margin: 0 auto;
+    }
+
+    .divPShareCar{
+        width: 100%;
+        height: 300px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgShareCar:hover .divPShareCar{
+        opacity: 1;
+    }
+
+    .h4ShareCar{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 3rem;
+        font-size: 25px;
+    }
+
+    .pShareCar{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 17px;
+    }
+
+    .enlacesShareCar{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aShareCar{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aShareCar:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /* ies ana luisa benitez */
+    .divIes{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 80%;
+        height: 300px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+        margin-top: -1.5em;
+    }
+
+    .imgIES{
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        background-image: url(../img/ies.jpg);
+        margin: 0 auto
+    }
+
+    .divPIES{
+        width: 100%;
+        height: 300px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgIES:hover .divPIES{
+        opacity: 1;
+    }
+
+    .h4IES{
+        text-align: center;
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 3.5rem;
+        font-size: 25px;
+    }
+
+    .pIES{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 17px;
+    }
+
+    .enlacesIES{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aIES{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aIES:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /* nintendo switch */
+    .divNintendo{
+        background-color: lightgrey;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        width: 80%;
+        height: 300px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+        margin-top: -1.5em;
+    }
+
+    .imgNintendo{
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        background-image: url(../img/nintendo.jpg);
+        margin: 0 auto;
+    }
+
+    .divPNintendo{
+        width: 100%;
+        height: 300px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgNintendo:hover .divPNintendo{
+        opacity: 1;
+    }
+
+    .h4Nintendo{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 2rem;
+        font-size: 22px;
+    }
+
+    .pNintendo{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 0.5em;
+        font-size: 15px;
+    }
+
+    .enlacesNintendo{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aNintendo{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aNintendo:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /* piedra papel tijera lagarto spock multijugador */
+    .divJuego2{
+        grid-column: 1/3;
+        grid-row: 3/4;
+        width: 70%;
+        height: 400px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+        margin-top: 2em;
+    }
+
+    .imgJuego2{
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-position: center 15%;
+        background-image: url(../img/juego2.jpg);
+        margin: 0 auto;
+    }
+
+    .divPJuego2{
+        width: 100%;
+        height: 400px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgJuego2:hover .divPJuego2{
+        opacity: 1;
+    }
+
+    .h4Juego2{
+        text-align: center;
+        width: 96%;
+        margin: 0 auto;
+        padding-top: 7rem;
+        font-size: 22px;
+    }
+
+    .pJuego2{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 15px;
+    }
+
+    .enlacesJuego2{
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aJuego2{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aJuego2:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /*---------- SECTION 3 ----------*/
+    .section3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3em;
+        margin-bottom: 3em;
+        background-color: #F2F2F2;
+        border-radius: 10px;
+        padding-top: 1rem;
+        padding-bottom :1rem;
+        flex-direction: column;
+    }
+
+    .h1SectionTres{
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-size: 30px;
+    }
+
+    .skills{
+        font-size: 30px;
+        width: 20%;
+        text-align: center;
+    }
+
+    .articleFlechas{
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1em;
+    }
+
+    .flecha{
+        width: 20%;
+        margin: 0 auto;
+        transform: rotate(90deg);
+    }
+
+    .articleSkills{
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(3, 33.33333333333333%);
+        width: 80%;
+        align-items: center;
+    }
+
+    /*----- conocimientos -----*/
+    .html{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .css{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .bootstrap{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .javascript{
+        grid-column: 4/5;
+        grid-row: 1/2;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .php{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .python{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .mysql{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .phpmyadmin{
+        grid-column: 4/5;
+        grid-row: 2/3;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .sqlite{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .heroku{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .linux{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .virtualbox{
+        grid-column: 4/5;
+        grid-row: 3/4;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    /*---------- SECCION DE CONTACTO ----------*/
+    .sectionContacto{
+        display: flex;
+        align-items: center;
+        width: 70%;
+        margin: 0 auto;       
+        margin-top: 3em;
+        background-color: #F2F2F2;
+        margin-bottom: 3em;
+    }
+
+    .final{
+        display: flex;
+        align-items: center;
+    }
+
+    .h1Contacto{
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-size: 30px;
+    }
+
+    .pContacto{
+        font-size: 17px;
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .lateralIzquierda{
+        width: 30%;
+        height: 270px;
+        background: rgb(255,255,255);
+        background: linear-gradient(-90deg, #F2F2F2 21%, rgba(128,0,255,1) 100%);
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    .lateralDerecha{
+        width: 30%;
+        height: 270px;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, #F2F2F2 21%, rgba(128,0,255,1) 100%);
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .telefonoIzquierda, .telefonoDerecha{
+        width: 6%;
+        height: 40px;
+        box-shadow: #8000FF 0px 5px 15px;
+        border-radius: 10px;
+        background-color: #F2F2F2;
+    }
+
+    .hr2{
+        width: 50%;
+        margin: 0 auto;
+        color: #8000FF;
+        border: 2px solid;
+        margin-bottom: 1em;
+    }
+
+    .button-container-1 {
+        border-radius: 10px;
+        position: relative;
+        width: 40%;
+        height: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4vh;
+        overflow: hidden;
+        border: 1px solid;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        transition: 0.5s;
+        letter-spacing: 1px;
+    }
+
+    .button-container-1 button {
+        width: 101%;
+        height: 100%;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        letter-spacing: 1px;
+        background-color: #8000FF;
+        -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+        mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+        -webkit-mask-size: 2300% 100%;
+        mask-size: 2300% 100%;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        -webkit-animation: ani2 0.7s steps(22) forwards;
+        animation: ani2 0.7s steps(22) forwards;
+    }
+
+    .button-container-1 button:hover {
+        -webkit-animation: ani 0.7s steps(22) forwards;
+        animation: ani 0.7s steps(22) forwards;
+    } 
+
+    .mas {
+        position: absolute;
+        color: #8000FF;
+        text-align: center;
+        width: 101%;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        position: absolute;
+        font-size: 20px;
+        margin-top: 12px;
+        overflow: hidden;
+    }
+
+    .aContacteme{
+        text-decoration: none;
+        color: white;
+    }
+
+    @-webkit-keyframes ani {
+        from {
+            -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+        }
+        to {
+            -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+        }
+    }
+
+    @keyframes ani {
+        from {
+            -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+        }
+        to {
+            -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+        }
+    }
+
+    @-webkit-keyframes ani2 {
+        from {
+            -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+        }
+        to {
+            -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+        }
+    }
+
+    @keyframes ani2 {
+        from {
+            -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+        }
+        to {
+            -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+        }
+    }
+
+    a{
+        color: #00ff95;
+    }
+
+    /*---------- FOOTER ----------*/
+    footer{
+        background-color: #8000FF;
+        margin-top: 3em;
+    }
+
+    .descargarFooter{
+        width: 5%;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1200px){
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        width: 85%;
+        margin: 0 auto;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /*---------- HEADER ----------*/
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nombre{
+        background-color:#8000FF;
+        color: white;
+        padding: 0.5rem;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+
+    #hr{
+        display: none;
+    }
+
+    .link-item{
+        text-decoration: none;
+        color: #8000FF;
+        padding: 1rem;
+    }
+
+    .link-item:hover{
+        background-color: #8000FF;
+        color: white;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    /*----- botón para cambiar el color del body -----*/
+	.content-input input,
+	.content-select select{
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+
+	.content-input input{
+		visibility: hidden;
+		position: absolute;
+		right: 0;
+	}
+
+	.content-input{
+		position: relative;
+		margin-bottom: 30px;
+		padding:5px 0 20px 60px;
+		display: block;
+	}
+
+	.content-input input + i{
+		background: #f0f0f0;
+		border:2px solid rgba(0,0,0,0.2);
+		position: absolute; 
+		left: 0;
+		top: 0;
+	}
+
+	.content-input input[type=checkbox ] + i{
+		width: 52px;
+		height: 30px;
+		border-radius: 15px;
+	}
+
+	.content-input input[type=checkbox] + i:before{
+		content: ''; 
+		width: 26px;
+		height: 26px;
+		background: #fff;
+		border-radius: 50%;
+		position: absolute;
+		z-index: 1;
+		left: 0px;
+		top: 0px;
+		-webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+		box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+	}
+
+	.content-input input[type=checkbox]:checked + i:before{
+		left: 22px;
+		-webkit-box-shadow: -3px 0 3px 0 rgba(0,0,0,0.2);
+		box-shadow: 3px 0 -3px 0 rgba(0,0,0,0.2);
+	}
+
+	.content-input input[type=checkbox]:checked + i{
+        background: #8000FF;
+	}
+
+	.content-input{
+		float: right;
+		margin: 0.5em;
+	}
+
+    /*---------- SECTION 1 ----------*/
+    .sectionUno{
+        margin-top: 2em;
+        width: 100%;
+        height: 500px;
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: repeat(2, 50%);
+    }
+
+    .div1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background: #F2F2F2;
+        background: linear-gradient(-50deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
+        border-top-left-radius: 10px;
+    }
+
+    .div2{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        background: #F2F2F2;
+        background: linear-gradient(50deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
+        border-top-right-radius: 10px;
+    }
+
+    .texto{
+        grid-column: 2/3;
+        grid-row: 1/3;
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        background-color: #F2F2F2;
+    }
+
+    .div3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background: #F2F2F2;
+        background: linear-gradient(-130deg, #F2F2F2 63%, rgba(128,0,255,1) 100%); 
+        border-bottom-left-radius: 10px;
+    }
+
+    .div4{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        background: #F2F2F2;
+        background: linear-gradient(-230deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
+        border-bottom-right-radius: 10px;
+    }
+
+    .textoContenido{
+        padding: 1rem;
+        box-shadow: #8000FF 0px 2px 5px -1px, #8000FF 0px 1px 3px -1px;
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .textoContenido > h1{
+        text-align: center;
+        padding: 0.3rem;
+    }
+    .textoContenido > p{
+        padding-left: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .enlaces{
+        display: flex;
+        width: 40%;
+        float: right;
+    }
+
+    .enlaceGithub{
+        width: 40%;
+    }
+
+    .enlaceLinkedin{
+        width: 40%;
+    }
+
+    .cv{
+        width: 40%;
+    }
+
+    .github{
+        width: 100%;
+    }
+
+    .linkedin{
+        width: 100%;
+    }
+
+    .descargar{
+        width: 90%;
+    }
+
+    /*---------- SECTION 2 ----------*/
+    /*----- titulo -----*/
+    .sectionDos{
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+    .h1SectionDos{
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-size: 30px;
+    }
+
+    .hr{
+        width: 50%;
+        margin: 0 auto;
+        color: #8000FF;
+        border: 2px solid;
+    }
+
+    /*----- cards -----*/
+    .articleProyectos{
+        margin-top: 1em;
+        display: grid;
+        width: 100%;
+        height: 1200px;
+        grid-template-rows: repeat(3, 33.33333333333333%);
+        grid-template-columns: repeat(2, 50%);
+        margin-bottom: 3em;
+        align-items: center;
+    }
+
+    .iconoProyectos{
+        display: none;
+    }
+
+    /* piedra papel tijera lagarto spock */
+    .divJuego1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 80%;
+        height: 350px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+    }
+
+    .imgJuego1{
+        width: 100%;
+        height: 350px;
+        background-size: cover;
+        background-position: center center;
+        background-image: url(../img/juego1.jpg);
+        margin: 0 auto
+    }
+
+    .divPJuego1{
+        width: 100%;
+        height: 350px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgJuego1:hover .divPJuego1{
+        opacity: 1;
+    }
+
+    .h4Juego1{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 4rem;
+        font-size: 25px;
+    }
+
+    .pJuego1{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 17px;
+    }
+
+    .enlacesJuego1{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aJuego1{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aJuego1:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /* share car */
+    .divShareCar{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 80%;
+        height: 350px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+    }
+
+    .imgShareCar{
+        width: 100%;
+        height: 350px;
+        background-size: cover;
+        background-position: center center;
+        background-image: url(../img/sharecar.jpg);
+        margin: 0 auto;
+    }
+
+    .divPShareCar{
+        width: 100%;
+        height: 350px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgShareCar:hover .divPShareCar{
+        opacity: 1;
+    }
+
+    .h4ShareCar{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 4rem;
+        font-size: 25px;
+    }
+
+    .pShareCar{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 17px;
+    }
+
+    .enlacesShareCar{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aShareCar{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aShareCar:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /* ies ana luisa benitez */
+    .divIes{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 80%;
+        height: 350px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+    }
+
+    .imgIES{
+        width: 100%;
+        height: 350px;
+        background-size: cover;
+        background-image: url(../img/ies.jpg);
+        margin: 0 auto
+    }
+
+    .divPIES{
+        width: 100%;
+        height: 350px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgIES:hover .divPIES{
+        opacity: 1;
+    }
+
+    .h4IES{
+        text-align: center;
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 4.5rem;
+        font-size: 25px;
+    }
+
+    .pIES{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 17px;
+    }
+
+    .enlacesIES{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aIES{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aIES:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /* nintendo switch */
+    .divNintendo{
+        background-color: lightgrey;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        width: 80%;
+        height: 350px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+    }
+
+    .imgNintendo{
+        width: 100%;
+        height: 350px;
+        background-size: cover;
+        background-image: url(../img/nintendo.jpg);
+        margin: 0 auto;
+    }
+
+    .divPNintendo{
+        width: 100%;
+        height: 350px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgNintendo:hover .divPNintendo{
+        opacity: 1;
+    }
+
+    .h4Nintendo{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 3rem;
+        font-size: 22px;
+    }
+
+    .pNintendo{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 0.5em;
+        font-size: 15px;
+    }
+
+    .enlacesNintendo{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aNintendo{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aNintendo:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /* piedra papel tijera lagarto spock multijugador */
+    .divJuego2{
+        grid-column: 1/3;
+        grid-row: 3/4;
+        width: 70%;
+        height: 400px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+        margin-top: 2em;
+    }
+
+    .imgJuego2{
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-position: center 15%;
+        background-image: url(../img/juego2.jpg);
+        margin: 0 auto;
+    }
+
+    .divPJuego2{
+        width: 100%;
+        height: 400px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgJuego2:hover .divPJuego2{
+        opacity: 1;
+    }
+
+    .h4Juego2{
+        text-align: center;
+        width: 96%;
+        margin: 0 auto;
+        padding-top: 7rem;
+        font-size: 22px;
+    }
+
+    .pJuego2{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 15px;
+    }
+
+    .enlacesJuego2{
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aJuego2{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aJuego2:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /*---------- SECTION 3 ----------*/
+    .section3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3em;
+        margin-bottom: 3em;
+        background-color: #F2F2F2;
+        border-radius: 10px;
+        padding-top: 1rem;
+        padding-bottom :1rem;
+    }
+
+    .h1SectionTres{
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-size: 30px;
+    }
+
+    .skills{
+        font-size: 30px;
+        width: 20%;
+        text-align: center;
+    }
+
+    .articleFlechas{
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flecha{
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .articleSkills{
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(3, 33.33333333333333%);
+        width: 65%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*----- conocimientos -----*/
+    .html{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .css{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .bootstrap{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .javascript{
+        grid-column: 4/5;
+        grid-row: 1/2;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .php{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .python{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .mysql{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .phpmyadmin{
+        grid-column: 4/5;
+        grid-row: 2/3;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .sqlite{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .heroku{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .linux{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .virtualbox{
+        grid-column: 4/5;
+        grid-row: 3/4;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    /*---------- SECCION DE CONTACTO ----------*/
+    .sectionContacto{
+        display: flex;
+        align-items: center;
+        width: 70%;
+        margin: 0 auto;       
+        margin-top: 3em;
+        background-color: #F2F2F2;
+        margin-bottom: 3em;
+    }
+
+    .final{
+        display: flex;
+        align-items: center;
+    }
+
+    .h1Contacto{
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-size: 30px;
+    }
+
+    .pContacto{
+        font-size: 17px;
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .lateralIzquierda{
+        width: 30%;
+        height: 270px;
+        background: rgb(255,255,255);
+        background: linear-gradient(-90deg, #F2F2F2 21%, rgba(128,0,255,1) 100%);
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    .lateralDerecha{
+        width: 30%;
+        height: 270px;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, #F2F2F2 21%, rgba(128,0,255,1) 100%);
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .telefonoIzquierda, .telefonoDerecha{
+        width: 5.5%;
+        height: 50px;
+        box-shadow: #8000FF 0px 5px 15px;
+        border-radius: 10px;
+        background-color: #F2F2F2;
+    }
+
+    .hr2{
+        width: 50%;
+        margin: 0 auto;
+        color: #8000FF;
+        border: 2px solid;
+        margin-bottom: 1em;
+    }
+
+    .button-container-1 {
+        border-radius: 10px;
+        position: relative;
+        width: 30%;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4vh;
+        overflow: hidden;
+        border: 1px solid;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        transition: 0.5s;
+        letter-spacing: 1px;
+    }
+
+    .button-container-1 button {
+        width: 101%;
+        height: 100%;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        letter-spacing: 1px;
+        background-color: #8000FF;
+        -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+        mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+        -webkit-mask-size: 2300% 100%;
+        mask-size: 2300% 100%;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        -webkit-animation: ani2 0.7s steps(22) forwards;
+        animation: ani2 0.7s steps(22) forwards;
+    }
+
+    .button-container-1 button:hover {
+        -webkit-animation: ani 0.7s steps(22) forwards;
+        animation: ani 0.7s steps(22) forwards;
+    } 
+
+    .mas {
+        position: absolute;
+        color: #8000FF;
+        text-align: center;
+        width: 101%;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        position: absolute;
+        font-size: 20px;
+        margin-top: 12px;
+        overflow: hidden;
+    }
+
+    .aContacteme{
+        text-decoration: none;
+        color: white;
+    }
+
+    @-webkit-keyframes ani {
+        from {
+            -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+        }
+        to {
+            -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+        }
+    }
+
+    @keyframes ani {
+        from {
+            -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+        }
+        to {
+            -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+        }
+    }
+
+    @-webkit-keyframes ani2 {
+        from {
+            -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+        }
+        to {
+            -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+        }
+    }
+
+    @keyframes ani2 {
+        from {
+            -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+        }
+        to {
+            -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+        }
+    }
+
+    a{
+        color: #00ff95;
+    }
+
+    /*---------- FOOTER ----------*/
+    footer{
+        background-color: #8000FF;
+        margin-top: 3em;
+    }
+
+    .descargarFooter{
+        width: 5%;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1440px){
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        width: 85%;
+        margin: 0 auto;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /*---------- HEADER ----------*/
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nombre{
+        background-color:#8000FF;
+        color: white;
+        padding: 0.5rem;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+
+    #hr{
+        display: none;
+    }
+
+    .link-item{
+        text-decoration: none;
+        color: #8000FF;
+        padding: 1rem;
+    }
+
+    .link-item:hover{
+        background-color: #8000FF;
+        color: white;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    /*----- botón para cambiar el color del body -----*/
+	.content-input input,
+	.content-select select{
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+
+	.content-input input{
+		visibility: hidden;
+		position: absolute;
+		right: 0;
+	}
+
+	.content-input{
+		position: relative;
+		margin-bottom: 30px;
+		padding:5px 0 20px 60px;
+		display: block;
+	}
+
+	.content-input input + i{
+		background: #f0f0f0;
+		border:2px solid rgba(0,0,0,0.2);
+		position: absolute; 
+		left: 0;
+		top: 0;
+	}
+
+	.content-input input[type=checkbox ] + i{
+		width: 52px;
+		height: 30px;
+		border-radius: 15px;
+	}
+
+	.content-input input[type=checkbox] + i:before{
+		content: ''; 
+		width: 26px;
+		height: 26px;
+		background: #fff;
+		border-radius: 50%;
+		position: absolute;
+		z-index: 1;
+		left: 0px;
+		top: 0px;
+		-webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+		box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+	}
+
+	.content-input input[type=checkbox]:checked + i:before{
+		left: 22px;
+		-webkit-box-shadow: -3px 0 3px 0 rgba(0,0,0,0.2);
+		box-shadow: 3px 0 -3px 0 rgba(0,0,0,0.2);
+	}
+
+	.content-input input[type=checkbox]:checked + i{
+        background: #8000FF;
+	}
+
+	.content-input{
+		float: right;
+		margin: 0.5em;
+	}
+
+    /*---------- SECTION 1 ----------*/
+    .sectionUno{
+        margin-top: 2em;
+        width: 100%;
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(3, 33.33333333333333%);
+        grid-template-rows: repeat(2, 50%);
+    }
+
+    .div1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background: #F2F2F2;
+        background: linear-gradient(-50deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
+        border-top-left-radius: 10px;
+    }
+
+    .div2{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        background: #F2F2F2;
+        background: linear-gradient(50deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
+        border-top-right-radius: 10px;
+    }
+
+    .texto{
+        grid-column: 2/3;
+        grid-row: 1/3;
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        background-color: #F2F2F2;
+    }
+
+    .div3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background: #F2F2F2;
+        background: linear-gradient(-130deg, #F2F2F2 63%, rgba(128,0,255,1) 100%); 
+        border-bottom-left-radius: 10px;
+    }
+
+    .div4{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        background: #F2F2F2;
+        background: linear-gradient(-230deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
+        border-bottom-right-radius: 10px;
+    }
+
+    .textoContenido{
+        padding: 1rem;
+        box-shadow: #8000FF 0px 2px 5px -1px, #8000FF 0px 1px 3px -1px;
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .textoContenido > h1{
+        text-align: center;
+        padding: 0.3rem;
+    }
+    .textoContenido > p{
+        padding-left: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .enlaces{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+        float: right;
+    }
+
+    .enlaceGithub{
+        width: 33.33333333333333%;
+    }
+
+    .enlaceLinkedin{
+        width: 33.33333333333333%;
+    }
+
+    .cv{
+        width: 33.33333333333333%;
+    }
+
+    .github{
+        width: 80%;
+    }
+
+    .linkedin{
+        width: 80%;
+    }
+
+    .descargar{
+        width: 72%;
+    }
+
+    /*---------- SECTION 2 ----------*/
+    /*----- titulo -----*/
+    .sectionDos{
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+    .h1SectionDos{
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-size: 30px;
+    }
+
+    .hr{
+        width: 50%;
+        margin: 0 auto;
+        color: #8000FF;
+        border: 2px solid;
+    }
+
+    /*----- cards -----*/
+    .articleProyectos{
+        margin-top: 1em;
+        display: grid;
+        width: 100%;
+        height: 670px;
+        grid-template-columns: repeat(3, 33.33333333333333%);
+        grid-template-rows: repeat(2, 50%);
+        margin-bottom: 3em;
+        align-items: center;
+    }
+
+    .iconoProyectos{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        width: 60%;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    /* piedra papel tijera lagarto spock */
+    .divJuego1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 83%;
+        height: 290px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+    }
+
+    .imgJuego1{
+        width: 100%;
+        height: 290px;
+        background-size: cover;
+        background-position: 70% center;
+        background-image: url(../img/juego1.jpg);
+        margin: 0 auto
+    }
+
+    .divPJuego1{
+        width: 100%;
+        height: 290px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgJuego1:hover .divPJuego1{
+        opacity: 1;
+    }
+
+    .h4Juego1{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 3rem;
+        font-size: 25px;
+    }
+
+    .pJuego1{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 17px;
+    }
+
+    .enlacesJuego1{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aJuego1{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aJuego1:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /* share car */
+    .divShareCar{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 83%;
+        height: 290px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+    }
+
+    .imgShareCar{
+        width: 100%;
+        height: 290px;
+        background-size: cover;
+        background-position: center center;
+        background-image: url(../img/sharecar.jpg);
+        margin: 0 auto;
+    }
+
+    .divPShareCar{
+        width: 100%;
+        height: 290px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgShareCar:hover .divPShareCar{
+        opacity: 1;
+    }
+
+    .h4ShareCar{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 3rem;
+        font-size: 25px;
+    }
+
+    .pShareCar{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 17px;
+    }
+
+    .enlacesShareCar{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aShareCar{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aShareCar:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /* piedra papel tijera lagarto spock multijugador */
+    .divJuego2{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        width: 83%;
+        height: 290px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+    }
+
+    .imgJuego2{
+        width: 100%;
+        height: 290px;
+        background-size: cover;
+        background-position: center center;
+        background-image: url(../img/juego2.jpg);
+        margin: 0 auto;
+    }
+
+    .divPJuego2{
+        width: 100%;
+        height: 290px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgJuego2:hover .divPJuego2{
+        opacity: 1;
+    }
+
+    .h4Juego2{
+        text-align: center;
+        width: 96%;
+        margin: 0 auto;
+        padding-top: 3rem;
+        font-size: 22px;
+    }
+
+    .pJuego2{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 15px;
+    }
+
+    .enlacesJuego2{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aJuego2{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aJuego2:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /* ies ana luisa benitez */
+    .divIes{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 83%;
+        height: 290px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+    }
+
+    .imgIES{
+        width: 100%;
+        height: 290px;
+        background-size: cover;
+        background-image: url(../img/ies.jpg);
+        margin: 0 auto
+    }
+
+    .divPIES{
+        width: 100%;
+        height: 290px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgIES:hover .divPIES{
+        opacity: 1;
+    }
+
+    .h4IES{
+        text-align: center;
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 3.5rem;
+        font-size: 25px;
+    }
+
+    .pIES{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 17px;
+    }
+
+    .enlacesIES{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aIES{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aIES:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /* nintendo switch */
+    .divNintendo{
+        background-color: lightgrey;
+        grid-column: 3/4;
+        grid-row: 2/3;
+        width: 83%;
+        height: 290px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+    }
+
+    .imgNintendo{
+        width: 100%;
+        height: 290px;
+        background-size: cover;
+        background-image: url(../img/nintendo.jpg);
+        margin: 0 auto;
+    }
+
+    .divPNintendo{
+        width: 100%;
+        height: 290px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgNintendo:hover .divPNintendo{
+        opacity: 1;
+    }
+
+    .h4Nintendo{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 2rem;
+        font-size: 22px;
+    }
+
+    .pNintendo{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 0.5em;
+        font-size: 15px;
+    }
+
+    .enlacesNintendo{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aNintendo{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aNintendo:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /*---------- SECTION 3 ----------*/
+    .section3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3em;
+        margin-bottom: 3em;
+        background-color: #F2F2F2;
+        border-radius: 10px;
+        padding-top: 1rem;
+        padding-bottom :1rem;
+    }
+
+    .h1SectionTres{
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-size: 30px;
+    }
+
+    .skills{
+        font-size: 30px;
+        width: 20%;
+        text-align: center;
+    }
+
+    .articleFlechas{
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flecha{
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .articleSkills{
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(3, 33.33333333333333%);
+        width: 55%;
+        align-items: center;
+    }
+
+    /*----- conocimientos -----*/
+    .html{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 0 auto;
+    }
+
+    .css{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin: 0 auto;
+    }
+
+    .bootstrap{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        margin: 0 auto;
+    }
+
+    .javascript{
+        grid-column: 4/5;
+        grid-row: 1/2;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .php{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin: 0 auto;
+    }
+
+    .python{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin: 0 auto;
+    }
+
+    .mysql{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        margin: 0 auto;
+    }
+
+    .phpmyadmin{
+        grid-column: 4/5;
+        grid-row: 2/3;
+        margin: 0 auto;
+    }
+
+    .sqlite{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin: 0 auto;
+    }
+
+    .heroku{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        margin: 0 auto;
+    }
+
+    .linux{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        margin: 0 auto;
+    }
+
+    .virtualbox{
+        grid-column: 4/5;
+        grid-row: 3/4;
+        margin: 0 auto;
+    }
+
+    /*---------- SECCION DE CONTACTO ----------*/
+    .sectionContacto{
+        display: flex;
+        align-items: center;
+        width: 70%;
+        margin: 0 auto;       
+        margin-top: 3em;
+        background-color: #F2F2F2;
+        margin-bottom: 3em;
+    }
+
+    .final{
+        display: flex;
+        align-items: center;
+    }
+
+    .h1Contacto{
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-size: 30px;
+    }
+
+    .pContacto{
+        font-size: 17px;
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .lateralIzquierda{
+        width: 30%;
+        height: 270px;
+        background: rgb(255,255,255);
+        background: linear-gradient(-90deg, #F2F2F2 21%, rgba(128,0,255,1) 100%);
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    .lateralDerecha{
+        width: 30%;
+        height: 270px;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, #F2F2F2 21%, rgba(128,0,255,1) 100%);
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .telefonoIzquierda, .telefonoDerecha{
+        width: 5%;
+        height: 60px;
+        box-shadow: #8000FF 0px 5px 15px;
+        border-radius: 10px;
+        background-color: #F2F2F2;
+    }
+
+    .hr2{
+        width: 50%;
+        margin: 0 auto;
+        color: #8000FF;
+        border: 2px solid;
+        margin-bottom: 1em;
+    }
+
+    .button-container-1 {
+        border-radius: 10px;
+        position: relative;
+        width: 30%;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 6vh;
+        overflow: hidden;
+        border: 1px solid;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        transition: 0.5s;
+        letter-spacing: 1px;
+    }
+
+    .button-container-1 button {
+        width: 101%;
+        height: 100%;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        letter-spacing: 1px;
+        background-color: #8000FF;
+        -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+        mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+        -webkit-mask-size: 2300% 100%;
+        mask-size: 2300% 100%;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        -webkit-animation: ani2 0.7s steps(22) forwards;
+        animation: ani2 0.7s steps(22) forwards;
+    }
+
+    .button-container-1 button:hover {
+        -webkit-animation: ani 0.7s steps(22) forwards;
+        animation: ani 0.7s steps(22) forwards;
+    } 
+
+    .mas {
+        position: absolute;
+        color: #8000FF;
+        text-align: center;
+        width: 101%;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        position: absolute;
+        font-size: 20px;
+        margin-top: 12px;
+        overflow: hidden;
+    }
+
+    .aContacteme{
+        text-decoration: none;
+        color: white;
+    }
+
+    @-webkit-keyframes ani {
+        from {
+            -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+        }
+        to {
+            -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+        }
+    }
+
+    @keyframes ani {
+        from {
+            -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+        }
+        to {
+            -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+        }
+    }
+
+    @-webkit-keyframes ani2 {
+        from {
+            -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+        }
+        to {
+            -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+        }
+    }
+
+    @keyframes ani2 {
+        from {
+            -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+        }
+        to {
+            -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+        }
+    }
+
+    a{
+        color: #00ff95;
+    }
+
+    /*---------- FOOTER ----------*/
+    footer{
+        background-color: #8000FF;
+        margin-top: 3em;
+    }
+
+    .descargarFooter{
+        width: 5%;
+    }
+}
+
+@media (min-width: 1441px){
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        width: 85%;
+        margin: 0 auto;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /*---------- HEADER ----------*/
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nombre{
+        background-color:#8000FF;
+        color: white;
+        padding: 0.5rem;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+
+    #hr{
+        display: none;
+    }
+
+    .link-item{
+        text-decoration: none;
+        color: #8000FF;
+        padding: 1rem;
+    }
+
+    .link-item:hover{
+        background-color: #8000FF;
+        color: white;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    /*----- botón para cambiar el color del body -----*/
+	.content-input input,
+	.content-select select{
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+
+	.content-input input{
+		visibility: hidden;
+		position: absolute;
+		right: 0;
+	}
+
+	.content-input{
+		position: relative;
+		margin-bottom: 30px;
+		padding:5px 0 20px 60px;
+		display: block;
+	}
+
+	.content-input input + i{
+		background: #f0f0f0;
+		border:2px solid rgba(0,0,0,0.2);
+		position: absolute; 
+		left: 0;
+		top: 0;
+	}
+
+	.content-input input[type=checkbox ] + i{
+		width: 52px;
+		height: 30px;
+		border-radius: 15px;
+	}
+
+	.content-input input[type=checkbox] + i:before{
+		content: ''; 
+		width: 26px;
+		height: 26px;
+		background: #fff;
+		border-radius: 50%;
+		position: absolute;
+		z-index: 1;
+		left: 0px;
+		top: 0px;
+		-webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+		box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+	}
+
+	.content-input input[type=checkbox]:checked + i:before{
+		left: 22px;
+		-webkit-box-shadow: -3px 0 3px 0 rgba(0,0,0,0.2);
+		box-shadow: 3px 0 -3px 0 rgba(0,0,0,0.2);
+	}
+
+	.content-input input[type=checkbox]:checked + i{
+        background: #8000FF;
+	}
+
+	.content-input{
+		float: right;
+		margin: 0.5em;
+	}
+
+    /*---------- SECTION 1 ----------*/
+    .sectionUno{
+        margin-top: 2em;
+        width: 100%;
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(3, 33.33333333333333%);
+        grid-template-rows: repeat(2, 50%);
+    }
+
+    .div1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background: #F2F2F2;
+        background: linear-gradient(-50deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
+        border-top-left-radius: 10px;
+    }
+
+    .div2{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        background: #F2F2F2;
+        background: linear-gradient(50deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
+        border-top-right-radius: 10px;
+    }
+
+    .texto{
+        grid-column: 2/3;
+        grid-row: 1/3;
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        background-color: #F2F2F2;
+    }
+
+    .div3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background: #F2F2F2;
+        background: linear-gradient(-130deg, #F2F2F2 63%, rgba(128,0,255,1) 100%); 
+        border-bottom-left-radius: 10px;
+    }
+
+    .div4{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        background: #F2F2F2;
+        background: linear-gradient(-230deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
+        border-bottom-right-radius: 10px;
+    }
+
+    .textoContenido{
+        padding: 1rem;
+        box-shadow: #8000FF 0px 2px 5px -1px, #8000FF 0px 1px 3px -1px;
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .textoContenido > h1{
+        text-align: center;
+        padding: 0.3rem;
+    }
+    .textoContenido > p{
+        padding-left: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .enlaces{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+        float: right;
+    }
+
+    .enlaceGithub{
+        width: 33.33333333333333%;
+    }
+
+    .enlaceLinkedin{
+        width: 33.33333333333333%;
+    }
+
+    .cv{
+        width: 33.33333333333333%;
+    }
+
+    .github{
+        width: 80%;
+    }
+
+    .linkedin{
+        width: 80%;
+    }
+
+    .descargar{
+        width: 72%;
+    }
+
+    /*---------- SECTION 2 ----------*/
+    /*----- titulo -----*/
+    .sectionDos{
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+    .h1SectionDos{
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-size: 30px;
+    }
+
+    .hr{
+        width: 50%;
+        margin: 0 auto;
+        color: #8000FF;
+        border: 2px solid;
+    }
+
+    /*----- cards -----*/
+    .articleProyectos{
+        margin-top: 1em;
+        display: grid;
+        width: 100%;
+        height: 700px;
+        grid-template-columns: repeat(3, 33.33333333333333%);
+        grid-template-rows: repeat(2, 50%);
+        grid-row-gap: 2em;
+        margin-bottom: 5em;
+        align-items: center;
+    }
+
+    .iconoProyectos{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        width: 60%;
+        height: 240px;
+        margin: 0 auto;
+    }
+
+    /* piedra papel tijera lagarto spock */
+    .divJuego1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 90%;
+        width: 83%;
+        height: 330px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+    }
+
+    .imgJuego1{
+        width: 100%;
+        height: 330px;
+        background-size: cover;
+        background-position: 70% center;
+        background-image: url(../img/juego1.jpg);
+        margin: 0 auto;
+    }
+
+    .divPJuego1{
+        width: 100%;
+        height: 330px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgJuego1:hover .divPJuego1{
+        opacity: 1;
+    }
+
+    .h4Juego1{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 4rem;
+        font-size: 25px;
+    }
+
+    .pJuego1{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 17px;
+    }
+
+    .enlacesJuego1{
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aJuego1{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aJuego1:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /* share car */
+    .divShareCar{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 83%;
+        height: 330px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+    }
+
+    .imgShareCar{
+        width: 100%;
+        height: 330px;
+        background-size: cover;
+        background-position: center center;
+        background-image: url(../img/sharecar.jpg);
+        margin: 0 auto;
+    }
+
+    .divPShareCar{
+        width: 100%;
+        height: 330px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgShareCar:hover .divPShareCar{
+        opacity: 1;
+    }
+
+    .h4ShareCar{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 4rem;
+        font-size: 25px;
+    }
+
+    .pShareCar{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 17px;
+    }
+
+    .enlacesShareCar{
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aShareCar{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aShareCar:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /* piedra papel tijera lagarto spock multijugador */
+    .divJuego2{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        width: 83%;
+        height: 330px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+    }
+
+    .imgJuego2{
+        width: 100%;
+        height: 330px;
+        background-size: cover;
+        background-position: center center;
+        background-image: url(../img/juego2.jpg);
+        margin: 0 auto;
+    }
+
+    .divPJuego2{
+        width: 100%;
+        height: 330px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgJuego2:hover .divPJuego2{
+        opacity: 1;
+    }
+
+    .h4Juego2{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 5rem;
+        font-size: 25px;
+    }
+
+    .pJuego2{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 17px;
+    }
+
+    .enlacesJuego2{
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aJuego2{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aJuego2:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /* ies ana luisa benitez */
+    .divIes{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 83%;
+        height: 330px; 
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+    }
+
+    .imgIES{
+        width: 100%;
+        height: 330px;
+        background-size: cover;
+        background-image: url(../img/ies.jpg);
+        margin: 0 auto
+    }
+
+    .divPIES{
+        width: 100%;
+        height: 330px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgIES:hover .divPIES{
+        opacity: 1;
+    }
+
+    .h4IES{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 5rem;
+        font-size: 25px;
+    }
+
+    .pIES{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 17px;
+    }
+
+    .enlacesIES{
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aIES{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aIES:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /* nintendo switch */
+    .divNintendo{
+        background-color: lightgrey;
+        grid-column: 3/4;
+        grid-row: 2/3;
+        width: 83%;
+        height: 330px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 0 auto;
+    }
+
+    .imgNintendo{
+        width: 100%;
+        height: 330px;
+        background-size: cover;
+        background-image: url(../img/nintendo.jpg);
+        margin: 0 auto;
+    }
+
+    .divPNintendo{
+        width: 100%;
+        height: 330px;
+        background-color: rgba(128, 0, 255, 0.9);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .imgNintendo:hover .divPNintendo{
+        opacity: 1;
+    }
+
+    .h4Nintendo{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 3.5rem;
+        font-size: 25px;
+    }
+
+    .pNintendo{
+        color: white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 17px;
+    }
+
+    .enlacesNintendo{
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    .aNintendo{
+        color: black;
+        text-decoration: none;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aNintendo:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+    /*---------- SECTION 3 ----------*/
+    .section3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3em;
+        margin-bottom: 3em;
+        background-color: #F2F2F2;
+        border-radius: 10px;
+        padding-top: 1rem;
+        padding-bottom :1rem;
+    }
+
+    .h1SectionTres{
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-size: 30px;
+    }
+
+    .skills{
+        font-size: 30px;
+        width: 20%;
+        text-align: center;
+    }
+
+    .articleFlechas{
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flecha{
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .articleSkills{
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(3, 33.33333333333333%);
+        width: 50%;
+        align-items: center;
+    }
+
+    /*----- conocimientos -----*/
+    .html{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 0 auto;
+    }
+
+    .css{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin: 0 auto;
+    }
+
+    .bootstrap{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        margin: 0 auto;
+    }
+
+    .javascript{
+        grid-column: 4/5;
+        grid-row: 1/2;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .php{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin: 0 auto;
+    }
+
+    .python{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin: 0 auto;
+    }
+
+    .mysql{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        margin: 0 auto;
+    }
+
+    .phpmyadmin{
+        grid-column: 4/5;
+        grid-row: 2/3;
+        margin: 0 auto;
+    }
+
+    .sqlite{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin: 0 auto;
+    }
+
+    .heroku{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        margin: 0 auto;
+    }
+
+    .linux{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        margin: 0 auto;
+    }
+
+    .virtualbox{
+        grid-column: 4/5;
+        grid-row: 3/4;
+        margin: 0 auto;
+    }
+
+    /*---------- SECCION DE CONTACTO ----------*/
+    .sectionContacto{
+        display: flex;
+        align-items: center;
+        width: 70%;
+        margin: 0 auto;       
+        margin-top: 3em;
+        background-color: #F2F2F2;
+        margin-bottom: 3em;
+    }
+
+    .final{
+        display: flex;
+        align-items: center;
+    }
+
+    .h1Contacto{
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-size: 30px;
+    }
+
+    .pContacto{
+        font-size: 17px;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .lateralIzquierda{
+        width: 30%;
+        height: 270px;
+        background: rgb(255,255,255);
+        background: linear-gradient(-90deg, #F2F2F2 21%, rgba(128,0,255,1) 100%);
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    .lateralDerecha{
+        width: 30%;
+        height: 270px;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, #F2F2F2 21%, rgba(128,0,255,1) 100%);
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .telefonoIzquierda, .telefonoDerecha{
+        width: 5%;
+        height: 60px;
+        box-shadow: #8000FF 0px 5px 15px;
+        border-radius: 10px;
+        background-color: #F2F2F2;
+    }
+
+    .hr2{
+        width: 50%;
+        margin: 0 auto;
+        color: #8000FF;
+        border: 2px solid;
+        margin-bottom: 1em;
+    }
+
+    .button-container-1 {
+        border-radius: 10px;
+        position: relative;
+        width: 30%;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 6vh;
+        overflow: hidden;
+        border: 1px solid;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        transition: 0.5s;
+        letter-spacing: 1px;
+    }
+
+    .button-container-1 button {
+        width: 101%;
+        height: 100%;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        letter-spacing: 1px;
+        background-color: #8000FF;
+        -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+        mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+        -webkit-mask-size: 2300% 100%;
+        mask-size: 2300% 100%;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        -webkit-animation: ani2 0.7s steps(22) forwards;
+        animation: ani2 0.7s steps(22) forwards;
+    }
+
+    .button-container-1 button:hover {
+        -webkit-animation: ani 0.7s steps(22) forwards;
+        animation: ani 0.7s steps(22) forwards;
+    } 
+
+    .mas {
+        position: absolute;
+        color: #8000FF;
+        text-align: center;
+        width: 101%;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        position: absolute;
+        font-size: 20px;
+        margin-top: 12px;
+        overflow: hidden;
+    }
+
+    .aContacteme{
+        text-decoration: none;
+        color: white;
+    }
+
+    @-webkit-keyframes ani {
+        from {
+            -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+        }
+        to {
+            -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+        }
+    }
+
+    @keyframes ani {
+        from {
+            -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+        }
+        to {
+            -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+        }
+    }
+
+    @-webkit-keyframes ani2 {
+        from {
+            -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+        }
+        to {
+            -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+        }
+    }
+
+    @keyframes ani2 {
+        from {
+            -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+        }
+        to {
+            -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+        }
+    }
+
+    a{
+        color: #00ff95;
+    }
+
+    /*---------- FOOTER ----------*/
+    footer{
+        background-color: #8000FF;
+        margin-top: 3em;
+    }
+
+    .descargarFooter{
+        width: 5%;
+    }
+}
