@@ -1,9 +1,9 @@
 # Web Personal
-Este proyecto va sobre una web para compatir coche. En el cuál, sus principales funciones serán crear, leer, actualizar y borrar datos (CRUD). 
+Este es un pequeño proyecto que muestra un poco de mí, algunos de los proyectos que he realizado, mis conocimientos en el desarrollo web, enlaces a mis redes socaiales y a github, un enlace para descargar mi curriculum de manera directa y un pequeño formulario por si alguién desea ponerse en contacto conmigo.
 
 # Página principal
 
-![Pagina principal](./img/imgReadme/3.png)
+![Pagina principal](./img/readme.jpg)
 
 # 🪛Tecnologías
 Para llevar a cabo la realización de este proyecto, he utilizado:
