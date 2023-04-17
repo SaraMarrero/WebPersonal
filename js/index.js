@@ -32,10 +32,6 @@ function closeBurguer(e){
 //---------- COLORES ----------//
 // Variables
 const menu = document.querySelector(".nav-links");
-const letrasMenu1 = document.querySelector('.letra1');
-const letrasMenu2 = document.querySelector('.letra2');
-const letrasMenu3 = document.querySelector('.letra3');
-const letrasMenu4 = document.querySelector('.letra4');
 const button = document.getElementById("buttonLuz");
 const body = document.getElementById("body");
 
@@ -61,18 +57,11 @@ const lateralDerecha = document.querySelector('.lateralDerecha');
 const telefonoIzquierda = document.querySelector('.telefonoIzquierda');
 const telefonoDerecha = document.querySelector('.telefonoDerecha');
 
-// Eventos
-button.addEventListener("click", cambiarBody);
-
 // Cambia el color del body
-function cambiarBody(){
+button.addEventListener('click', () => {
     if(button.checked){
         // menú hamburguesa
         menu.style.background = "#2E2E2E";
-        letrasMenu1.style.color = "white";
-        letrasMenu2.style.color = "white";
-        letrasMenu3.style.color = "white";
-        letrasMenu4.style.color = "white";
 
         // body
         body.style.background = "#2E2E2E";
@@ -112,11 +101,7 @@ function cambiarBody(){
 
     } else{
         // menú hamburguesa
-        menu.style.background = "#F2F2F2";
-        letrasMenu1.style.color = "#444444";
-        letrasMenu2.style.color = "#444444";
-        letrasMenu3.style.color = "#444444";
-        letrasMenu4.style.color = "#444444";
+        menu.style.background = "white";
 
         // body
         body.style.background = "white";
@@ -154,4 +139,4 @@ function cambiarBody(){
         telefonoIzquierda.style.boxShadow = "#8000FF 0px 5px 15px";
         telefonoDerecha.style.boxShadow = "#8000FF 0px 5px 15px";
     }
-}
+});
