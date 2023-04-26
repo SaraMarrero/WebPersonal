@@ -10,7 +10,6 @@ Para llevar a cabo la realización de este proyecto, he utilizado:
 * HTML
 * CSS
 * JavaScript
-* Doxygen
 * Github
 
 # Autora
