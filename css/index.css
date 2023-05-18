@@ -656,7 +656,7 @@
         height: 522px;
         background-size: cover;
         background-position: center 12%;
-        background-image: url(../img/juego2Movil.jpg);
+        background-image: url(../img/calculadoraEdad.jpg);
         margin: 0 auto;
     }
 
@@ -1675,7 +1675,7 @@
         height: 400px;
         background-size: cover;
         background-position: center 15%;
-        background-image: url(../img/juego2.jpg);
+        background-image: url(../img/calculadoraEdad.jpg);
         margin: 0 auto;
     }
 
@@ -2691,7 +2691,7 @@
         height: 400px;
         background-size: cover;
         background-position: center 15%;
-        background-image: url(../img/juego2.jpg);
+        background-image: url(../img/calculadoraEdad.jpg);
         margin: 0 auto;
     }
 
@@ -3658,7 +3658,7 @@
         height: 400px;
         background-size: cover;
         background-position: center 15%;
-        background-image: url(../img/juego2.jpg);
+        background-image: url(../img/calculadoraEdad.jpg);
         margin: 0 auto;
     }
 
@@ -4558,7 +4558,7 @@
         height: 400px;
         background-size: cover;
         background-position: center 15%;
-        background-image: url(../img/juego2.jpg);
+        background-image: url(../img/calculadoraEdad.jpg);
         margin: 0 auto;
     }
 
@@ -5326,7 +5326,7 @@
         height: 290px;
         background-size: cover;
         background-position: center center;
-        background-image: url(../img/juego2.jpg);
+        background-image: url(../img/calculadoraEdad.jpg);
         margin: 0 auto;
     }
 
@@ -6205,7 +6205,7 @@
         box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     }
 
-    /* piedra papel tijera lagarto spock multijugador */
+    /* calculadora de edad */
     .divJuego2{
         grid-column: 3/4;
         grid-row: 1/2;
@@ -6220,7 +6220,7 @@
         height: 330px;
         background-size: cover;
         background-position: center center;
-        background-image: url(../img/juego2.jpg);
+        background-image: url(../img/calculadoraEdad.jpg);
         margin: 0 auto;
     }
 
