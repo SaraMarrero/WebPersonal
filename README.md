@@ -3,7 +3,7 @@ Este es un pequeño proyecto que muestra un poco de mí, algunos de los proyecto
 
 # Página principal
 
-![Pagina principal](./img/readme.jpg)
+![Pagina principal](./img/readme.png)
 
 # 🪛Tecnologías
 Para llevar a cabo la realización de este proyecto, he utilizado:
