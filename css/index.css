@@ -5933,7 +5933,7 @@
         width: 100%;
         height: 500px;
         display: grid;
-        grid-template-columns: repeat(3, 33.33333333333333%);
+        grid-template-columns: repeat(4, 25%);
         grid-template-rows: repeat(2, 50%);
     }
 
@@ -5946,7 +5946,7 @@
     }
 
     .div2{
-        grid-column: 3/4;
+        grid-column: 4/5;
         grid-row: 1/2;
         background: #F2F2F2;
         background: linear-gradient(50deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
@@ -5954,7 +5954,7 @@
     }
 
     .texto{
-        grid-column: 2/3;
+        grid-column: 2/4;
         grid-row: 1/3;
         display: flex;
         align-items: center;
@@ -5971,7 +5971,7 @@
     }
 
     .div4{
-        grid-column: 3/4;
+        grid-column: 4/5;
         grid-row: 2/3;
         background: #F2F2F2;
         background: linear-gradient(-230deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
@@ -5979,40 +5979,55 @@
     }
 
     .textoContenido{
-        padding: 1rem;
+        padding: 2rem;
         box-shadow: #8000FF 0px 2px 5px -1px, #8000FF 0px 1px 3px -1px;
         background-color: white;
         border-radius: 10px;
         text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .textoContenido > h1{
-        text-align: center;
-        padding: 0.3rem;
+    .izquierda{
+        width: 40%;
     }
-    .textoContenido > p{
+
+    .memoji{
+        width: 100%;
+    }
+
+    .derecha{
+        width: 60%;
+    }
+
+    .derecha > h1{
+        text-align: center;
+        padding: 0.5rem;
+    }
+    .derecha > p{
         padding-left: 0.5rem;
-        padding-bottom: 0.5rem;
+        line-height: 1.5;
     }
 
     .enlaces{
         display: flex;
         align-items: center;
-        justify-content: center;
         width: 40%;
-        float: right;
+        margin: 0 auto;
+        margin-top: 1em;
     }
 
     .enlaceGithub{
-        width: 33.33333333333333%;
+        width: 100%;
     }
 
     .enlaceLinkedin{
-        width: 33.33333333333333%;
+        width: 100%;
     }
 
     .cv{
-        width: 33.33333333333333%;
+        width: 100%;
     }
 
     .github{
