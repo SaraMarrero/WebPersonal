@@ -297,7 +297,6 @@
         display: none;
     }
 
-
     .derecha{
         width: 100%;
     }
@@ -1321,11 +1320,7 @@
     }
 
     .izquierda{
-        width: 100%;
-    }
-
-    .memoji{
-        width: 90%;
+        display: none;
     }
 
     .derecha{
@@ -2350,11 +2345,7 @@
     }
 
     .izquierda{
-        width: 100%;
-    }
-
-    .memoji{
-        width: 70%;
+        display: none;
     }
 
     .derecha{
@@ -4238,13 +4229,14 @@
         background-color: white;
         border-radius: 10px;
         text-align: center;
-        display: flex;
+        /* display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
     }
 
     .izquierda{
         width: 50%;
+        margin: 0 auto;
     }
 
     .memoji{
@@ -4252,7 +4244,7 @@
     }
 
     .derecha{
-        width: 50%;
+        width: 100%;
     }
 
     .derecha > h1{
