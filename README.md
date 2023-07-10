@@ -3,7 +3,14 @@ Este es un pequeño proyecto que muestra un poco de mí, algunos de los proyecto
 
 # 📸 Página principal
 
-![Pagina principal](./img/readme.png)
+![Pagina principal](./img/1.jpg)
+![Pagina principal](./img/2.jpg)
+![Pagina principal](./img/3.jpg)
+![Pagina principal](./img/4.jpg)
+![Pagina principal](./img/5.jpg)
+![Pagina principal](./img/6.jpg)
+
+
 
 # 🪛Tecnologías
 Para llevar a cabo la realización de este proyecto, he utilizado:
