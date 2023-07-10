@@ -387,7 +387,7 @@
     }
 
     .divisionDos{
-        width: 35%;
+        width: 50%;
         color: white;
         background-color: #8000FF;
         padding: 1rem;
@@ -429,10 +429,11 @@
     }
 
     .divisionTres{
-        width: 35%;
+        width: 50%;
         color: white;
         background-color: #8000FF;
         padding: 1rem;
+        text-align: center;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
     }
@@ -1521,7 +1522,7 @@
     }
 
     .divisionDos{
-        width: 30%;
+        width: 40%;
         color: white;
         background-color: #8000FF;
         padding: 1rem;
@@ -1563,10 +1564,11 @@
     }
 
     .divisionTres{
-        width: 30%;
+        width: 40%;
         color: white;
         background-color: #8000FF;
         padding: 1rem;
+        text-align: center;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
     }
@@ -2655,7 +2657,7 @@
     }
 
     .divisionDos{
-        width: 25%;
+        width: 30%;
         color: white;
         background-color: #8000FF;
         padding: 1rem;
@@ -2697,10 +2699,11 @@
     }
 
     .divisionTres{
-        width: 25%;
+        width: 30%;
         color: white;
         background-color: #8000FF;
         padding: 1rem;
+        text-align: center;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
     }
@@ -3781,6 +3784,7 @@
         width: 25%;
         color: white;
         background-color: #8000FF;
+        text-align: center;
         padding: 1rem;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
@@ -4804,6 +4808,7 @@
         color: white;
         background-color: #8000FF;
         padding: 1rem;
+        text-align: center;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
 
@@ -5816,6 +5821,7 @@
         color: white;
         background-color: #8000FF;
         padding: 1.7rem;
+        text-align: center;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
     }
@@ -6825,6 +6831,7 @@
         color: white;
         background-color: #8000FF;
         padding: 1.7rem;
+        text-align: center;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
 
