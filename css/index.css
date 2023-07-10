@@ -341,6 +341,114 @@
         width: 70%;
     }
 
+    /*---------- FORMACIÓN ----------*/
+    .formacion{
+        width: 100;
+        height: 450px;
+        margin-top: 3em;
+    }
+
+    .h1SectionFormacion{
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-size: 30px;
+    }
+
+    .divFormacion{
+        width: 100%;
+        display: flex;
+        padding-top: 2rem;
+    }
+
+    /*----- bachillerato -----*/
+    .bachiller{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 40%;
+    }
+
+    .divisionUno{
+        background-color: #F2F2F2;
+        padding: 1rem;
+        width: 70%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .estudios{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .centro{
+        text-align: center;
+    }
+
+    .divisionDos{
+        width: 35%;
+        color: white;
+        background-color: #8000FF;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    /*----- centro -----*/
+    .divisionCentral{
+        margin: 0 auto;
+        text-align: center;
+        height: 330px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgFormacion{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .hrVertical, .hrVertical{
+        width: 100%;
+        color: #8000FF;
+        border: 1px solid;
+        transform: rotate(90deg);
+        margin-top: 4.5em;
+    }
+
+    /*----- ciclo -----*/
+    .ciclo{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+
+    .divisionTres{
+        width: 35%;
+        color: white;
+        background-color: #8000FF;
+        padding: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    }
+
+    .divisionCuatro{
+        background-color: #F2F2F2;
+        padding: 1rem;
+        width: 75%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .estudios{
+        font-size: 17px;
+        font-weight: bold;
+    }
+
     /*---------- SECTION 2 ----------*/
     /*----- titulo -----*/
     .sectionDos{
@@ -1365,6 +1473,114 @@
 
     .descargar{
         width: 72%;
+    }
+
+    /*---------- FORMACIÓN ----------*/
+    .formacion{
+        width: 100;
+        height: 450px;
+        margin-top: 3em;
+    }
+
+    .h1SectionFormacion{
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-size: 30px;
+    }
+
+    .divFormacion{
+        width: 100%;
+        display: flex;
+        padding-top: 2rem;
+    }
+
+    /*----- bachillerato -----*/
+    .bachiller{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 40%;
+    }
+
+    .divisionUno{
+        background-color: #F2F2F2;
+        padding: 1rem;
+        width: 70%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .estudios{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .centro{
+        text-align: center;
+    }
+
+    .divisionDos{
+        width: 30%;
+        color: white;
+        background-color: #8000FF;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    /*----- centro -----*/
+    .divisionCentral{
+        margin: 0 auto;
+        text-align: center;
+        height: 330px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgFormacion{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .hrVertical, .hrVertical1{
+        width: 100%;
+        color: #8000FF;
+        border: 1px solid;
+        transform: rotate(90deg);
+        margin-top: 4.5em;
+    }
+
+    /*----- ciclo -----*/
+    .ciclo{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+
+    .divisionTres{
+        width: 30%;
+        color: white;
+        background-color: #8000FF;
+        padding: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    }
+
+    .divisionCuatro{
+        background-color: #F2F2F2;
+        padding: 1rem;
+        width: 75%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .estudios{
+        font-size: 17px;
+        font-weight: bold;
     }
 
     /*---------- SECTION 2 ----------*/
@@ -2393,6 +2609,114 @@
         width: 72%;
     }
 
+    /*---------- FORMACIÓN ----------*/
+    .formacion{
+        width: 100;
+        height: 450px;
+        margin-top: 3em;
+    }
+
+    .h1SectionFormacion{
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-size: 30px;
+    }
+
+    .divFormacion{
+        width: 100%;
+        display: flex;
+        padding-top: 2rem;
+    }
+
+    /*----- bachillerato -----*/
+    .bachiller{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 40%;
+    }
+
+    .divisionUno{
+        background-color: #F2F2F2;
+        padding: 1rem;
+        width: 70%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .estudios{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .centro{
+        text-align: center;
+    }
+
+    .divisionDos{
+        width: 25%;
+        color: white;
+        background-color: #8000FF;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    /*----- centro -----*/
+    .divisionCentral{
+        margin: 0 auto;
+        text-align: center;
+        height: 330px;
+        width: 15%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgFormacion{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .hrVertical, .hrVertical1{
+        width: 100%;
+        color: #8000FF;
+        border: 1px solid;
+        transform: rotate(90deg);
+        margin-top: 4.5em;
+    }
+
+    /*----- ciclo -----*/
+    .ciclo{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+
+    .divisionTres{
+        width: 25%;
+        color: white;
+        background-color: #8000FF;
+        padding: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    }
+
+    .divisionCuatro{
+        background-color: #F2F2F2;
+        padding: 1rem;
+        width: 75%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .estudios{
+        font-size: 17px;
+        font-weight: bold;
+    }
+
     /*---------- SECTION 2 ----------*/
     /*----- titulo -----*/
     .sectionDos{
@@ -3368,6 +3692,111 @@
         width: 72%;
     }
 
+    /*---------- FORMACIÓN ----------*/
+    .formacion{
+        width: 100;
+        height: 450px;
+        margin-top: 3em;
+    }
+
+    .h1SectionFormacion{
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-size: 30px;
+    }
+
+    .divFormacion{
+        width: 100%;
+        display: flex;
+        padding-top: 2rem;
+    }
+
+    /*----- bachillerato -----*/
+    .bachiller{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 45%;
+    }
+
+    .divisionUno{
+        background-color: #F2F2F2;
+        padding: 1rem;
+        width: 70%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .estudios{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .centro{
+        text-align: center;
+    }
+
+    .divisionDos{
+        width: 25%;
+        color: white;
+        background-color: #8000FF;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    /*----- centro -----*/
+    .divisionCentral{
+        margin: 0 auto;
+        text-align: center;
+        height: 330px;
+        width: 12%;
+    }
+
+    .imgFormacion{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .hrVertical, .hrVertical1{
+        width: 100%;
+        color: #8000FF;
+        border: 1px solid;
+        transform: rotate(90deg);
+        margin-top: 4.5em;
+    }
+
+    /*----- ciclo -----*/
+    .ciclo{
+        width: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+
+    .divisionTres{
+        width: 25%;
+        color: white;
+        background-color: #8000FF;
+        padding: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    .divisionCuatro{
+        background-color: #F2F2F2;
+        padding: 1rem;
+        width: 75%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .estudios{
+        font-size: 17px;
+        font-weight: bold;
+    }
+
     /*---------- SECTION 2 ----------*/
     /*----- titulo -----*/
     .sectionDos{
@@ -4307,8 +4736,9 @@
     /*----- bachillerato -----*/
     .bachiller{
         display: flex;
+        justify-content: center;
         align-items: center;
-        justify-content: flex-end;
+        flex-direction: column;
         width: 45%;
     }
 
@@ -4322,13 +4752,19 @@
     .estudios{
         font-size: 20px;
         font-weight: bold;
+        text-align: center;
+    }
+
+    .centro{
+        text-align: center;
     }
 
     .divisionDos{
-        width: 15%;
+        width: 25%;
         color: white;
         background-color: #8000FF;
-        padding: 1.7rem;
+        padding: 1rem;
+        text-align: center;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
 
@@ -4341,11 +4777,11 @@
     }
 
     .imgFormacion{
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
     }
 
-    .hrVertical{
+    .hrVertical, .hrVertical1{
         width: 100%;
         color: #8000FF;
         border: 1px solid;
@@ -4357,24 +4793,24 @@
     .ciclo{
         width: 45%;
         display: flex;
-        align-items: flex-end;
-        justify-content: flex-start;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
         padding-bottom: 1rem;
     }
 
     .divisionTres{
-        width: 15%;
+        width: 25%;
         color: white;
         background-color: #8000FF;
-        padding: 1.7rem;
+        padding: 1rem;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
     }
 
     .divisionCuatro{
         background-color: #F2F2F2;
         padding: 1rem;
-        width: 70%;
+        width: 75%;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
@@ -4386,7 +4822,7 @@
     /*---------- SECTION 2 ----------*/
     /*----- titulo -----*/
     .sectionDos{
-        margin-top: 3em;
+        margin-top: 4.5em;
         margin-bottom: 3em;
     }
 
@@ -5358,7 +5794,7 @@
         margin: 0 auto;
     }
 
-    .hrVertical{
+    .hrVertical, .hrVertical1{
         width: 100%;
         color: #8000FF;
         border: 1px solid;
@@ -5399,7 +5835,7 @@
     /*---------- SECTION 2 ----------*/
     /*----- titulo -----*/
     .sectionDos{
-        margin-top: 3em;
+        margin-top: 6em;
         margin-bottom: 3em;
     }
 
@@ -6371,6 +6807,10 @@
         margin-top: 4.5em;
     }
 
+    .hrVertical1{
+        display: none;
+    }
+
     /*----- ciclo -----*/
     .ciclo{
         width: 45%;
@@ -6403,7 +6843,7 @@
     /*---------- SECTION 2 ----------*/
     /*----- titulo -----*/
     .sectionDos{
-        margin-top: 3em;
+        margin-top: 4.5em;
         margin-bottom: 3em;
     }
 
