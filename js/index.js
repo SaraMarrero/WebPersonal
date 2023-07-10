@@ -45,6 +45,7 @@ const div4 = document.querySelector(".div4");
 
 const h1Section2 = document.querySelector(".h1SectionDos");
 const h1Section3 = document.querySelector(".h1SectionTres");
+const h1SectionFormacion = document.querySelector(".h1SectionFormacion");
 
 const section3 = document.querySelector(".section3");
 
@@ -79,6 +80,9 @@ button.addEventListener('click', () => {
         div3.style.background = "linear-gradient(-130deg, #424242 63%, rgba(128,0,255,1) 100%)";
         div4.style.background = "linear-gradient(-230deg, #424242 63%, rgba(128,0,255,1) 100%)";
         
+        // section formacion
+        h1SectionFormacion.style.color = "white";
+
         // section 2
         h1Section2.style.color = "white";
 
@@ -119,6 +123,9 @@ button.addEventListener('click', () => {
         div3.style.background = "linear-gradient(-130deg, #F2F2F2 63%, rgba(128,0,255,1) 100%)";
         div4.style.background = "linear-gradient(-230deg, #F2F2F2 63%, rgba(128,0,255,1) 100%)";
     
+        // section formacion
+        h1SectionFormacion.style.color = "black";
+
         // Sección 2
         h1Section2.style.color = "black";
 
