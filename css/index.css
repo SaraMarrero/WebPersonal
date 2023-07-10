@@ -286,7 +286,7 @@
     }
 
     .textoContenido{
-        padding: 2rem;
+        padding: 1rem;
         box-shadow: #8000FF 0px 2px 5px -1px, #8000FF 0px 1px 3px -1px;
         background-color: white;
         border-radius: 10px;
@@ -330,15 +330,15 @@
     }
 
     .github{
-        width: 90%;
+        width: 80%;
     }
 
     .linkedin{
-        width: 90%;
+        width: 80%;
     }
 
     .descargar{
-        width: 80%;
+        width: 70%;
     }
 
     /*---------- SECTION 2 ----------*/
