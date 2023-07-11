@@ -2,6 +2,7 @@
 const buttonBody = document.getElementById("buttonLuz");
 const body = document.getElementById("body");
 const main = document.querySelector('.main');
+const form = document.querySelector('.form');
 
 const nombre = document.getElementById('nombre');
 const email = document.getElementById('email');
@@ -9,8 +10,14 @@ const asunto = document.getElementById('asunto');
 const mensaje = document.getElementById('mensaje');
 const buttonEnviar = document.getElementById('enviar');
 
+const regExp = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+const table = document.querySelector('.table');
+const msgEnvio = document.createElement('p');
+const msgError = document.createElement('p');
+
 // Eventos
 buttonBody.addEventListener("click", cambiarBody);
+buttonEnviar.addEventListener('click', camposCompletos);
 
 // Cambia el color del body
 function cambiarBody(){
@@ -25,82 +32,53 @@ function cambiarBody(){
     }
 }
 
-// Valida el campo del nombre
-nombre.addEventListener('blur', () => {
-    
-    if(nombre.value.length <= 0){
-        nombre.style.border = '1px solid red';
-        document.getElementById('trNombre').innerHTML = '<p style="color: red">Debe rellenar todos los campos</p>';
-        buttonEnviar.style.background = 'red';
-        buttonEnviar.disabled = true;
-    } else{
-        nombre.style.border = '1px solid lightgreen';
-        document.getElementById('trNombre').innerHTML = ' ';
+function camposCompletos(){
+    if(nombre.value === '' || email.value === '' || asunto.value === '' || mensaje.value === ''){
+        // modifica la clase dependiendo del mensaje
+        msgEnvio.classList.remove('valido');
+        msgEnvio.classList.add('error');
+
+        // agrega el mensaje al html
+        msgEnvio.textContent = 'Todos los campos son obligatorios';
+        table.insertAdjacentElement('afterend', msgEnvio);
+
+    } else if(nombre.value !== '' && email.value !== '' && asunto.value !== '' && mensaje.value !== ''){
+        if((!email.value.match(regExp))){
+            validarDatos(email);
+        } else{
+            // modifica la clase dependiendo del mensaje
+            msgEnvio.classList.remove('error');
+            msgEnvio.classList.add('valido');
+
+            // agrega el mensaje al html
+            msgEnvio.textContent = 'Se agregó correctamente';
+            table.insertAdjacentElement('afterend', msgEnvio);
+
+            form.setAttribute('action', 'https://formsubmit.co/52ceb9336b22c4c48e9cec87c3ab8d59');
+        }
     }
 
-    // Comprueba que los datos estan correctos y habilita el botón de enviar
-    if(mensaje.value.length > 0 && email.value.length > 0 && asunto.value.length > 0 && mensaje.value.length > 0){
-        buttonEnviar.style.background = 'lightgreen';
-        buttonEnviar.disabled = false;
-    }
-});
+    // borra el aviso y reinicia el formulario tras 2 segundos
+    setTimeout(() => { 
+        msgEnvio.remove();
+    }, 2000);
+}
 
-// Valida el campo del email
-email.addEventListener('blur', () => {
-    
-    if(email.value.length <= 0){
-        email.style.border = '1px solid red';
-        document.getElementById('trEmail').innerHTML = '<p style="color: red">Debe rellenar todos los campos</p>';
-        buttonEnviar.style.background = 'red';
-        buttonEnviar.disabled = true;
-    } else{
-        email.style.border = '1px solid lightgreen';
-        document.getElementById('trEmail').innerHTML = ' ';
-    }
+// Valida que el formato del email sea correcto
+function validarDatos(input){
+    input.style.border = '1px solid red';
 
-    // Comprueba que los datos estan correctos y habilita el botón de enviar
-    if(mensaje.value.length > 0 && email.value.length > 0 && asunto.value.length > 0 && mensaje.value.length > 0){
-        buttonEnviar.style.background = 'lightgreen';
-        buttonEnviar.disabled = false;
-    }
-});
+    // modifica la clase dependiendo del mensaje
+    msgError.classList.remove('valido');
+    msgError.classList.add('error');
 
-// Valida el campo del asunto
-asunto.addEventListener('blur', () => {
-    
-    if(asunto.value.length <= 0){
-        asunto.style.border = '1px solid red';
-        document.getElementById('trAsunto').innerHTML = '<p style="color: red">Debe rellenar todos los campos</p>';
-        buttonEnviar.style.background = 'red';
-        buttonEnviar.disabled = true;
-    } else{
-        asunto.style.border = '1px solid lightgreen';
-        document.getElementById('trAsunto').innerHTML = ' ';
-    }
+    // agrega el mensaje al html
+    msgError.textContent = 'Formato incorrecto';
+    input.insertAdjacentElement('afterend', msgError);
 
-    // Comprueba que los datos estan correctos y habilita el botón de enviar
-    if(mensaje.value.length > 0 && email.value.length > 0 && asunto.value.length > 0 && mensaje.value.length > 0){
-        buttonEnviar.style.background = 'lightgreen';
-        buttonEnviar.disabled = false;
-    }
-});    
-
-// Valida el campo del mensaje
-mensaje.addEventListener('blur', () => {
-    
-    if(mensaje.value.length <= 0){
-        mensaje.style.border = '1px solid red';
-        document.getElementById('trMensaje').innerHTML = '<p style="color: red">Debe rellenar todos los campos</p>';
-        buttonEnviar.style.background = 'red';
-        buttonEnviar.disabled = true;
-    } else{
-        mensaje.style.border = '1px solid lightgreen';
-        document.getElementById('trMensaje').innerHTML = ' ';
-    }
-
-    // Comprueba que los datos estan correctos y habilita el botón de enviar
-    if(mensaje.value.length > 0 && email.value.length > 0 && asunto.value.length > 0 && mensaje.value.length > 0){
-        buttonEnviar.style.background = 'lightgreen';
-        buttonEnviar.disabled = false;
-    }
-}); 
+    // borra el aviso tras dos segundos
+    setTimeout(() => {
+        input.style.border = '2px solid #8000FF';
+        msgError.remove();
+    }, 1500)
+}
