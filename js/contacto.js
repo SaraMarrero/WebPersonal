@@ -61,6 +61,7 @@ function camposCompletos(){
     // borra el aviso y reinicia el formulario tras 2 segundos
     setTimeout(() => { 
         msgEnvio.remove();
+        form.reset();
     }, 2000);
 }
 
