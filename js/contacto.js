@@ -80,5 +80,6 @@ function validarDatos(input){
     setTimeout(() => {
         input.style.border = '2px solid #8000FF';
         msgError.remove();
-    }, 1500)
+        form.reset();
+    }, 2000)
 }
