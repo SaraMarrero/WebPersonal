@@ -1,8 +1,9 @@
-//---------- MENU HAMBURGUESA ----------//
+// Variables
 const toggleButton = document.getElementById("button-menu");
 const navWrapper = document.getElementById("nav");
 const opcionesMenu = document.getElementById('nav-links');
 
+// Eventos
 toggleButton.addEventListener('click', open);
 navWrapper.addEventListener('click', close);
 opcionesMenu.addEventListener('click', closeBurguer);

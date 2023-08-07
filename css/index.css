@@ -2082,39 +2082,43 @@
         margin: 0 auto;
         margin-bottom: 3em;
     }
+}
 
-    /*---------- MODO OSCURO ----------*/
-    .modoOscuro{
-        background-color: #2E2E2E;
-    }
+/*---------- MODO OSCURO ----------*/
+.modoOscuro{
+    background-color: #2E2E2E;
+}
 
-    .modoOscuro .sectionUno{
-        background-color: #424242;
-        border-radius: 10px;
-    }
+.modoOscuro .nav-links{
+    background-color: #2E2E2E;
+}
 
-    .modoOscuro .textoContenido{
-        background-color: #2E2E2E;
-        color: white;
-    }
+.modoOscuro .sectionUno{
+    background-color: #424242;
+    border-radius: 10px;
+}
 
-    .modoOscuro .texto{
-        background-color: #424242;
-    }
+.modoOscuro .textoContenido{
+    background-color: #2E2E2E;
+    color: white;
+}
 
-    .modoOscuro .div1{
-        background: linear-gradient(-50deg, #424242 63%, rgba(128,0,255,1) 100%);
-    }
+.modoOscuro .texto{
+    background-color: #424242;
+}
 
-    .modoOscuro .div2{
-        background: linear-gradient(50deg, #424242 63%, rgba(128,0,255,1) 100%);
-    }
+.modoOscuro .div1{
+    background: linear-gradient(-50deg, #424242 63%, rgba(128,0,255,1) 100%);
+}
 
-    .modoOscuro .div3{
-        background: linear-gradient(-130deg, #424242 63%, rgba(128,0,255,1) 100%);
-    }
+.modoOscuro .div2{
+    background: linear-gradient(50deg, #424242 63%, rgba(128,0,255,1) 100%);
+}
 
-    .modoOscuro .div4{
-        background: linear-gradient(-230deg, #424242 63%, rgba(128,0,255,1) 100%);
-    }
+.modoOscuro .div3{
+    background: linear-gradient(-130deg, #424242 63%, rgba(128,0,255,1) 100%);
+}
+
+.modoOscuro .div4{
+    background: linear-gradient(-230deg, #424242 63%, rgba(128,0,255,1) 100%);
 }

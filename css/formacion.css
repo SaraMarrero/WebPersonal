@@ -2032,3 +2032,16 @@
         font-weight: bold;
     }
 }
+
+/*---------- MODO OSCURO ----------*/
+.modoOscuro{
+    background-color: #2E2E2E;
+}
+
+.modoOscuro .nav-links{
+    background-color: #2E2E2E;
+}
+
+.modoOscuro .h1SectionFormacion{
+    color: white;
+}

@@ -17,24 +17,20 @@ const msgEnvio = document.createElement('p');
 const msgError = document.createElement('p');
 
 // Eventos
-buttonBody.addEventListener("click", cambiarBody);
-// buttonEnviar.addEventListener('click', camposCompletos);
+buttonBody.addEventListener('click', modoOscuro)
+buttonEnviar.addEventListener('click', camposCompletos);
 
-// Cambia el color del body
-function cambiarBody(){
+//---------- MODO OSCURO ----------//
+// Activa y desactiva el modo oscuro
+function modoOscuro(){
     if(buttonBody.checked){
-        body.style.background = "#2E2E2E";
-        main.style.background = "#424242";
-        main.style.borderRadius = "10px";
-        menu.style.background = '#2E2E2E';
+        body.classList.add('modoOscuro');
     } else{
-        body.style.background = "white";
-        main.style.background = "#F2F2F2";
-        main.style.borderRadius = "10px";
-        menu.style.background = 'white';
+        body.classList.remove('modoOscuro');
     }
-}
+};
 
+//---------- VALIDACION DE LOS CAMPOS ----------//
 // Valida que todos los campos esten rellenos
 function camposCompletos(){
     if(nombre.value === '' || email.value === '' || asunto.value === '' || mensaje.value === ''){
