@@ -6,21 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/contacto.css">
     <link rel="icon" href="../img/logo.png">
-    <title>Contacto</title>
+    <title>Web Personal</title>
 </head>
 <body id="body">
     <!---------- HEADER ---------->
     <header>
         <p class="nombre">Sara Marrero Miranda</p>
-        <!----- opciones menú ----->
-        <nav>	
-            <ul>
-                <li><a href="../index.html" class="menu">
-                    <img src="../img/home.png" class="home">
-                </a></li>
-            </ul>
+
+        <nav id="nav" class="main-nav">
+            <div class="nav-links" id="nav-links">
+                <a class="link-item" id="menu" href="../index.html">Home</a>
+                <hr class="hr" id="hr">
+                <a class="link-item" id="menu" href="./formacion.html">Formacion</a>
+                <hr class="hr" id="hr">
+                <a class="link-item" id="menu" href="./proyectos.html">Proyectos</a>
+                <hr class="hr" id="hr">
+                <a class="link-item" id="menu" href="./skills.html">Skills</a>
+                <hr class="hr" id="hr">
+                <a class="link-item" id="menu" href="#">Contacto</a>
+                <hr class="hr" id="hr">
+            </div>
         </nav>
-        <!----- botón de fondo ----->
+
+        <button id="button-menu" class="button-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
         <section class="button">
             <label class="content-input">
                 <input type="checkbox" name="buttonLuz" id="buttonLuz">
@@ -29,6 +42,7 @@
         </section> 
     </header>
 
+    <!---------- MAIN ---------->
     <main class="main">
         <section class="sectionIzqueirda">
             <img src="../img/contacto.png" class="imgContacto">
@@ -79,7 +93,10 @@
         </section>
     </main>
 
+    <hr class="hrFinal">
+
     <!---------- JAVASCRIPT ---------->
+    <script src="../js/menu.js"></script>    
     <script src="../js/contacto.js"></script>
 </body>
 </html>

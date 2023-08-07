@@ -3,6 +3,7 @@ const buttonBody = document.getElementById("buttonLuz");
 const body = document.getElementById("body");
 const main = document.querySelector('.main');
 const form = document.querySelector('.form');
+const menu = document.querySelector(".nav-links");
 
 const nombre = document.getElementById('nombre');
 const email = document.getElementById('email');
@@ -17,7 +18,7 @@ const msgError = document.createElement('p');
 
 // Eventos
 buttonBody.addEventListener("click", cambiarBody);
-buttonEnviar.addEventListener('click', camposCompletos);
+// buttonEnviar.addEventListener('click', camposCompletos);
 
 // Cambia el color del body
 function cambiarBody(){
@@ -25,13 +26,16 @@ function cambiarBody(){
         body.style.background = "#2E2E2E";
         main.style.background = "#424242";
         main.style.borderRadius = "10px";
+        menu.style.background = '#2E2E2E';
     } else{
         body.style.background = "white";
         main.style.background = "#F2F2F2";
         main.style.borderRadius = "10px";
+        menu.style.background = 'white';
     }
 }
 
+// Valida que todos los campos esten rellenos
 function camposCompletos(){
     if(nombre.value === '' || email.value === '' || asunto.value === '' || mensaje.value === ''){
         // modifica la clase dependiendo del mensaje

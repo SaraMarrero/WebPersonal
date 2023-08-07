@@ -36,6 +36,12 @@
 		margin-left: 0.5em; 
 	}
 
+    .hr{
+        background-color: #8000FF;
+        border: hidden;
+        padding: 0.1rem;
+    }
+
     #hr{
         background-color: black;
         width: 60%;
@@ -237,120 +243,113 @@
 		margin: 0.5em;
 	}
 
-    /*---------- SECTION 1 ----------*/
-    .sectionUno{
+    /*---------- FORMACIÓN ----------*/
+    .formacion{
+        width: 100;
+        height: 450px;
         margin-top: 3em;
-        margin-bottom: 3em;
+    }
+
+    .h1SectionFormacion{
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-size: 30px;
+    }
+
+    .divFormacion{
         width: 100%;
-        height: 500px;
-        display: grid;
-        grid-template-columns: repeat(4, 25%);
-        grid-template-rows: repeat(2, 50%);
-    }
-
-    .div1{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        background: #F2F2F2;
-        background: linear-gradient(-55deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
-        border-top-left-radius: 10px;
-    }
-
-    .div2{
-        grid-column: 4/5;
-        grid-row: 1/2;
-        background: #F2F2F2;
-        background: linear-gradient(55deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
-        border-top-right-radius: 10px;
-    }
-
-    .texto{
-        grid-column: 2/4;
-        grid-row: 1/3;
         display: flex;
+        padding-top: 2rem;
+    }
+
+    /*----- bachillerato -----*/
+    .bachiller{
+        display: flex;
+        justify-content: center;
         align-items: center;
-        padding: 1rem;
+        flex-direction: column;
+        width: 40%;
+    }
+
+    .divisionUno{
         background-color: #F2F2F2;
-    }
-
-    .div3{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        background: #F2F2F2;
-        background: linear-gradient(-125deg, #F2F2F2 63%, rgba(128,0,255,1) 100%); 
-        border-bottom-left-radius: 10px;
-    }
-
-    .div4{
-        grid-column: 4/5;
-        grid-row: 2/3;
-        background: #F2F2F2;
-        background: linear-gradient(-235deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
-        border-bottom-right-radius: 10px;
-    }
-
-    .textoContenido{
         padding: 1rem;
-        box-shadow: #8000FF 0px 2px 5px -1px, #8000FF 0px 1px 3px -1px;
-        background-color: white;
-        border-radius: 10px;
-        text-align: center;
-    }
-
-    .izquierda{
-        display: none;
-    }
-
-    .derecha{
         width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
-    .derecha > h1{
+    .estudios{
+        font-size: 20px;
+        font-weight: bold;
         text-align: center;
-        padding: 0.5rem;
-    }
-    .derecha > p{
-        padding-left: 0.5rem;
     }
 
-    .enlaces{
+    .centro{
+        text-align: center;
+    }
+
+    .divisionDos{
+        width: 50%;
+        color: white;
+        background-color: #8000FF;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    /*----- centro -----*/
+    .divisionCentral{
+        margin: 0 auto;
+        text-align: center;
+        height: 330px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgFormacion{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .hrVertical, .hrVertical{
+        width: 100%;
+        color: #8000FF;
+        border: 1px solid;
+        transform: rotate(90deg);
+        margin-top: 4.5em;
+    }
+
+    /*----- ciclo -----*/
+    .ciclo{
+        width: 40%;
         display: flex;
         align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+
+    .divisionTres{
+        width: 50%;
+        color: white;
+        background-color: #8000FF;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    }
+
+    .divisionCuatro{
+        background-color: #F2F2F2;
+        padding: 1rem;
         width: 100%;
-        margin: 0 auto;
-        margin-top: 1em;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
-    .enlaceGithub{
-        width: 100%;
-    }
-
-    .enlaceLinkedin{
-        width: 100%;
-    }
-
-    .cv{
-        width: 100%;
-    }
-
-    .github{
-        width: 80%;
-    }
-
-    .linkedin{
-        width: 80%;
-    }
-
-    .descargar{
-        width: 70%;
-    }
-
-    .hrFinal{
-        color: #8000FF;
-        border: 2px solid;
-        width: 80%;
-        margin: 0 auto;
-        margin-bottom: 3em;
+    .estudios{
+        font-size: 17px;
+        font-weight: bold;
     }
 }
 
@@ -400,6 +399,13 @@
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     }
 
+    .hr{
+        color: #8000FF;
+        border: 1px solid;
+        width: 80%;
+        margin: 0 auto;
+    }
+
     .menu{
         text-decoration: none;
         color: #8000FF;
@@ -593,120 +599,113 @@
 		margin: 0.5em;
 	}
 
-    /*---------- SECTION 1 ----------*/
-    .sectionUno{
+    /*---------- FORMACIÓN ----------*/
+    .formacion{
+        width: 100;
+        height: 450px;
         margin-top: 3em;
-        margin-bottom: 3em;
+    }
+
+    .h1SectionFormacion{
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-size: 30px;
+    }
+
+    .divFormacion{
         width: 100%;
-        height: 500px;
-        display: grid;
-        grid-template-columns: repeat(4, 25%);
-        grid-template-rows: repeat(4, 25%);
-    }
-
-    .div1{
-        grid-column: 1/2;
-        grid-row: 1/3;
-        background: #F2F2F2;
-        background: linear-gradient(-50deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
-        border-top-left-radius: 10px;
-    }
-
-    .div2{
-        grid-column: 4/5;
-        grid-row: 1/3;
-        background: #F2F2F2;
-        background: linear-gradient(50deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
-        border-top-right-radius: 10px;
-    }
-
-    .texto{
-        grid-column: 2/4;
-        grid-row: 1/5;
         display: flex;
+        padding-top: 2rem;
+    }
+
+    /*----- bachillerato -----*/
+    .bachiller{
+        display: flex;
+        justify-content: center;
         align-items: center;
-        padding: 1rem;
+        flex-direction: column;
+        width: 40%;
+    }
+
+    .divisionUno{
         background-color: #F2F2F2;
-    }
-
-    .div3{
-        grid-column: 1/2;
-        grid-row: 3/5;
-        background: #F2F2F2;
-        background: linear-gradient(-130deg, #F2F2F2 63%, rgba(128,0,255,1) 100%); 
-        border-bottom-left-radius: 10px;
-    }
-
-    .div4{
-        grid-column: 4/5;
-        grid-row: 3/5;
-        background: #F2F2F2;
-        background: linear-gradient(-230deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
-        border-bottom-right-radius: 10px;
-    }
-
-    .textoContenido{
-        padding: 2rem;
-        box-shadow: #8000FF 0px 2px 5px -1px, #8000FF 0px 1px 3px -1px;
-        background-color: white;
-        border-radius: 10px;
-        text-align: center;
-    }
-
-    .izquierda{
-        display: none;
-    }
-
-    .derecha{
+        padding: 1rem;
         width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
-    .derecha > h1{
+    .estudios{
+        font-size: 20px;
+        font-weight: bold;
         text-align: center;
-        padding: 0.5rem;
-    }
-    .derecha > p{
-        padding-left: 0.5rem;
     }
 
-    .enlaces{
+    .centro{
+        text-align: center;
+    }
+
+    .divisionDos{
+        width: 40%;
+        color: white;
+        background-color: #8000FF;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    /*----- centro -----*/
+    .divisionCentral{
+        margin: 0 auto;
+        text-align: center;
+        height: 330px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgFormacion{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .hrVertical, .hrVertical1{
+        width: 100%;
+        color: #8000FF;
+        border: 1px solid;
+        transform: rotate(90deg);
+        margin-top: 4.5em;
+    }
+
+    /*----- ciclo -----*/
+    .ciclo{
+        width: 40%;
         display: flex;
         align-items: center;
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 1em;
+        justify-content: flex-end;
+        flex-direction: column;
+        padding-bottom: 1rem;
     }
 
-    .enlaceGithub{
+    .divisionTres{
+        width: 40%;
+        color: white;
+        background-color: #8000FF;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    }
+
+    .divisionCuatro{
+        background-color: #F2F2F2;
+        padding: 1rem;
         width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
-    .enlaceLinkedin{
-        width: 100%;
-    }
-
-    .cv{
-        width: 100%;
-    }
-
-    .github{
-        width: 80%;
-    }
-
-    .linkedin{
-        width: 80%;
-    }
-
-    .descargar{
-        width: 72%;
-    }
-
-    .hrFinal{
-        color: #8000FF;
-        border: 2px solid;
-        width: 80%;
-        margin: 0 auto;
-        margin-bottom: 3em;
+    .estudios{
+        font-size: 17px;
+        font-weight: bold;
     }
 }
 
@@ -756,6 +755,13 @@
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     }
 
+    .hr{
+        color: #8000FF;
+        border: 1px solid;
+        width: 80%;
+        margin: 0 auto;
+    }
+
     .menu{
         text-decoration: none;
         color: #8000FF;
@@ -949,121 +955,113 @@
 		margin: 0.5em;
 	}
 
-    /*---------- SECTION 1 ----------*/
-    .sectionUno{
+    /*---------- FORMACIÓN ----------*/
+    .formacion{
+        width: 100;
+        height: 450px;
         margin-top: 3em;
-        margin-bottom: 3em;
+    }
+
+    .h1SectionFormacion{
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-size: 30px;
+    }
+
+    .divFormacion{
         width: 100%;
-        height: 500px;
-        display: grid;
-        grid-template-columns: repeat(4, 25%);
-        grid-template-rows: repeat(2, 50%);
-    }
-
-    .div1{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        background: #F2F2F2;
-        background: linear-gradient(-50deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
-        border-top-left-radius: 10px;
-    }
-
-    .div2{
-        grid-column: 4/5;
-        grid-row: 1/2;
-        background: #F2F2F2;
-        background: linear-gradient(50deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
-        border-top-right-radius: 10px;
-    }
-
-    .texto{
-        grid-column: 2/4;
-        grid-row: 1/3;
         display: flex;
+        padding-top: 2rem;
+    }
+
+    /*----- bachillerato -----*/
+    .bachiller{
+        display: flex;
+        justify-content: center;
         align-items: center;
-        padding: 1rem;
+        flex-direction: column;
+        width: 40%;
+    }
+
+    .divisionUno{
         background-color: #F2F2F2;
+        padding: 1rem;
+        width: 70%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
-    .div3{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        background: #F2F2F2;
-        background: linear-gradient(-130deg, #F2F2F2 63%, rgba(128,0,255,1) 100%); 
-        border-bottom-left-radius: 10px;
-    }
-
-    .div4{
-        grid-column: 4/5;
-        grid-row: 2/3;
-        background: #F2F2F2;
-        background: linear-gradient(-230deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
-        border-bottom-right-radius: 10px;
-    }
-
-    .textoContenido{
-        padding: 2rem;
-        box-shadow: #8000FF 0px 2px 5px -1px, #8000FF 0px 1px 3px -1px;
-        background-color: white;
-        border-radius: 10px;
+    .estudios{
+        font-size: 20px;
+        font-weight: bold;
         text-align: center;
     }
 
-    .izquierda{
-        display: none;
+    .centro{
+        text-align: center;
     }
 
-    .derecha{
+    .divisionDos{
+        width: 30%;
+        color: white;
+        background-color: #8000FF;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    /*----- centro -----*/
+    .divisionCentral{
+        margin: 0 auto;
+        text-align: center;
+        height: 330px;
+        width: 15%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgFormacion{
         width: 100%;
+        margin: 0 auto;
     }
 
-    .derecha > h1{
-        text-align: center;
-        padding: 0.5rem;
-    }
-    .derecha > p{
-        padding-left: 0.5rem;
-        line-height: 1.5;
+    .hrVertical, .hrVertical1{
+        width: 100%;
+        color: #8000FF;
+        border: 1px solid;
+        transform: rotate(90deg);
+        margin-top: 4.5em;
     }
 
-    .enlaces{
+    /*----- ciclo -----*/
+    .ciclo{
+        width: 40%;
         display: flex;
         align-items: center;
-        width: 70%;
-        margin: 0 auto;
-        margin-top: 1em;
+        justify-content: flex-end;
+        flex-direction: column;
+        padding-bottom: 1rem;
     }
 
-    .enlaceGithub{
-        width: 100%;
+    .divisionTres{
+        width: 30%;
+        color: white;
+        background-color: #8000FF;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
     }
 
-    .enlaceLinkedin{
-        width: 100%;
+    .divisionCuatro{
+        background-color: #F2F2F2;
+        padding: 1rem;
+        width: 75%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
-    .cv{
-        width: 100%;
-    }
-
-    .github{
-        width: 80%;
-    }
-
-    .linkedin{
-        width: 80%;
-    }
-
-    .descargar{
-        width: 72%;
-    }
-
-    .hrFinal{
-        color: #8000FF;
-        border: 2px solid;
-        width: 80%;
-        margin: 0 auto;
-        margin-bottom: 3em;
+    .estudios{
+        font-size: 17px;
+        font-weight: bold;
     }
 }
 
@@ -1097,6 +1095,13 @@
 
     #hr{
         display: none;
+    }
+
+    .hr{
+        color: #8000FF;
+        border: 1px solid;
+        width: 80%;
+        margin: 0 auto;
     }
 
     .link-item{
@@ -1248,126 +1253,110 @@
 		margin: 0.5em;
 	}
 
-
-    /*---------- SECTION 1 ----------*/
-    .sectionUno{
+    /*---------- FORMACIÓN ----------*/
+    .formacion{
+        width: 100;
+        height: 450px;
         margin-top: 3em;
-        margin-bottom: 3em;
+    }
+
+    .h1SectionFormacion{
+        text-align: center;
+        margin-bottom: 0.5em;
+        font-size: 30px;
+    }
+
+    .divFormacion{
         width: 100%;
-        height: 500px;
-        display: grid;
-        grid-template-columns: repeat(4, 25%);
-        grid-template-rows: repeat(2, 50%);
-    }
-
-    .div1{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        background: #F2F2F2;
-        background: linear-gradient(-50deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
-        border-top-left-radius: 10px;
-    }
-
-    .div2{
-        grid-column: 4/5;
-        grid-row: 1/2;
-        background: #F2F2F2;
-        background: linear-gradient(50deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
-        border-top-right-radius: 10px;
-    }
-
-    .texto{
-        grid-column: 2/4;
-        grid-row: 1/3;
         display: flex;
+        padding-top: 2rem;
+    }
+
+    /*----- bachillerato -----*/
+    .bachiller{
+        display: flex;
+        justify-content: center;
         align-items: center;
-        padding: 1rem;
+        flex-direction: column;
+        width: 45%;
+    }
+
+    .divisionUno{
         background-color: #F2F2F2;
+        padding: 1rem;
+        width: 70%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
-    .div3{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        background: #F2F2F2;
-        background: linear-gradient(-130deg, #F2F2F2 63%, rgba(128,0,255,1) 100%); 
-        border-bottom-left-radius: 10px;
-    }
-
-    .div4{
-        grid-column: 4/5;
-        grid-row: 2/3;
-        background: #F2F2F2;
-        background: linear-gradient(-230deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
-        border-bottom-right-radius: 10px;
-    }
-
-    .textoContenido{
-        padding: 2rem;
-        box-shadow: #8000FF 0px 2px 5px -1px, #8000FF 0px 1px 3px -1px;
-        background-color: white;
-        border-radius: 10px;
+    .estudios{
+        font-size: 20px;
+        font-weight: bold;
         text-align: center;
     }
 
-    .izquierda{
-        width: 100%;
-    }
-
-    .memoji{
-        width: 55%;
-    }
-
-    .derecha{
-        width: 100%;
-    }
-
-    .derecha > h1{
+    .centro{
         text-align: center;
-        padding: 0.5rem;
-    }
-    .derecha > p{
-        padding-left: 0.5rem;
-        line-height: 1.5;
     }
 
-    .enlaces{
+    .divisionDos{
+        width: 25%;
+        color: white;
+        background-color: #8000FF;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    /*----- centro -----*/
+    .divisionCentral{
+        margin: 0 auto;
+        text-align: center;
+        height: 330px;
+        width: 12%;
+    }
+
+    .imgFormacion{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .hrVertical, .hrVertical1{
+        width: 100%;
+        color: #8000FF;
+        border: 1px solid;
+        transform: rotate(90deg);
+        margin-top: 4.5em;
+    }
+
+    /*----- ciclo -----*/
+    .ciclo{
+        width: 45%;
         display: flex;
         align-items: center;
-        width: 50%;
-        margin: 0 auto;
-        margin-top: 1em;
+        justify-content: flex-end;
+        flex-direction: column;
+        padding-bottom: 1rem;
     }
 
-    .enlaceGithub{
-        width: 100%;
+    .divisionTres{
+        width: 25%;
+        color: white;
+        background-color: #8000FF;
+        text-align: center;
+        padding: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
 
-    .enlaceLinkedin{
-        width: 100%;
+    .divisionCuatro{
+        background-color: #F2F2F2;
+        padding: 1rem;
+        width: 75%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
-    .cv{
-        width: 100%;
-    }
-
-    .github{
-        width: 80%;
-    }
-
-    .linkedin{
-        width: 80%;
-    }
-
-    .descargar{
-        width: 72%;
-    }
-
-    .hrFinal{
-        color: #8000FF;
-        border: 2px solid;
-        width: 80%;
-        margin: 0 auto;
-        margin-bottom: 3em;
+    .estudios{
+        font-size: 17px;
+        font-weight: bold;
     }
 }
 
@@ -1403,6 +1392,13 @@
         display: none;
     }
 
+    .hr{
+        color: #8000FF;
+        border: 1px solid;
+        width: 80%;
+        margin: 0 auto;
+    }
+
     .link-item{
         text-decoration: none;
         color: #8000FF;
@@ -1484,126 +1480,110 @@
 		margin: 0.5em;
 	}
 
-    /*---------- SECTION 1 ----------*/
-    .sectionUno{
+    /*---------- FORMACIÓN ----------*/
+    .formacion{
+        width: 100;
+        height: 450px;
         margin-top: 3em;
-        margin-bottom: 3em;
+    }
+
+    .h1SectionFormacion{
+        text-align: center;
+        margin-bottom: 1em;
+        font-size: 30px;
+    }
+
+    .divFormacion{
         width: 100%;
-        height: 500px;
-        display: grid;
-        grid-template-columns: repeat(4, 25%);
-        grid-template-rows: repeat(4, 25%);
-    }
-
-    .div1{
-        grid-column: 1/2;
-        grid-row: 1/3;
-        background: #F2F2F2;
-        background: linear-gradient(-50deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
-        border-top-left-radius: 10px;
-    }
-
-    .div2{
-        grid-column: 4/5;
-        grid-row: 1/3;
-        background: #F2F2F2;
-        background: linear-gradient(50deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
-        border-top-right-radius: 10px;
-    }
-
-    .texto{
-        grid-column: 2/4;
-        grid-row: 1/5;
         display: flex;
+        padding-top: 2rem;
+    }
+
+    /*----- bachillerato -----*/
+    .bachiller{
+        display: flex;
+        justify-content: center;
         align-items: center;
-        padding: 1rem;
+        flex-direction: column;
+        width: 45%;
+    }
+
+    .divisionUno{
         background-color: #F2F2F2;
+        padding: 1rem;
+        width: 70%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
-    .div3{
-        grid-column: 1/2;
-        grid-row: 3/5;
-        background: #F2F2F2;
-        background: linear-gradient(-130deg, #F2F2F2 63%, rgba(128,0,255,1) 100%); 
-        border-bottom-left-radius: 10px;
-    }
-
-    .div4{
-        grid-column: 4/5;
-        grid-row: 3/5;
-        background: #F2F2F2;
-        background: linear-gradient(-230deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
-        border-bottom-right-radius: 10px;
-    }
-
-    .textoContenido{
-        padding: 2rem;
-        box-shadow: #8000FF 0px 2px 5px -1px, #8000FF 0px 1px 3px -1px;
-        background-color: white;
-        border-radius: 10px;
+    .estudios{
+        font-size: 20px;
+        font-weight: bold;
         text-align: center;
     }
 
-    .izquierda{
-        width: 50%;
+    .centro{
+        text-align: center;
+    }
+
+    .divisionDos{
+        width: 25%;
+        color: white;
+        background-color: #8000FF;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    /*----- centro -----*/
+    .divisionCentral{
+        margin: 0 auto;
+        text-align: center;
+        height: 330px;
+        width: 12%;
+    }
+
+    .imgFormacion{
+        width: 100%;
         margin: 0 auto;
     }
 
-    .memoji{
+    .hrVertical, .hrVertical1{
         width: 100%;
+        color: #8000FF;
+        border: 1px solid;
+        transform: rotate(90deg);
+        margin-top: 4.5em;
     }
 
-    .derecha{
-        width: 100%;
-    }
-
-    .derecha > h1{
-        text-align: center;
-        padding: 0.5rem;
-    }
-    .derecha > p{
-        padding-left: 0.5rem;
-        line-height: 1.5;
-    }
-
-    .enlaces{
+    /*----- ciclo -----*/
+    .ciclo{
+        width: 45%;
         display: flex;
         align-items: center;
-        width: 60%;
-        margin: 0 auto;
-        margin-top: 1em;
+        justify-content: flex-end;
+        flex-direction: column;
+        padding-bottom: 1rem;
     }
 
-    .enlaceGithub{
-        width: 100%;
+    .divisionTres{
+        width: 25%;
+        color: white;
+        background-color: #8000FF;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
 
-    .enlaceLinkedin{
-        width: 100%;
+    .divisionCuatro{
+        background-color: #F2F2F2;
+        padding: 1rem;
+        width: 75%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
-    .cv{
-        width: 100%;
-    }
-
-    .github{
-        width: 80%;
-    }
-
-    .linkedin{
-        width: 80%;
-    }
-
-    .descargar{
-        width: 72%;
-    }
-
-    .hrFinal{
-        color: #8000FF;
-        border: 2px solid;
-        width: 80%;
-        margin: 0 auto;
-        margin-bottom: 3em;
+    .estudios{
+        font-size: 20px;
+        font-weight: bold;
     }
 }
 
@@ -1639,6 +1619,13 @@
         display: none;
     }
 
+    .hr{
+        color: #8000FF;
+        border: 1px solid;
+        width: 80%;
+        margin: 0 auto;
+    }
+
     .link-item{
         text-decoration: none;
         color: #8000FF;
@@ -1720,128 +1707,104 @@
 		margin: 0.5em;
 	}
 
-    /*---------- SECTION 1 ----------*/
-    .sectionUno{
+    /*---------- FORMACIÓN ----------*/
+    .formacion{
+        width: 100;
+        height: 450px;
         margin-top: 3em;
-        margin-bottom: 3em;
+    }
+
+    .h1SectionFormacion{
+        text-align: center;
+        margin-bottom: 1em;
+        font-size: 30px;
+    }
+
+    .divFormacion{
         width: 100%;
-        height: 500px;
-        display: grid;
-        grid-template-columns: repeat(4, 25%);
-        grid-template-rows: repeat(2, 50%);
+        display: flex;
+        padding-top: 2rem;
     }
 
-    .div1{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        background: #F2F2F2;
-        background: linear-gradient(-50deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
-        border-top-left-radius: 10px;
-    }
-
-    .div2{
-        grid-column: 4/5;
-        grid-row: 1/2;
-        background: #F2F2F2;
-        background: linear-gradient(50deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
-        border-top-right-radius: 10px;
-    }
-
-    .texto{
-        grid-column: 2/4;
-        grid-row: 1/3;
+    /*----- bachillerato -----*/
+    .bachiller{
         display: flex;
         align-items: center;
-        padding: 1rem;
+        justify-content: flex-end;
+        width: 45%;
+    }
+
+    .divisionUno{
         background-color: #F2F2F2;
+        padding: 1rem;
+        width: 70%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
-    .div3{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        background: #F2F2F2;
-        background: linear-gradient(-130deg, #F2F2F2 63%, rgba(128,0,255,1) 100%); 
-        border-bottom-left-radius: 10px;
+    .estudios{
+        font-size: 20px;
+        font-weight: bold;
     }
 
-    .div4{
-        grid-column: 4/5;
-        grid-row: 2/3;
-        background: #F2F2F2;
-        background: linear-gradient(-230deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
-        border-bottom-right-radius: 10px;
+    .divisionDos{
+        width: 15%;
+        color: white;
+        background-color: #8000FF;
+        padding: 1.7rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
 
-    .textoContenido{
-        padding: 2rem;
-        box-shadow: #8000FF 0px 2px 5px -1px, #8000FF 0px 1px 3px -1px;
-        background-color: white;
-        border-radius: 10px;
+    /*----- centro -----*/
+    .divisionCentral{
+        margin: 0 auto;
         text-align: center;
+        height: 330px;
+        width: 12%;
+    }
+
+    .imgFormacion{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .hrVertical, .hrVertical1{
+        width: 100%;
+        color: #8000FF;
+        border: 1px solid;
+        transform: rotate(90deg);
+        margin-top: 4.5em;
+    }
+
+    /*----- ciclo -----*/
+    .ciclo{
+        width: 45%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        padding-bottom: 1rem;
+    }
+
+    .divisionTres{
+        width: 15%;
+        color: white;
+        background-color: #8000FF;
+        padding: 2.4rem;
         display: flex;
         justify-content: center;
-        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
     }
 
-    .izquierda{
-        width: 40%;
+    .divisionCuatro{
+        background-color: #F2F2F2;
+        padding: 1rem;
+        width: 70%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
-    .memoji{
-        width: 100%;
-    }
-
-    .derecha{
-        width: 60%;
-    }
-
-    .derecha > h1{
-        text-align: center;
-        padding: 0.5rem;
-    }
-    .derecha > p{
-        padding-left: 0.5rem;
-        line-height: 1.5;
-    }
-
-    .enlaces{
-        display: flex;
-        align-items: center;
-        width: 40%;
-        margin: 0 auto;
-        margin-top: 1em;
-    }
-
-    .enlaceGithub{
-        width: 100%;
-    }
-
-    .enlaceLinkedin{
-        width: 100%;
-    }
-
-    .cv{
-        width: 100%;
-    }
-
-    .github{
-        width: 80%;
-    }
-
-    .linkedin{
-        width: 80%;
-    }
-
-    .descargar{
-        width: 72%;
-    }
-
-    .hrFinal{
-        color: #8000FF;
-        border: 2px solid;
-        width: 80%;
-        margin: 0 auto;
-        margin-bottom: 3em;
+    .estudios{
+        font-size: 20px;
+        font-weight: bold;
     }
 }
 
@@ -1878,6 +1841,13 @@
         display: none;
     }
 
+    .hr{
+        width: 50%;
+        margin: 0 auto;
+        color: #8000FF;
+        border: 2px solid;
+    }
+
     .link-item{
         text-decoration: none;
         color: #8000FF;
@@ -1959,127 +1929,106 @@
 		margin: 0.5em;
 	}
 
-    /*---------- SECTION 1 ----------*/
-    .sectionUno{
+    /*---------- FORMACIÓN ----------*/
+    .formacion{
+        width: 100;
+        height: 450px;
         margin-top: 3em;
-        margin-bottom: 3em;
+    }
+
+    .h1SectionFormacion{
+        text-align: center;
+        margin-bottom: 1em;
+        font-size: 30px;
+    }
+
+    .divFormacion{
         width: 100%;
-        height: 550px;
-        display: grid;
-        grid-template-columns: repeat(4, 25%);
-        grid-template-rows: repeat(2, 50%);
+        display: flex;
+        padding-top: 2rem;
     }
 
-    .div1{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        background: #F2F2F2;
-        background: linear-gradient(-50deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
-        border-top-left-radius: 10px;
-    }
-
-    .div2{
-        grid-column: 4/5;
-        grid-row: 1/2;
-        background: #F2F2F2;
-        background: linear-gradient(50deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
-        border-top-right-radius: 10px;
-    }
-
-    .texto{
-        grid-column: 2/4;
-        grid-row: 1/3;
+    /*----- bachillerato -----*/
+    .bachiller{
         display: flex;
         align-items: center;
-        padding: 1rem;
+        justify-content: flex-end;
+        width: 45%;
+    }
+
+    .divisionUno{
         background-color: #F2F2F2;
+        padding: 1rem;
+        width: 70%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
-    .div3{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        background: #F2F2F2;
-        background: linear-gradient(-130deg, #F2F2F2 63%, rgba(128,0,255,1) 100%); 
-        border-bottom-left-radius: 10px;
+    .estudios{
+        font-size: 20px;
+        font-weight: bold;
     }
 
-    .div4{
-        grid-column: 4/5;
-        grid-row: 2/3;
-        background: #F2F2F2;
-        background: linear-gradient(-230deg, #F2F2F2 63%, rgba(128,0,255,1) 100%);
-        border-bottom-right-radius: 10px;
+    .divisionDos{
+        width: 15%;
+        color: white;
+        background-color: #8000FF;
+        padding: 1.7rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
 
-    .textoContenido{
-        padding: 2rem;
-        box-shadow: #8000FF 0px 2px 5px -1px, #8000FF 0px 1px 3px -1px;
-        background-color: white;
-        border-radius: 10px;
+    /*----- centro -----*/
+    .divisionCentral{
+        margin: 0 auto;
         text-align: center;
+        height: 330px;
+        width: 12%;
+    }
+
+    .imgFormacion{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .hrVertical{
+        width: 100%;
+        color: #8000FF;
+        border: 1px solid;
+        transform: rotate(90deg);
+        margin-top: 4.5em;
+    }
+
+    .hrVertical1{
+        display: none;
+    }
+
+    /*----- ciclo -----*/
+    .ciclo{
+        width: 45%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        padding-bottom: 1rem;
+    }
+
+    .divisionTres{
+        width: 15%;
+        color: white;
+        background-color: #8000FF;
+        padding: 2.4rem;
         display: flex;
         justify-content: center;
-        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
 
-    .izquierda{
-        width: 40%;
+    .divisionCuatro{
+        background-color: #F2F2F2;
+        padding: 1rem;
+        width: 70%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
-    .memoji{
-        width: 100%;
-    }
-
-    .derecha{
-        width: 60%;
-    }
-
-    .derecha > h1{
-        text-align: center;
-        padding: 0.5rem;
-    }
-    .derecha > p{
-        padding-left: 0.5rem;
-        line-height: 1.5;
-    }
-
-    .enlaces{
-        display: flex;
-        align-items: center;
-        width: 50%;
-        margin: 0 auto;
-        margin-top: 1em;
-    }
-
-    .enlaceGithub{
-        width: 100%;
-    }
-
-    .enlaceLinkedin{
-        width: 100%;
-    }
-
-    .cv{
-        width: 100%;
-    }
-
-    .github{
-        width: 80%;
-    }
-
-    .linkedin{
-        width: 80%;
-    }
-
-    .descargar{
-        width: 72%;
-    }
-
-    .hrFinal{
-        color: #8000FF;
-        border: 2px solid;
-        width: 80%;
-        margin: 0 auto;
-        margin-bottom: 3em;
+    .estudios{
+        font-size: 20px;
+        font-weight: bold;
     }
 }
