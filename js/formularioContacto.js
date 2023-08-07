@@ -1,6 +1,4 @@
 // Variables
-const buttonBody = document.getElementById("buttonLuz");
-const body = document.getElementById("body");
 const main = document.querySelector('.main');
 const form = document.querySelector('.form');
 const menu = document.querySelector(".nav-links");
@@ -17,18 +15,7 @@ const msgEnvio = document.createElement('p');
 const msgError = document.createElement('p');
 
 // Eventos
-buttonBody.addEventListener('click', modoOscuro)
 buttonEnviar.addEventListener('click', camposCompletos);
-
-//---------- MODO OSCURO ----------//
-// Activa y desactiva el modo oscuro
-function modoOscuro(){
-    if(buttonBody.checked){
-        body.classList.add('modoOscuro');
-    } else{
-        body.classList.remove('modoOscuro');
-    }
-};
 
 //---------- VALIDACION DE LOS CAMPOS ----------//
 // Valida que todos los campos esten rellenos
