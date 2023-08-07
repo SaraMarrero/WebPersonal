@@ -2136,6 +2136,7 @@
         border-radius: 10px;
         padding-top: 1rem;
         padding-bottom :1rem;
+        height: 550px;
     }
 
     .h1SectionTres{
@@ -2166,7 +2167,7 @@
     }
 
     .flecha{
-        width: 5%;
+        width: 4%;
         margin: 0 auto;
         transform: rotate(90deg);
     }
@@ -2179,7 +2180,7 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 450px;
+        height: 340px;
     }
 
     /*----- conocimientos -----*/
