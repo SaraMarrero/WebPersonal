@@ -8,10 +8,13 @@
             color: black;
         }
 
-        .dark-mode{
+        .dark-mode body{
             background-color: black;
+        }
+
+        .dark-mode h1{
             color: white;
-            }
+        }
     </style>
 </head>
 <body class="body">
@@ -27,12 +30,10 @@
 
         modoOscuroButton.addEventListener('click', () => {
             body.classList.add('dark-mode');
-            console.log('a')
         });
 
         modoClaroButton.addEventListener('click', () => {
             body.classList.remove('dark-mode');
-            console.log('b')
         });
     </script>
 </body>
