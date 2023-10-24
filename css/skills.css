@@ -2136,7 +2136,7 @@
         border-radius: 10px;
         padding-top: 1rem;
         padding-bottom :1rem;
-        height: 550px;
+        height: 600px;
     }
 
     .h1SectionTres{
@@ -2176,7 +2176,8 @@
         display: grid;
         margin: 0 auto;
         grid-template-columns: repeat(3, 33.3333333333%);
-        grid-template-rows: repeat(4, 25%);
+        grid-template-rows: repeat(5, 20%);
+        grid-row-gap: 1em;
         justify-content: center;
         align-items: center;
         width: 100%;
@@ -2199,41 +2200,41 @@
     }
 
     .bootstrap{
-        grid-column: 3/4;
-        grid-row: 1/2;
+        grid-column: 2/3;
+        grid-row: 2/3;
         margin: 0 auto;
         width: 30%;
     }
 
     .javascript{
         grid-column: 1/2;
-        grid-row: 2/3;
+        grid-row: 4/5;
         margin: 0 auto;
     }
 
     .php{
-        grid-column: 2/3;
+        grid-column: 1/2;
         grid-row: 2/3;
         margin: 0 auto;
         width: 20%;
     }
 
     .python{
-        grid-column: 3/4;
-        grid-row: 2/3;
-        margin: 0 auto;
-        width: 30%;
-    }
-
-    .mysql{
         grid-column: 1/2;
         grid-row: 3/4;
         margin: 0 auto;
         width: 30%;
     }
 
+    .mysql{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        margin: 0 auto;
+        width: 30%;
+    }
+
     .phpmyadmin{
-        grid-column: 2/3;
+        grid-column: 3/4;
         grid-row: 3/4;
         margin: 0 auto;
         width: 40%;
@@ -2241,14 +2242,14 @@
 
     .sqlite{
         grid-column: 3/4;
-        grid-row: 3/4;
+        grid-row: 2/3;
         margin: 0 auto;
         width: 30%;
     }
 
     .heroku{
-        grid-column: 1/2;
-        grid-row: 4/5;
+        grid-column: 3/4;
+        grid-row: 5/6;
         margin: 0 auto;
         width: 30%;
     }
@@ -2265,6 +2266,13 @@
         grid-row: 4/5;
         margin: 0 auto;
         width: 30%;
+    }
+
+    .tailwind{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        margin: 0 auto;
+        width: 20%;
     }
 
     .hrFinal{
