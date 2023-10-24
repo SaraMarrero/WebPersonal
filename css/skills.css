@@ -2136,7 +2136,7 @@
         border-radius: 10px;
         padding-top: 1rem;
         padding-bottom :1rem;
-        height: 600px;
+        height: 700px;
     }
 
     .h1SectionTres{
@@ -2177,7 +2177,7 @@
         margin: 0 auto;
         grid-template-columns: repeat(3, 33.3333333333%);
         grid-template-rows: repeat(5, 20%);
-        grid-row-gap: 1em;
+        grid-row-gap: 2em;
         justify-content: center;
         align-items: center;
         width: 100%;
@@ -2254,11 +2254,11 @@
         width: 30%;
     }
 
-    .linux{
+    .react{
         grid-column: 2/3;
         grid-row: 4/5;
         margin: 0 auto;
-        width: 30%;
+        width: 20%;
     }
 
     .virtualbox{
