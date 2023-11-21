@@ -1,7 +1,6 @@
 // Variables
 const main = document.querySelector('.main');
 const form = document.querySelector('.form');
-const menu = document.querySelector(".nav-links");
 
 const nombre = document.getElementById('nombre');
 const email = document.getElementById('email');
@@ -41,7 +40,7 @@ function camposCompletos(){
             msgEnvio.textContent = 'Se agregó correctamente';
             table.insertAdjacentElement('afterend', msgEnvio);
 
-            form.setAttribute('action', 'https://formsubmit.co/52ceb9336b22c4c48e9cec87c3ab8d59');
+            form.setAttribute('action', 'https://formsubmit.co/saramarreromiranda@gmail.com');
         }
     }
 
