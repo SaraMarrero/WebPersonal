@@ -53,12 +53,13 @@ class Contacto{
                 msgEnvio.textContent = 'Se envió correctamente';
                 table.insertAdjacentElement('afterend', msgEnvio);
     
+                // Envía el correo electrónico
                 form.setAttribute('action', 'https://formsubmit.co/saramarreromiranda@gmail.com');
                 // form.setAttribute('action', 'https://formsubmit.co/52ceb9336b22c4c48e9cec87c3ab8d59');
             }
         }
 
-        // borra el aviso y reinicia el formulario tras 2 segundos
+        // Borra el aviso y reinicia el formulario tras 2 segundos
         setTimeout(() => { 
             msgEnvio.remove();
             form.reset();
@@ -74,7 +75,7 @@ const mensaje = document.querySelector('#mensaje');
 const buttonEnviar = document.querySelector('#enviar');
 
 
-buttonEnviar.addEventListener('button', () =>{
+buttonEnviar.addEventListener('click', () =>{
     let formulario = new Contacto(nombre.value, email.value, asunto.value, mensaje.value);
 
     formulario.camposCompletos()
