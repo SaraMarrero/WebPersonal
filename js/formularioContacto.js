@@ -26,7 +26,7 @@ class Contacto{
     }
 
     camposCompletos(){
-        const form = document.querySelector('.form');
+        const form = document.querySelector('form');
         const regExp = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
         const table = document.querySelector('.table');
         const msgEnvio = document.createElement('p');
@@ -53,8 +53,7 @@ class Contacto{
                 msgEnvio.textContent = 'Se envió correctamente';
                 table.insertAdjacentElement('afterend', msgEnvio);
     
-
-                // form.setAttribute('action', 'https://formsubmit.co/saramarreromiranda@gmail.com');
+                form.setAttribute('action', 'https://formsubmit.co/saramarreromiranda@gmail.com');
                 // form.setAttribute('action', 'https://formsubmit.co/52ceb9336b22c4c48e9cec87c3ab8d59');
             }
         }
