@@ -6,6 +6,25 @@ class Contacto{
         this.mensaje = mensaje;
     }
 
+    validarDatos(input, msgError, form){
+        input.style.border = '1px solid red';
+
+        // modifica la clase dependiendo del mensaje
+        msgError.classList.remove('valido');
+        msgError.classList.add('error');
+
+        // agrega el mensaje al html
+        msgError.textContent = 'Formato incorrecto';
+        input.insertAdjacentElement('afterend', msgError);
+
+        // borra el aviso tras dos segundos
+        setTimeout(() => {
+            input.style.border = '2px solid #8000FF';
+            msgError.remove();
+            form.reset();
+        }, 2000)
+    }
+
     camposCompletos(){
         const form = document.querySelector('.form');
         const regExp = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
@@ -31,12 +50,12 @@ class Contacto{
                 msgEnvio.classList.add('valido');
     
                 // agrega el mensaje al html
-                msgEnvio.textContent = 'Se agregó correctamente';
+                msgEnvio.textContent = 'Se envió correctamente';
                 table.insertAdjacentElement('afterend', msgEnvio);
     
-                form.setAttribute('action', 'https://formsubmit.co/saramarreromiranda@gmail.com');
+
+                // form.setAttribute('action', 'https://formsubmit.co/saramarreromiranda@gmail.com');
                 // form.setAttribute('action', 'https://formsubmit.co/52ceb9336b22c4c48e9cec87c3ab8d59');
-            
             }
         }
 
@@ -45,25 +64,6 @@ class Contacto{
             msgEnvio.remove();
             form.reset();
         }, 2000);
-    }
-
-    validarDatos(input, msgError, form){
-        input.style.border = '1px solid red';
-
-        // modifica la clase dependiendo del mensaje
-        msgError.classList.remove('valido');
-        msgError.classList.add('error');
-
-        // agrega el mensaje al html
-        msgError.textContent = 'Formato incorrecto';
-        input.insertAdjacentElement('afterend', msgError);
-
-        // borra el aviso tras dos segundos
-        setTimeout(() => {
-            input.style.border = '2px solid #8000FF';
-            msgError.remove();
-            form.reset();
-        }, 2000)
     }
 }
 
@@ -75,7 +75,7 @@ const mensaje = document.querySelector('#mensaje');
 const buttonEnviar = document.querySelector('#enviar');
 
 
-buttonEnviar.addEventListener('click', () =>{
+buttonEnviar.addEventListener('button', () =>{
     let formulario = new Contacto(nombre.value, email.value, asunto.value, mensaje.value);
 
     formulario.camposCompletos()
