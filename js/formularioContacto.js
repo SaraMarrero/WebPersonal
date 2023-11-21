@@ -40,10 +40,13 @@ class Contacto{
             // agrega el mensaje al html
             msgEnvio.textContent = 'Todos los campos son obligatorios';
             table.insertAdjacentElement('afterend', msgEnvio);
+            location.href = "https://saramarrero.github.io/WebPersonal/html/contacto.html";
     
         } else if(this.nombre !== '' && this.email !== '' && this.asunto !== '' && this.mensaje !== ''){
             if((!this.email.match(regExp))){
                 this.validarDatos(this.email, msgError, form);
+                location.href = "https://saramarrero.github.io/WebPersonal/html/contacto.html";
+
             } else{
                 // modifica la clase dependiendo del mensaje
                 msgEnvio.classList.remove('error');
@@ -55,6 +58,7 @@ class Contacto{
     
                 // Envía el correo electrónico
                 form.setAttribute('action', 'https://formsubmit.co/saramarreromiranda@gmail.com');
+
                 // form.setAttribute('action', 'https://formsubmit.co/52ceb9336b22c4c48e9cec87c3ab8d59');
             }
         }
