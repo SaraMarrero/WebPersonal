@@ -7,7 +7,7 @@ Este es un pequeño proyecto que muestra un poco de mí, algunos de los proyecto
 
 
 
-# 🔧Tecnologías
+# 🪛Tecnologías
 Para llevar a cabo la realización de este proyecto, he utilizado:
 * HTML
 * CSS
