@@ -40,12 +40,12 @@ class Contacto{
             // agrega el mensaje al html
             msgEnvio.textContent = 'Todos los campos son obligatorios';
             table.insertAdjacentElement('afterend', msgEnvio);
-            // location.href = "https://saramarrero.github.io/WebPersonal/html/contacto.html";
+            location.href = "https://saramarrero.github.io/WebPersonal/html/contacto.html";
     
         } else if(this.nombre !== '' && this.email !== '' && this.asunto !== '' && this.mensaje !== ''){
             if((!this.email.match(regExp))){
                 this.validarDatos(this.email, msgError, form);
-                // location.href = "https://saramarrero.github.io/WebPersonal/html/contacto.html";
+                location.href = "https://saramarrero.github.io/WebPersonal/html/contacto.html";
 
             } else{
                 // Muestra el spinner
@@ -59,18 +59,19 @@ class Contacto{
                     msgEnvio.classList.remove('error');
                     msgEnvio.classList.add('valido');
 
+
                     // agrega el mensaje al html
                     msgEnvio.textContent = 'Se envió correctamente';
                     table.insertAdjacentElement('afterend', msgEnvio);
-        
+
                     // Envía el correo electrónico
-                    // form.setAttribute('action', 'https://formsubmit.co/saramarreromiranda@gmail.com');
+                    form.setAttribute('action', 'https://formsubmit.co/saramarreromiranda@gmail.com');
                 }, 2000);
 
                 // envía el formulario
-                // setTimeout(function(){
-                //     event.target.form.submit();
-                // }, 2500);
+                setTimeout(function(){
+                    event.target.form.submit();
+                }, 2500);
             }
         }
 
@@ -78,7 +79,7 @@ class Contacto{
         setTimeout(() => { 
             msgEnvio.remove();
             form.reset();
-        }, 2000);
+        }, 4000);
     }
 
     // Muestra el spinner
