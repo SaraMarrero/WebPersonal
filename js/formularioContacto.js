@@ -25,7 +25,7 @@ class Contacto{
         }, 2000)
     }
 
-    camposCompletos(){
+    camposCompletos(event){
         const form = document.querySelector('.form');
         const regExp = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
         const table = document.querySelector('.table');
@@ -40,26 +40,37 @@ class Contacto{
             // agrega el mensaje al html
             msgEnvio.textContent = 'Todos los campos son obligatorios';
             table.insertAdjacentElement('afterend', msgEnvio);
-            location.href = "https://saramarrero.github.io/WebPersonal/html/contacto.html";
+            // location.href = "https://saramarrero.github.io/WebPersonal/html/contacto.html";
     
         } else if(this.nombre !== '' && this.email !== '' && this.asunto !== '' && this.mensaje !== ''){
             if((!this.email.match(regExp))){
                 this.validarDatos(this.email, msgError, form);
-                location.href = "https://saramarrero.github.io/WebPersonal/html/contacto.html";
+                // location.href = "https://saramarrero.github.io/WebPersonal/html/contacto.html";
 
             } else{
-                // modifica la clase dependiendo del mensaje
-                msgEnvio.classList.remove('error');
-                msgEnvio.classList.add('valido');
-    
-                // agrega el mensaje al html
-                msgEnvio.textContent = 'Se envió correctamente';
-                table.insertAdjacentElement('afterend', msgEnvio);
-    
-                // Envía el correo electrónico
-                form.setAttribute('action', 'https://formsubmit.co/saramarreromiranda@gmail.com');
+                // Muestra el spinner
+                this.showSpinner();
 
-                // form.setAttribute('action', 'https://formsubmit.co/52ceb9336b22c4c48e9cec87c3ab8d59');
+                // Oculta el spinner y da un aviso
+                setTimeout(() => {
+                    this.hideSpinner();
+
+                    // modifica la clase dependiendo del mensaje
+                    msgEnvio.classList.remove('error');
+                    msgEnvio.classList.add('valido');
+
+                    // agrega el mensaje al html
+                    msgEnvio.textContent = 'Se envió correctamente';
+                    table.insertAdjacentElement('afterend', msgEnvio);
+        
+                    // Envía el correo electrónico
+                    // form.setAttribute('action', 'https://formsubmit.co/saramarreromiranda@gmail.com');
+                }, 2000);
+
+                // envía el formulario
+                // setTimeout(function(){
+                //     event.target.form.submit();
+                // }, 2500);
             }
         }
 
@@ -69,8 +80,22 @@ class Contacto{
             form.reset();
         }, 2000);
     }
+
+    // Muestra el spinner
+    showSpinner(){
+        document.querySelector('.loader').style.display = 'block';
+    }
+
+    // Oculta el spinner
+    hideSpinner(){
+        document.querySelector('.loader').style.display = 'none';
+    }
 }
 
+// Oculta el spinner
+document.querySelector('.loader').style.display = 'none';
+
+// Recoge los datos del html
 const nombre = document.querySelector('#nombre');
 const email = document.querySelector('#email');
 const asunto = document.querySelector('#asunto');
@@ -79,8 +104,13 @@ const mensaje = document.querySelector('#mensaje');
 const buttonEnviar = document.querySelector('#enviar');
 
 
-buttonEnviar.addEventListener('click', () =>{
-    let formulario = new Contacto(nombre.value, email.value, asunto.value, mensaje.value);
+buttonEnviar.addEventListener('click', (event) =>{
+    // Evita el envío predeterminado del formulario
+    event.preventDefault(); 
 
-    formulario.camposCompletos()
+    // Instancia la clase
+    let formulario = new Contacto(nombre.value, email.value, asunto.value, mensaje.value);
+    
+    // Valida y envía el correo
+    formulario.camposCompletos(event);
 });
