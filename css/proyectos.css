@@ -1907,8 +1907,16 @@
         padding: 1rem;
     }
 
-    .link-item:hover{
+    .actual{
         background-color: #8000FF;
+        color: white;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        
+    }
+
+    .link-item:hover{
+        background-color: #8000ffa3;
         color: white;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
@@ -2476,8 +2484,16 @@
         padding: 1rem;
     }
 
-    .link-item:hover{
+    .actual{
         background-color: #8000FF;
+        color: white;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        
+    }
+
+    .link-item:hover{
+        background-color: #8000ffa3;
         color: white;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
@@ -2975,8 +2991,16 @@
         padding: 1rem;
     }
 
-    .link-item:hover{
+    .actual{
         background-color: #8000FF;
+        color: white;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        
+    }
+
+    .link-item:hover{
+        background-color: #8000ffa3;
         color: white;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
@@ -3478,8 +3502,16 @@
         padding: 1rem;
     }
 
-    .link-item:hover{
+    .actual{
         background-color: #8000FF;
+        color: white;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        
+    }
+
+    .link-item:hover{
+        background-color: #8000ffa3;
         color: white;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
@@ -3954,5 +3986,9 @@
 }
 
 .modoOscuro .h1SectionDos{
+    color: white;
+}
+
+.modoOscuro .actual{
     color: white;
 }
