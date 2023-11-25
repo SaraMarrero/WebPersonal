@@ -3608,26 +3608,27 @@
     /*----- cards -----*/
     .articleProyectos{
         margin-top: 2em;
+        padding: 1rem;
         display: grid;
         width: 100%;
-        height: 700px;
+        height: 1400px;
         grid-template-columns: repeat(3, 33.33333333333333%);
-        grid-template-rows: repeat(2, 50%);
-        grid-row-gap: 2em;
+        grid-template-rows: repeat(2, auto);
+        grid-row-gap: 3em;
         margin-bottom: 5em;
-        align-items: center;
+        background-color: #8000FF;
     }
 
-    .iconoProyectos{
+    /* .iconoProyectos{
         grid-column: 2/3;
         grid-row: 2/3;
         width: 60%;
         height: 240px;
         margin: 0 auto;
-    }
+    } */
 
     /* piedra papel tijera lagarto spock */
-    .divJuego1{
+    /* .divJuego1{
         grid-column: 1/2;
         grid-row: 1/2;
         width: 90%;
@@ -3635,68 +3636,355 @@
         height: 330px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         margin: 0 auto;
+    } */
+
+    .divProyecto1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 20px;
+        background-color: #F2F2F2;
     }
 
-    .imgJuego1{
+    .divImgProyecto1{
+        width: 100%;
+        height: 60%;
+    }
+
+    .imgProyecto1{
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .datosProyecto1{
+        height: 40%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 1rem;
+    }
+
+    .h2Proyecto1{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .pProyecto1{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .enlacesProyecto1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+    }
+
+    .enlacesProyecto1{
+        margin: 1em;
+        color: white;
+    }
+
+    .aProyecto1{
+        background-color: gray;
+        border-radius: 20px;
+        color: white;
+        padding: 1rem;
+        text-decoration: none;
+    }
+
+    /*--------------------------------*/
+
+    .divProyecto2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 20px;
+        background-color: #F2F2F2;
+    }
+
+    .divImgProyecto2{
+        width: 100%;
+        height: 60%;
+    }
+
+    .imgProyecto2{
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .datosProyecto2{
+        height: 40%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 1rem;
+    }
+
+    .h2Proyecto2{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .pProyecto2{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .enlacesProyecto2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+        margin: 1em;
+    }
+
+    .aProyecto2{
+        background-color: gray;
+        border-radius: 20px;
+        color: white;
+        padding: 1rem;
+        text-decoration: none;
+    }
+
+    /*-------------------------------------------------------------------*/
+
+    .divProyecto3{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 20px;
+        background-color: #F2F2F2;
+    }
+
+    .divImgProyecto3{
+        width: 100%;
+        height: 60%;
+    }
+
+    .imgProyecto3{
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .datosProyecto3{
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 1rem;
+        height: 40%;
+    }
+
+    .h2Proyecto3{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .pProyecto3{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .enlacesProyecto3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+    }
+
+    .enlacesProyecto3{
+        margin: 1.5em;
+        text-decoration: none;
+        color: white;
+    }
+
+    .aProyecto3{
+        background-color: gray;
+        border-radius: 20px;
+        color: white;
+        padding: 1rem;
+        text-decoration: none;
+    }
+
+    /*--------------------------------*/
+
+    .divProyecto4{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 20px;
+        background-color: #F2F2F2;
+    }
+
+    .divImgProyecto4{
+        width: 100%;
+        height: 70%;
+    }
+
+    .imgProyecto4{
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .datosProyecto4{
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 1rem;
+        height: 30%;
+    }
+
+    .h2Proyecto4{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .pProyecto4{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .enlacesProyecto4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+        margin: 1.5em;
+    }
+
+    .aProyecto4{
+        background-color: gray;
+        border-radius: 20px;
+        color: white;
+        padding: 1rem;
+        text-decoration: none;
+    }
+
+    /*--------------------------------*/
+
+    .divProyecto5{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 20px;
+        background-color: #F2F2F2;
+    }
+
+    .divImgProyecto5{
+        width: 100%;
+        height: 70%;
+    }
+
+    .imgProyecto5{
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .datosProyecto5{
+        height: 30%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 1rem;
+    }
+
+    .h2Proyecto5{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .pProyecto5{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .enlacesProyecto5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+        margin: 1.5em;
+    }
+
+    .aProyecto5{
+        background-color: gray;
+        border-radius: 20px;
+        color: white;
+        padding: 1rem;
+        text-decoration: none;
+    }
+
+    /* .imgJuego1{
         width: 100%;
         height: 330px;
         background-size: cover;
         background-position: 70% center;
         background-image: url(../img/juego1.jpg);
         margin: 0 auto;
-    }
+    } */
 
-    .divPJuego1{
+    /* .divPJuego1{
         width: 100%;
         height: 330px;
         background-color: rgba(128, 0, 255, 0.9);
         opacity: 0;
         transition: opacity 1s ease-in-out;
-    }
+    } */
     
-    .imgJuego1:hover .divPJuego1{
+    /* .imgJuego1:hover .divPJuego1{
         opacity: 1;
-    }
+    } */
 
-    .h4Juego1{
+    /* .h4Juego1{
         text-align: center;
         width: 90%;
         margin: 0 auto;
         padding-top: 4rem;
         font-size: 25px;
-    }
+    } */
 
-    .pJuego1{
+    /* .pJuego1{
         color: white;
         text-align: center;
         width: 90%;
         margin: 0 auto;
         margin-top: 1em;
         font-size: 17px;
-    }
+    } */
 
-    .enlacesJuego1{
+    /* .enlacesJuego1{
         width: 45%;
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
         margin-top: 1.5em;
-    }
+    } */
 
-    .aJuego1{
+    /* .aJuego1{
         color: black;
         text-decoration: none;
         background-color: lightslategrey;
         border-radius: 10px;
         padding: 0.5rem;
-    }
+    } */
 
-    .aJuego1:hover{
+    /* .aJuego1:hover{
         box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    }
+    } */
 
     /* share car */
-    .divShareCar{
+    /* .divShareCar{
         grid-column: 2/3;
         grid-row: 1/2;
         width: 83%;
@@ -3764,7 +4052,7 @@
     }
 
     /* calculadora de edad */
-    .divJuego2{
+    /*.divJuego2{
         grid-column: 3/4;
         grid-row: 1/2;
         width: 83%;
@@ -3829,10 +4117,10 @@
 
     .aJuego2:hover{
         box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    }
+    }*/
 
     /* ies ana luisa benitez */
-    .divIes{
+    /*.divIes{
         grid-column: 1/2;
         grid-row: 2/3;
         width: 83%;
@@ -3896,10 +4184,10 @@
 
     .aIES:hover{
         box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    }
+    }*/
 
     /* nintendo switch */
-    .divNintendo{
+    /*.divNintendo{
         background-color: lightgrey;
         grid-column: 3/4;
         grid-row: 2/3;
@@ -3973,8 +4261,8 @@
         margin: 0 auto;
         margin-top: 3em;
         margin-bottom: 3em;
-    }
-}
+    }*/
+} 
 
 /*---------- MODO OSCURO ----------*/
 .modoOscuro{
