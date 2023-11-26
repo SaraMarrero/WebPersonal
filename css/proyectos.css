@@ -2185,7 +2185,7 @@
 
     .divImgProyecto1{
         width: 100%;
-        height: 50%;
+        height: 60%;
     }
 
     .imgProyecto1{
@@ -2196,7 +2196,7 @@
     }
 
     .datosProyecto1{
-        height: 50%;
+        height: 40%;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         padding: 0.5rem;
@@ -2248,7 +2248,7 @@
 
     .divImgProyecto2{
         width: 100%;
-        height: 50%;
+        height: 60%;
     }
 
     .imgProyecto2{
@@ -2259,7 +2259,7 @@
     }
 
     .datosProyecto2{
-        height: 50%;
+        height: 40%;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         padding: 0.5rem;
@@ -2372,7 +2372,7 @@
 
     .divImgProyecto4{
         width: 100%;
-        height: 60%;
+        height: 70%;
     }
 
     .imgProyecto4{
@@ -2386,7 +2386,7 @@
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         padding: 0.5rem;
-        height: 40%;
+        height: 30%;
     }
 
     .h2Proyecto4{
@@ -2431,7 +2431,7 @@
 
     .divImgProyecto5{
         width: 100%;
-        height: 70%;
+        height: 75%;
     }
 
     .imgProyecto5{
@@ -2442,7 +2442,7 @@
     }
 
     .datosProyecto5{
-        height: 30%;
+        height: 25%;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         padding: 0.5rem;
