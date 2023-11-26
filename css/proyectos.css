@@ -577,6 +577,65 @@
         margin: 1em;
     }
 
+    /*--------------------------------*/
+
+    .divProyecto6{
+        grid-column: 1/2;
+        grid-row: 6/7;
+        width: 83%;
+        height: 100%;
+        margin: 0 auto;
+        border-radius: 20px;
+        background-color: #F2F2F2;
+        box-shadow: #8000FF 0px 5px 15px;
+    }
+
+    .divImgProyecto6{
+        width: 100%;
+        height: 55%;
+    }
+
+    .imgProyecto6{
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .datosProyecto6{
+        height: 45%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 0.5rem;
+    }
+
+    .h2Proyecto6{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .pProyecto6{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .enlacesProyecto6{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+        margin: 1.5em;
+    }
+
+    .aProyecto6{
+        background-color: gray;
+        border-radius: 20px;
+        color: white;
+        padding: 0.5rem;
+        text-decoration: none;
+        margin: 1em;
+    }
+
     .hrFinal{
         color: #8000FF;
         border: 2px solid;
@@ -1212,7 +1271,7 @@
         padding: 1rem;
         display: grid;
         width: 100%;
-        height: 3100px;
+        height: 3600px;
         grid-template-columns: repeat(1, 100%);
         grid-template-rows: repeat(5, auto);
         grid-row-gap: 2em;
@@ -1526,364 +1585,63 @@
         margin: 1em;
     }
 
-    .hrFinal{
-        color: #8000FF;
-        border: 2px solid;
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 3em;
-        margin-bottom: 3em;
-    }
-    /* .articleProyectos{
-        margin-top: 2.5em;
-        display: grid;
-        width: 100%;
-        height: 2150px;
-        grid-template-rows: repeat(5, 20%);
-        grid-template-columns: repeat(1, 100%);
-        margin-bottom: 2em;
-    }
+    /*--------------------------------*/
 
-    .iconoProyectos{
-        display: none;
-    } */
-
-    /* piedra papel tijera lagarto spock */
-    /* .divJuego1{
+    .divProyecto6{
         grid-column: 1/2;
-        grid-row: 1/2;
-        width: 84%;
-        height: 400px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        grid-row: 6/7;
+        width: 83%;
+        height: 100%;
         margin: 0 auto;
+        border-radius: 20px;
+        background-color: #F2F2F2;
+        box-shadow: #8000FF 0px 5px 15px;
     }
 
-    .imgJuego1{
+    .divImgProyecto6{
         width: 100%;
-        height: 400px;
-        background-size: cover;
-        background-position: center center;
-        background-image: url(../img/juego1.jpg);
-        margin: 0 auto
+        height: 60%;
     }
 
-    .divPJuego1{
+    .imgProyecto6{
         width: 100%;
-        height: 400px;
-        background-color: rgba(128, 0, 255, 0.9);
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-    }
-    
-    .imgJuego1:hover .divPJuego1{
-        opacity: 1;
+        height: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
     }
 
-    .h4Juego1{
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-        padding-top: 6rem;
-        font-size: 25px;
-    }
-
-    .pJuego1{
-        color: white;
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 1em;
-        font-size: 17px;
-    }
-
-    .enlacesJuego1{
-        width: 40%;
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-        margin-top: 1.5em;
-    }
-
-    .aJuego1{
-        color: black;
-        text-decoration: none;
-        background-color: lightslategrey;
-        border-radius: 10px;
+    .datosProyecto6{
+        height: 40%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
         padding: 0.5rem;
     }
 
-    .aJuego1:hover{
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    }
-
-    /* share car */
-    /*.divShareCar{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        width: 70%;
-        height: 400px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        margin: 0 auto;
-    }
-
-    .imgShareCar{
-        width: 100%;
-        height: 400px;
-        background-size: cover;
-        background-position: center center;
-        background-image: url(../img/sharecar.jpg);
-        margin: 0 auto;
-    }
-
-    .divPShareCar{
-        width: 100%;
-        height: 400px;
-        background-color: rgba(128, 0, 255, 0.9);
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-    }
-    
-    .imgShareCar:hover .divPShareCar{
-        opacity: 1;
-    }
-
-    .h4ShareCar{
+    .h2Proyecto6{
         text-align: center;
-        width: 90%;
-        margin: 0 auto;
-        padding-top: 5rem;
-        font-size: 25px;
-    }
-
-    .pShareCar{
-        color: white;
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 1em;
-        font-size: 17px;
-    }
-
-    /* .enlacesShareCar{
-        width: 50%;
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-        margin-top: 1.5em;
-    }
-
-    .aShareCar{
-        color: black;
-        text-decoration: none;
-        background-color: lightslategrey;
-        border-radius: 10px;
         padding: 0.5rem;
     }
 
-    .aShareCar:hover{
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    } */
-
-    /* ies ana luisa benitez */
-    /*.divIes{
-        grid-column: 1/2;
-        grid-row: 3/4;
-        width: 84%;
-        height: 400px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        margin: 0 auto;
-    }
-
-    .imgIES{
-        width: 100%;
-        height: 400px;
-        background-size: cover;
-        background-image: url(../img/ies.jpg);
-        margin: 0 auto
-    }
-
-    .divPIES{
-        width: 100%;
-        height: 400px;
-        background-color: rgba(128, 0, 255, 0.9);
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-    }
-    
-    .imgIES:hover .divPIES{
-        opacity: 1;
-    }
-
-    .h4IES{
+    .pProyecto6{
         text-align: center;
-        width: 95%;
-        margin: 0 auto;
-        padding-top: 5.5rem;
-        font-size: 25px;
-    }
-
-    .pIES{
-        color: white;
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 1em;
-        font-size: 17px;
-    }
-
-    .enlacesIES{
-        width: 50%;
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-        margin-top: 1.5em;
-    }
-
-    .aIES{
-        color: black;
-        text-decoration: none;
-        background-color: lightslategrey;
-        border-radius: 10px;
         padding: 0.5rem;
     }
 
-    .aIES:hover{
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    } */
-
-    /* nintendo switch */
-    /*.divNintendo{
-        grid-column: 1/2;
-        grid-row: 4/5;
-        width: 70%;
-        height: 400px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        margin: 0 auto;
-    }
-
-    .imgNintendo{
-        width: 100%;
-        height: 400px;
-        background-size: cover;
-        background-image: url(../img/nintendo.jpg);
-        margin: 0 auto;
-    }
-
-    .divPNintendo{
-        width: 100%;
-        height: 400px;
-        background-color: rgba(128, 0, 255, 0.9);
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-    }
-    
-    .imgNintendo:hover .divPNintendo{
-        opacity: 1;
-    }
-
-    .h4Nintendo{
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-        padding-top: 5.5rem;
-        font-size: 22px;
-    }
-
-    .pNintendo{
-        color: white;
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 0.5em;
-        font-size: 15px;
-    }
-
-    .enlacesNintendo{
-        width: 50%;
+    .enlacesProyecto6{
         display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-        margin-top: 1.5em;
-    }
-
-    .aNintendo{
-        color: black;
-        text-decoration: none;
-        background-color: lightslategrey;
-        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
         padding: 0.5rem;
+        margin: 1.5em;
     }
 
-    .aNintendo:hover{
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    }
-
-    /* piedra papel tijera lagarto spock multijugador */
-    /*.divJuego2{
-        grid-column: 1/2;
-        grid-row: 5/6;
-        width: 84%;
-        height: 400px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        margin: 0 auto;
-    }
-
-    .imgJuego2{
-        width: 100%;
-        height: 400px;
-        background-size: cover;
-        background-position: center 15%;
-        background-image: url(../img/calculadoraEdad.jpg);
-        margin: 0 auto;
-    }
-
-    .divPJuego2{
-        width: 100%;
-        height: 400px;
-        background-color: rgba(128, 0, 255, 0.9);
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-    }
-    
-    .imgJuego2:hover .divPJuego2{
-        opacity: 1;
-    }
-
-    .h4Juego2{
-        text-align: center;
-        width: 96%;
-        margin: 0 auto;
-        padding-top: 7rem;
-        font-size: 22px;
-    }
-
-    .pJuego2{
+    .aProyecto6{
+        background-color: gray;
+        border-radius: 20px;
         color: white;
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 1em;
-        font-size: 15px;
-    }
-
-    .enlacesJuego2{
-        width: 30%;
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-        margin-top: 1.5em;
-    }
-
-    .aJuego2{
-        color: black;
-        text-decoration: none;
-        background-color: lightslategrey;
-        border-radius: 10px;
         padding: 0.5rem;
-    }
-
-    .aJuego2:hover{
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        text-decoration: none;
+        margin: 1em;
     }
 
     .hrFinal{
@@ -1893,7 +1651,7 @@
         margin: 0 auto;
         margin-top: 3em;
         margin-bottom: 3em;
-    }*/
+    }
 }
 
 @media (min-width: 601px) and (max-width: 768px){
@@ -2161,7 +1919,7 @@
         padding: 1rem;
         display: grid;
         width: 100%;
-        height: 3600px;
+        height: 3800px;
         grid-template-columns: repeat(1, 100%);
         grid-template-rows: repeat(5, auto);
         grid-row-gap: 2em;
@@ -2475,6 +2233,74 @@
         margin: 1em;
     }
 
+        /*--------------------------------*/
+
+        .divProyecto6{
+            grid-column: 1/2;
+            grid-row: 6/7;
+            width: 83%;
+            height: 100%;
+            margin: 0 auto;
+            border-radius: 20px;
+            background-color: #F2F2F2;
+            box-shadow: #8000FF 0px 5px 15px;
+        }
+    
+        .divImgProyecto6{
+            width: 100%;
+            height: 60%;
+        }
+    
+        .imgProyecto6{
+            width: 100%;
+            height: 100%;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+    
+        .datosProyecto6{
+            height: 40%;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            padding: 0.5rem;
+        }
+    
+        .h2Proyecto6{
+            text-align: center;
+            padding: 0.5rem;
+        }
+    
+        .pProyecto6{
+            text-align: center;
+            padding: 0.5rem;
+        }
+    
+        .enlacesProyecto6{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.5rem;
+            margin: 1.5em;
+        }
+    
+        .aProyecto6{
+            background-color: gray;
+            border-radius: 20px;
+            color: white;
+            padding: 0.5rem;
+            text-decoration: none;
+            margin: 1em;
+        }
+    
+        .hrFinal{
+            color: #8000FF;
+            border: 2px solid;
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 3em;
+            margin-bottom: 3em;
+        }
+
     .hrFinal{
         color: #8000FF;
         border: 2px solid;
@@ -2483,366 +2309,6 @@
         margin-top: 3em;
         margin-bottom: 3em;
     }
-    /* .articleProyectos{
-        margin-top: 2.5em;
-        display: grid;
-        width: 100%;
-        height: 2150px;
-        grid-template-rows: repeat(5, 20%);
-        grid-template-columns: repeat(1, 100%);
-        margin-bottom: 2em;
-    }
-
-    .iconoProyectos{
-        display: none;
-    } */
-
-    /* piedra papel tijera lagarto spock */
-    /* .divJuego1{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        width: 84%;
-        height: 400px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        margin: 0 auto;
-    }
-
-    .imgJuego1{
-        width: 100%;
-        height: 400px;
-        background-size: cover;
-        background-position: center center;
-        background-image: url(../img/juego1.jpg);
-        margin: 0 auto
-    }
-
-    .divPJuego1{
-        width: 100%;
-        height: 400px;
-        background-color: rgba(128, 0, 255, 0.9);
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-    }
-    
-    .imgJuego1:hover .divPJuego1{
-        opacity: 1;
-    }
-
-    .h4Juego1{
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-        padding-top: 6rem;
-        font-size: 25px;
-    }
-
-    .pJuego1{
-        color: white;
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 1em;
-        font-size: 17px;
-    }
-
-    .enlacesJuego1{
-        width: 40%;
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-        margin-top: 1.5em;
-    }
-
-    .aJuego1{
-        color: black;
-        text-decoration: none;
-        background-color: lightslategrey;
-        border-radius: 10px;
-        padding: 0.5rem;
-    }
-
-    .aJuego1:hover{
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    }
-
-    /* share car */
-    /*.divShareCar{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        width: 70%;
-        height: 400px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        margin: 0 auto;
-    }
-
-    .imgShareCar{
-        width: 100%;
-        height: 400px;
-        background-size: cover;
-        background-position: center center;
-        background-image: url(../img/sharecar.jpg);
-        margin: 0 auto;
-    }
-
-    .divPShareCar{
-        width: 100%;
-        height: 400px;
-        background-color: rgba(128, 0, 255, 0.9);
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-    }
-    
-    .imgShareCar:hover .divPShareCar{
-        opacity: 1;
-    }
-
-    .h4ShareCar{
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-        padding-top: 5rem;
-        font-size: 25px;
-    }
-
-    .pShareCar{
-        color: white;
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 1em;
-        font-size: 17px;
-    }
-
-    /* .enlacesShareCar{
-        width: 50%;
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-        margin-top: 1.5em;
-    }
-
-    .aShareCar{
-        color: black;
-        text-decoration: none;
-        background-color: lightslategrey;
-        border-radius: 10px;
-        padding: 0.5rem;
-    }
-
-    .aShareCar:hover{
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    } */
-
-    /* ies ana luisa benitez */
-    /*.divIes{
-        grid-column: 1/2;
-        grid-row: 3/4;
-        width: 84%;
-        height: 400px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        margin: 0 auto;
-    }
-
-    .imgIES{
-        width: 100%;
-        height: 400px;
-        background-size: cover;
-        background-image: url(../img/ies.jpg);
-        margin: 0 auto
-    }
-
-    .divPIES{
-        width: 100%;
-        height: 400px;
-        background-color: rgba(128, 0, 255, 0.9);
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-    }
-    
-    .imgIES:hover .divPIES{
-        opacity: 1;
-    }
-
-    .h4IES{
-        text-align: center;
-        width: 95%;
-        margin: 0 auto;
-        padding-top: 5.5rem;
-        font-size: 25px;
-    }
-
-    .pIES{
-        color: white;
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 1em;
-        font-size: 17px;
-    }
-
-    .enlacesIES{
-        width: 50%;
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-        margin-top: 1.5em;
-    }
-
-    .aIES{
-        color: black;
-        text-decoration: none;
-        background-color: lightslategrey;
-        border-radius: 10px;
-        padding: 0.5rem;
-    }
-
-    .aIES:hover{
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    } */
-
-    /* nintendo switch */
-    /*.divNintendo{
-        grid-column: 1/2;
-        grid-row: 4/5;
-        width: 70%;
-        height: 400px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        margin: 0 auto;
-    }
-
-    .imgNintendo{
-        width: 100%;
-        height: 400px;
-        background-size: cover;
-        background-image: url(../img/nintendo.jpg);
-        margin: 0 auto;
-    }
-
-    .divPNintendo{
-        width: 100%;
-        height: 400px;
-        background-color: rgba(128, 0, 255, 0.9);
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-    }
-    
-    .imgNintendo:hover .divPNintendo{
-        opacity: 1;
-    }
-
-    .h4Nintendo{
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-        padding-top: 5.5rem;
-        font-size: 22px;
-    }
-
-    .pNintendo{
-        color: white;
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 0.5em;
-        font-size: 15px;
-    }
-
-    .enlacesNintendo{
-        width: 50%;
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-        margin-top: 1.5em;
-    }
-
-    .aNintendo{
-        color: black;
-        text-decoration: none;
-        background-color: lightslategrey;
-        border-radius: 10px;
-        padding: 0.5rem;
-    }
-
-    .aNintendo:hover{
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    }
-
-    /* piedra papel tijera lagarto spock multijugador */
-    /*.divJuego2{
-        grid-column: 1/2;
-        grid-row: 5/6;
-        width: 84%;
-        height: 400px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        margin: 0 auto;
-    }
-
-    .imgJuego2{
-        width: 100%;
-        height: 400px;
-        background-size: cover;
-        background-position: center 15%;
-        background-image: url(../img/calculadoraEdad.jpg);
-        margin: 0 auto;
-    }
-
-    .divPJuego2{
-        width: 100%;
-        height: 400px;
-        background-color: rgba(128, 0, 255, 0.9);
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-    }
-    
-    .imgJuego2:hover .divPJuego2{
-        opacity: 1;
-    }
-
-    .h4Juego2{
-        text-align: center;
-        width: 96%;
-        margin: 0 auto;
-        padding-top: 7rem;
-        font-size: 22px;
-    }
-
-    .pJuego2{
-        color: white;
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 1em;
-        font-size: 15px;
-    }
-
-    .enlacesJuego2{
-        width: 30%;
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-        margin-top: 1.5em;
-    }
-
-    .aJuego2{
-        color: black;
-        text-decoration: none;
-        background-color: lightslategrey;
-        border-radius: 10px;
-        padding: 0.5rem;
-    }
-
-    .aJuego2:hover{
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    }
-
-    .hrFinal{
-        color: #8000FF;
-        border: 2px solid;
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 3em;
-        margin-bottom: 3em;
-    }*/
 }
 
 @media (min-width: 769px) and (max-width: 900px){
@@ -3318,10 +2784,10 @@
     /*--------------------------------*/
 
     .divProyecto5{
-        grid-column: 1/3;
+        grid-column: 1/2;
         grid-row: 3/4;
-        width: 60%;
-        height: 75%;
+        width: 83%;
+        height: 95%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -3330,7 +2796,7 @@
 
     .divImgProyecto5{
         width: 100%;
-        height: 70%;
+        height: 60%;
     }
 
     .imgProyecto5{
@@ -3341,7 +2807,7 @@
     }
 
     .datosProyecto5{
-        height: 30%;
+        height: 40%;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         padding: 0.5rem;
@@ -3366,6 +2832,65 @@
     }
 
     .aProyecto5{
+        background-color: gray;
+        border-radius: 20px;
+        color: white;
+        padding: 0.5rem;
+        text-decoration: none;
+        margin: 1em;
+    }
+
+    /*--------------------------------*/
+
+    .divProyecto6{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        width: 83%;
+        height: 95%;
+        margin: 0 auto;
+        border-radius: 20px;
+        background-color: #F2F2F2;
+        box-shadow: #8000FF 0px 5px 15px;
+    }
+
+    .divImgProyecto6{
+        width: 100%;
+        height: 60%;
+    }
+
+    .imgProyecto6{
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .datosProyecto6{
+        height: 40%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 0.5rem;
+    }
+
+    .h2Proyecto6{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .pProyecto6{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .enlacesProyecto6{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+        margin: 1.5em;
+    }
+
+    .aProyecto6{
         background-color: gray;
         border-radius: 20px;
         color: white;
@@ -3904,11 +3429,7 @@
     }
 
     .iconoProyectos{
-        grid-column: 2/3;
-        grid-row: 2/3;
-        width: 60%;
-        height: 30%;
-        margin: 0 auto;
+        display: none;
     }
 
     .divProyecto1{
@@ -4157,7 +3678,7 @@
     /*--------------------------------*/
 
     .divProyecto5{
-        grid-column: 3/4;
+        grid-column: 2/3;
         grid-row: 2/3;
         width: 83%;
         height: 100%;
@@ -4213,368 +3734,63 @@
         margin: 1em;
     }
 
-    .hrFinal{
-        color: #8000FF;
-        border: 2px solid;
-        width: 80%;
+    /*--------------------------------*/
+
+    .divProyecto6{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        width: 83%;
+        height: 100%;
         margin: 0 auto;
-        margin-top: 3em;
-        margin-bottom: 3em;
+        border-radius: 20px;
+        background-color: #F2F2F2;
+        box-shadow: #8000FF 0px 5px 15px;
     }
 
-    /* .articleProyectos{
-        margin-top: 1em;
-        display: grid;
+    .divImgProyecto6{
         width: 100%;
-        height: 1200px;
-        grid-template-rows: repeat(3, 33.33333333333333%);
-        grid-template-columns: repeat(2, 50%);
-        margin-bottom: 3em;
+        height: 50%;
+    }
+
+    .imgProyecto6{
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .datosProyecto6{
+        height: 50%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 0.5rem;
+    }
+
+    .h2Proyecto6{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .pProyecto6{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .enlacesProyecto6{
+        display: flex;
+        justify-content: center;
         align-items: center;
-    }
-
-    .iconoProyectos{
-        display: none;
-    } */
-
-    /* piedra papel tijera lagarto spock */
-    /* .divJuego1{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        width: 80%;
-        height: 350px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        margin: 0 auto;
-    }
-
-    .imgJuego1{
-        width: 100%;
-        height: 350px;
-        background-size: cover;
-        background-position: center center;
-        background-image: url(../img/juego1.jpg);
-        margin: 0 auto
-    }
-
-    .divPJuego1{
-        width: 100%;
-        height: 350px;
-        background-color: rgba(128, 0, 255, 0.9);
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-    }
-    
-    .imgJuego1:hover .divPJuego1{
-        opacity: 1;
-    }
-
-    .h4Juego1{
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-        padding-top: 4rem;
-        font-size: 25px;
-    }
-
-    .pJuego1{
-        color: white;
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 1em;
-        font-size: 17px;
-    }
-
-    .enlacesJuego1{
-        width: 50%;
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-        margin-top: 1.5em;
-    }
-
-    .aJuego1{
-        color: black;
-        text-decoration: none;
-        background-color: lightslategrey;
-        border-radius: 10px;
         padding: 0.5rem;
+        margin: 1.5em;
     }
 
-    .aJuego1:hover{
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    } */
-
-    /* share car */
-    /* .divShareCar{
-        grid-column: 2/3;
-        grid-row: 1/2;
-        width: 80%;
-        height: 350px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        margin: 0 auto;
-    }
-
-    .imgShareCar{
-        width: 100%;
-        height: 350px;
-        background-size: cover;
-        background-position: center center;
-        background-image: url(../img/sharecar.jpg);
-        margin: 0 auto;
-    }
-
-    .divPShareCar{
-        width: 100%;
-        height: 350px;
-        background-color: rgba(128, 0, 255, 0.9);
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-    }
-    
-    .imgShareCar:hover .divPShareCar{
-        opacity: 1;
-    }
-
-    .h4ShareCar{
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-        padding-top: 4rem;
-        font-size: 25px;
-    }
-
-    .pShareCar{
+    .aProyecto6{
+        background-color: gray;
+        border-radius: 20px;
         color: white;
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 1em;
-        font-size: 17px;
-    }
-
-    .enlacesShareCar{
-        width: 50%;
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-        margin-top: 1.5em;
-    }
-
-    .aShareCar{
-        color: black;
-        text-decoration: none;
-        background-color: lightslategrey;
-        border-radius: 10px;
         padding: 0.5rem;
-    }
-
-    .aShareCar:hover{
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    } */
-
-    /* ies ana luisa benitez */
-    /* .divIes{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        width: 80%;
-        height: 350px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        margin: 0 auto;
-    }
-
-    .imgIES{
-        width: 100%;
-        height: 350px;
-        background-size: cover;
-        background-image: url(../img/ies.jpg);
-        margin: 0 auto
-    }
-
-    .divPIES{
-        width: 100%;
-        height: 350px;
-        background-color: rgba(128, 0, 255, 0.9);
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-    }
-    
-    .imgIES:hover .divPIES{
-        opacity: 1;
-    } */
-
-    /* .h4IES{ */
-        /* text-align: center;
-        width: 95%;
-        margin: 0 auto;
-        padding-top: 4.5rem;
-        font-size: 25px;
-    }
-
-    .pIES{
-        color: white;
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 1em;
-        font-size: 17px;
-    }
-
-    .enlacesIES{
-        width: 50%;
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-        margin-top: 1.5em;
-    }
-
-    .aIES{
-        color: black;
         text-decoration: none;
-        background-color: lightslategrey;
-        border-radius: 10px;
-        padding: 0.5rem;
-    }
-
-    .aIES:hover{
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    }
-
-    /* nintendo switch */
-    /* .divNintendo{
-        background-color: lightgrey;
-        grid-column: 2/3;
-        grid-row: 2/3;
-        width: 80%;
-        height: 350px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        margin: 0 auto;
-    }
-
-    .imgNintendo{
-        width: 100%;
-        height: 350px;
-        background-size: cover;
-        background-image: url(../img/nintendo.jpg);
-        margin: 0 auto;
-    }
-
-    .divPNintendo{
-        width: 100%;
-        height: 350px;
-        background-color: rgba(128, 0, 255, 0.9);
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-    } */
-    
-    /* .imgNintendo:hover .divPNintendo{
-        opacity: 1;
-    }
-
-    .h4Nintendo{
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-        padding-top: 3rem;
-        font-size: 22px;
-    }
-
-    .pNintendo{
-        color: white;
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 0.5em;
-        font-size: 15px;
-    } */
-
-    /* .enlacesNintendo{
-        width: 50%;
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-        margin-top: 1.5em;
-    }
-
-    .aNintendo{
-        color: black;
-        text-decoration: none;
-        background-color: lightslategrey;
-        border-radius: 10px;
-        padding: 0.5rem;
-    }
-
-    .aNintendo:hover{
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    } */
-
-    /* piedra papel tijera lagarto spock multijugador */
-    /* .divJuego2{
-        grid-column: 1/3;
-        grid-row: 3/4;
-        width: 70%;
-        height: 400px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        margin: 0 auto;
-        margin-top: 2em;
-    }
-
-    .imgJuego2{
-        width: 100%;
-        height: 400px;
-        background-size: cover;
-        background-position: center 15%;
-        background-image: url(../img/calculadoraEdad.jpg);
-        margin: 0 auto;
-    }
-
-    .divPJuego2{
-        width: 100%;
-        height: 400px;
-        background-color: rgba(128, 0, 255, 0.9);
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-    }
-    
-    .imgJuego2:hover .divPJuego2{
-        opacity: 1;
-    }
-
-    .h4Juego2{
-        text-align: center;
-        width: 96%;
-        margin: 0 auto;
-        padding-top: 7rem;
-        font-size: 22px;
-    }
-
-    .pJuego2{
-        color: white;
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 1em;
-        font-size: 15px;
-    }
-
-    .enlacesJuego2{
-        width: 30%;
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-        margin-top: 1.5em;
-    }
-
-    .aJuego2{
-        color: black;
-        text-decoration: none;
-        background-color: lightslategrey;
-        border-radius: 10px;
-        padding: 0.5rem;
-    }
-
-    .aJuego2:hover{
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        margin: 1em;
     }
 
     .hrFinal{
@@ -4584,7 +3800,8 @@
         margin: 0 auto;
         margin-top: 3em;
         margin-bottom: 3em;
-    } */
+    }
+
 }
 
 @media (min-width: 1201px) and (max-width: 1440px){
@@ -5040,6 +4257,65 @@
     }
 
     .aProyecto5{
+        background-color: gray;
+        border-radius: 20px;
+        color: white;
+        padding: 0.5rem;
+        text-decoration: none;
+        margin: 1em;
+    }
+
+    /*--------------------------------*/
+
+    .divProyecto6{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        width: 83%;
+        height: 90%;
+        margin: 0 auto;
+        border-radius: 20px;
+        background-color: #F2F2F2;
+        box-shadow: #8000FF 0px 5px 15px;
+    }
+
+    .divImgProyecto6{
+        width: 100%;
+        height: 60%;
+    }
+
+    .imgProyecto6{
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .datosProyecto6{
+        height: 40%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 1rem;
+    }
+
+    .h2Proyecto6{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .pProyecto6{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .enlacesProyecto6{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+        margin: 1.5em;
+    }
+
+    .aProyecto6{
         background-color: gray;
         border-radius: 20px;
         color: white;
