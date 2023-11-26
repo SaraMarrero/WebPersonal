@@ -102,8 +102,8 @@ const email = document.querySelector('#email');
 const asunto = document.querySelector('#asunto');
 const mensaje = document.querySelector('#mensaje');
 
+const buttonLimpiar = document.querySelector('#reset');
 const buttonEnviar = document.querySelector('#enviar');
-
 
 buttonEnviar.addEventListener('click', (event) =>{
     // Evita el envío predeterminado del formulario
@@ -114,4 +114,10 @@ buttonEnviar.addEventListener('click', (event) =>{
     
     // Valida y envía el correo
     formulario.camposCompletos(event);
+});
+
+// Limpia los campos del formulario
+buttonLimpiar.addEventListener('click', () => {
+    const form = document.querySelector('.form');
+    form.reset();
 });
