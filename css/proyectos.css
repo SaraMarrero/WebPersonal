@@ -4113,6 +4113,17 @@
 
 } 
 
+.sectionOrdenar{
+    text-align: center;
+    margin-top: 2em;
+}
+
+.ordenar{
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1.5px solid;
+}
+
 /*---------- MODO OSCURO ----------*/
 .modoOscuro{
     background-color: #2E2E2E;
