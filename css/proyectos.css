@@ -3207,13 +3207,16 @@
     .articleProyectos{
         margin-top: 2em;
         padding: 1rem;
-        display: grid;
+        /* display: grid; */
         width: 100%;
         height: 1400px;
-        grid-template-columns: repeat(3, 33.33333333333333%);
+        /* grid-template-columns: repeat(3, 33.33333333333333%);
         grid-template-rows: repeat(2, auto);
-        grid-row-gap: 3em;
+        grid-row-gap: 3em; */
         margin-bottom: 5em;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: yellow;
     }
 
     .iconoProyectos{
@@ -3222,14 +3225,14 @@
 
     /*----- Proyecto 1 -----*/
     .divProyecto1{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        width: 83%;
+        /* grid-column: 1/2;
+        grid-row: 1/2; */
+        width: 30%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
         box-shadow: #8000FF 0px 5px 15px;
-        height: 90%;
+        height: 40%;
     }
 
     .divImgProyecto1{
@@ -3284,14 +3287,14 @@
 
     /*----- Proyecto 2 -----*/
     .divProyecto2{
-        grid-column: 2/3;
-        grid-row: 1/2;
-        width: 83%;
+        /* grid-column: 2/3;
+        grid-row: 1/2; */
+        width: 30%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
         box-shadow: #8000FF 0px 5px 15px;
-        height: 90%;
+        height: 40%;
     }
 
     .divImgProyecto2{
@@ -3342,14 +3345,14 @@
 
     /*----- Proyecto 3 -----*/
     .divProyecto3{
-        grid-column: 3/4;
-        grid-row: 1/2;
-        width: 83%;
+        /* grid-column: 3/4;
+        grid-row: 1/2; */
+        width: 30%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
         box-shadow: #8000FF 0px 5px 15px;
-        height: 90%;
+        height: 40%;
     }
 
     .divImgProyecto3{
@@ -3406,10 +3409,10 @@
 
     /*----- Proyecto 4 -----*/
     .divProyecto4{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        width: 83%;
-        height: 90%;
+        /* grid-column: 1/2;
+        grid-row: 2/3; */
+        width: 30%;
+        height: 40%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -3464,10 +3467,10 @@
 
     /*----- Proyecto 5 -----*/
     .divProyecto5{
-        grid-column: 2/3;
-        grid-row: 2/3;
-        width: 83%;
-        height: 90%;
+        /* grid-column: 2/3;
+        grid-row: 2/3; */
+        width: 30%;
+        height: 40%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -3522,10 +3525,10 @@
 
     /*----- Proyecto 6 -----*/
     .divProyecto6{
-        grid-column: 3/4;
-        grid-row: 2/3;
-        width: 83%;
-        height: 90%;
+        /* grid-column: 3/4;
+        grid-row: 2/3; */
+        width: 30%;
+        height: 40%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -3534,7 +3537,7 @@
 
     .divImgProyecto6{
         width: 100%;
-        height: 60%;
+        height: 50%;
     }
 
     .imgProyecto6{
@@ -3545,7 +3548,7 @@
     }
 
     .datosProyecto6{
-        height: 40%;
+        height: 50%;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         padding: 1rem;
@@ -3735,13 +3738,16 @@
     .articleProyectos{
         margin-top: 2em;
         padding: 1rem;
-        display: grid;
+        /* display: grid; */
+        display: flex;
+        flex-wrap: wrap;
         width: 100%;
         height: 1600px;
-        grid-template-columns: repeat(3, 33.33333333333333%);
+        /* grid-template-columns: repeat(3, 33.33333333333333%);
         grid-template-rows: repeat(2, auto);
-        grid-row-gap: 3em;
+        grid-row-gap: 3em; */
         margin-bottom: 5em;
+        background-color: violet;
     }
 
     .iconoProyectos{
@@ -3750,9 +3756,10 @@
 
     /*----- Proyecto 1 -----*/
     .divProyecto1{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        width: 83%;
+        /* grid-column: 1/2;
+        grid-row: 1/2; */
+        width: 30%;
+        height: 40%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -3811,9 +3818,10 @@
 
     /*----- Proyecto 2-----*/
     .divProyecto2{
-        grid-column: 2/3;
-        grid-row: 1/2;
-        width: 83%;
+        /* grid-column: 2/3;
+        grid-row: 1/2; */
+        width: 30%;
+        height: 40%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -3868,9 +3876,10 @@
 
     /*----- Proyecto 3 -----*/
     .divProyecto3{
-        grid-column: 3/4;
-        grid-row: 1/2;
-        width: 83%;
+        /* grid-column: 3/4;
+        grid-row: 1/2; */
+        width: 30%;
+        height: 40%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -3931,9 +3940,10 @@
 
     /*----- Proyecto 4 -----*/
     .divProyecto4{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        width: 83%;
+        /* grid-column: 1/2;
+        grid-row: 2/3; */
+        width: 30%;
+        height: 40%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -3988,9 +3998,10 @@
 
     /*----- Proyecto 5 -----*/
     .divProyecto5{
-        grid-column: 2/3;
-        grid-row: 2/3;
-        width: 83%;
+        /* grid-column: 2/3;
+        grid-row: 2/3; */
+        width: 30%;
+        height: 40%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -4045,9 +4056,10 @@
 
     /*----- Proyecto 6 -----*/
     .divProyecto6{
-        grid-column: 3/4;
-        grid-row: 2/3;
-        width: 83%;
+        /* grid-column: 3/4;
+        grid-row: 2/3; */
+        width: 30%;
+        height: 40%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -4056,7 +4068,7 @@
 
     .divImgProyecto6{
         width: 100%;
-        height: 70%;
+        height: 60%;
     }
 
     .imgProyecto6{
@@ -4067,7 +4079,7 @@
     }
 
     .datosProyecto6{
-        height: 30%;
+        height: 40%;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         padding: 1rem;
@@ -4109,8 +4121,6 @@
         margin-top: 3em;
         margin-bottom: 3em;
     }
-    
-
 } 
 
 .sectionOrdenar{
