@@ -1,3 +1,5 @@
+import { arrayProyects } from "./proyectos.js";
+
 class Ordenar{
     constructor(proyect1, proyect2, proyect3, proyect4, proyect5, proyect6){
         this.proyect1 = proyect1;
