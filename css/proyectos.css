@@ -2936,12 +2936,12 @@
         background-color: #F2F2F2;
         box-shadow: #8000FF 0px 5px 15px;
         width: 35%;
-        height: 35%;
+        height: 25%;
     }
 
     .divImgProyecto5{
         width: 100%;
-        height: 70%;
+        height: 65%;
     }
 
     .imgProyecto5{
@@ -2952,7 +2952,7 @@
     }
 
     .datosProyecto5{
-        height: 30%;
+        height: 35%;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         padding: 0.5rem;
@@ -2960,7 +2960,6 @@
 
     .h2Proyecto5{
         text-align: center;
-        padding: 0.3rem;
     }
 
     .pProyecto5{
@@ -2973,7 +2972,6 @@
         justify-content: center;
         align-items: center;
         padding: 0.5rem;
-        margin: 1em;
     }
 
     .aProyecto5{
@@ -2988,7 +2986,7 @@
     /*----- Proyecto 6 -----*/
     .divProyecto6{
         width: 35%;
-        height: 30%;
+        height: 25%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -3029,7 +3027,7 @@
         justify-content: center;
         align-items: center;
         padding: 0.5rem;
-        margin: 1.5em;
+        margin: 1em;
     }
 
     .aProyecto6{
