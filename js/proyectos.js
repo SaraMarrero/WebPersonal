@@ -30,7 +30,7 @@ export let arrayProyects = [
         id: 4,
         imagen: '../img/ies.jpg',
         nombre: 'IES Ana Luisa Benítez',
-        descripcion: 'Este proyecto muestra los tipos de nintendo switch que hay y algunos juegos que tiene o que van a salir',
+        descripcion: 'Rediseño de la página web del instituto IES Ana Luisa Benitez. La cuál solo estética.',
         codigo: 'https://github.com/SaraMarrero/ProyectoWebBasico-IESAnaLuisaBenitez',
         website: 'https://saramarrero.github.io/ProyectoWebBasico-IESAnaLuisaBenitez/'
     },
@@ -39,7 +39,7 @@ export let arrayProyects = [
         id: 5,
         imagen: '../img/nintendo.jpg',
         nombre: 'Nintendo Switch',
-        descripcion: 'Este proyecto va sobre el juego piedra, papel, tijera, lagarto, spock.',
+        descripcion: 'Muestra los tipos de nintendo switch que hay y algunos juegos que tiene o que van a salir',
         codigo: 'https://github.com/SaraMarrero/ProyectoWebBasico-NintendoSwitch',
         website: 'https://saramarrero.github.io/ProyectoWebBasico-NintendoSwitch/'
     },
