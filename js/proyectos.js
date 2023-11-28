@@ -39,7 +39,7 @@ export let arrayProyects = [
         id: 5,
         imagen: '../img/nintendo.jpg',
         nombre: 'Nintendo Switch',
-        descripcion: 'Muestra los tipos de nintendo switch que hay y algunos juegos que tiene o que van a salir',
+        descripcion: 'Muestra los tipos de nintendo switch y algunos juegos que tiene o que van a salir',
         codigo: 'https://github.com/SaraMarrero/ProyectoWebBasico-NintendoSwitch',
         website: 'https://saramarrero.github.io/ProyectoWebBasico-NintendoSwitch/'
     },

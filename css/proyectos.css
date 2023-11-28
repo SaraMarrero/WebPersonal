@@ -2682,16 +2682,12 @@
         padding: 1rem;
         width: 100%;
         height: 1800px;
-        /* display: grid; */
-        /* grid-template-columns: repeat(3, 33.33333333333333%);
-        grid-template-rows: repeat(2, auto); */
-        /* grid-row-gap: 2em; */
         margin-bottom: 5em;
         display: flex;
         flex-wrap: wrap;
         column-gap: 0.5rem;
         row-gap: 2em;
-        background-color: turquoise;
+        background-color: rgb(25, 0, 255);
     }
 
     .iconoProyectos{
@@ -2700,8 +2696,6 @@
 
     /*----- Proyecto 1 -----*/
     .divProyecto1{
-        grid-column: 1/2;
-        grid-row: 1/2;
         width: 35%;
         height: 25%;
         margin: 0 auto;
@@ -2762,14 +2756,10 @@
 
     /*----- Proyecto 2 -----*/
     .divProyecto2{
-        grid-column: 2/3;
-        grid-row: 1/2;
-        /* width: 83%; */
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
         box-shadow: #8000FF 0px 5px 15px;
-        /* height: 100%; */
         width: 35%;
         height: 25%;
     }
@@ -2821,14 +2811,10 @@
 
     /*----- Proyecto 3 -----*/
     .divProyecto3{
-        grid-column: 3/4;
-        grid-row: 1/2;
-        /* width: 83%; */
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
         box-shadow: #8000FF 0px 5px 15px;
-        /* height: 100%; */
         width: 35%;
         height: 25%;
     }
@@ -2889,10 +2875,8 @@
     .divProyecto4{
         grid-column: 1/2;
         grid-row: 2/3;
-        /* width: 83%;
-        height: 100%; */
         width: 35%;
-        height: 30%;
+        height: 25%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -2945,12 +2929,8 @@
         margin: 1em;
     }
 
-    /*----- Proyecto 15-----*/
+    /*----- Proyecto 5-----*/
     .divProyecto5{
-        grid-column: 2/3;
-        grid-row: 2/3;
-        /* width: 83%;
-        height: 100%; */
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -3007,10 +2987,6 @@
 
     /*----- Proyecto 6 -----*/
     .divProyecto6{
-        grid-column: 3/4;
-        grid-row: 2/3;
-        /* width: 83%;
-        height: 100%; */
         width: 35%;
         height: 30%;
         margin: 0 auto;
@@ -3222,12 +3198,8 @@
     .articleProyectos{
         margin-top: 2em;
         padding: 1rem;
-        /* display: grid; */
         width: 100%;
         height: 1400px;
-        /* grid-template-columns: repeat(3, 33.33333333333333%);
-        grid-template-rows: repeat(2, auto);
-        grid-row-gap: 3em; */
         margin-bottom: 5em;
         display: flex;
         flex-wrap: wrap;
@@ -3241,8 +3213,6 @@
 
     /*----- Proyecto 1 -----*/
     .divProyecto1{
-        /* grid-column: 1/2;
-        grid-row: 1/2; */
         width: 25%;
         height: 35%;
         margin: 0 auto;
@@ -3303,8 +3273,6 @@
 
     /*----- Proyecto 2 -----*/
     .divProyecto2{
-        /* grid-column: 2/3;
-        grid-row: 1/2; */
         width: 25%;
         margin: 0 auto;
         border-radius: 20px;
@@ -3361,8 +3329,6 @@
 
     /*----- Proyecto 3 -----*/
     .divProyecto3{
-        /* grid-column: 3/4;
-        grid-row: 1/2; */
         width: 25%;
         margin: 0 auto;
         border-radius: 20px;
@@ -3424,10 +3390,8 @@
 
     /*----- Proyecto 4 -----*/
     .divProyecto4{
-        /* grid-column: 1/2;
-        grid-row: 2/3; */
         width: 25%;
-        height: 45%;
+        height: 35%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -3480,10 +3444,8 @@
 
     /*----- Proyecto 5 -----*/
     .divProyecto5{
-        /* grid-column: 2/3;
-        grid-row: 2/3; */
-        width: 30%;
-        height: 45%;
+        width: 25%;
+        height: 35%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -3492,7 +3454,7 @@
 
     .divImgProyecto5{
         width: 100%;
-        height: 70%;
+        height: 65%;
     }
 
     .imgProyecto5{
@@ -3503,7 +3465,7 @@
     }
 
     .datosProyecto5{
-        height: 30%;
+        height: 35%;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         padding: 1rem;
@@ -3523,7 +3485,6 @@
         justify-content: center;
         align-items: center;
         padding: 0.5rem;
-        margin: 1.5em;
     }
 
     .aProyecto5{
@@ -3537,10 +3498,8 @@
 
     /*----- Proyecto 6 -----*/
     .divProyecto6{
-        /* grid-column: 3/4;
-        grid-row: 2/3; */
         width: 25%;
-        height: 40%;
+        height: 35%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -3549,7 +3508,7 @@
 
     .divImgProyecto6{
         width: 100%;
-        height: 60%;
+        height: 55%;
     }
 
     .imgProyecto6{
@@ -3560,10 +3519,10 @@
     }
 
     .datosProyecto6{
-        height: 40%;
+        height: 45%;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        padding: 1rem;
+        padding: 0.5rem;
     }
 
     .h2Proyecto6{
@@ -3749,18 +3708,13 @@
     .articleProyectos{
         margin-top: 2em;
         padding: 1rem;
-        /* display: grid; */
         display: flex;
         flex-wrap: wrap;
         width: 100%;
         height: 1600px;
-        /* grid-template-columns: repeat(3, 33.33333333333333%);
-        grid-template-rows: repeat(2, auto);
-        grid-row-gap: 3em; */
         justify-content: space-around;
-        gap: 0.5em;
+        column-gap: 0.5em;
         margin-bottom: 5em;
-        /* background-color: violet; */
     }
 
     .iconoProyectos{
@@ -3769,8 +3723,6 @@
 
     /*----- Proyecto 1 -----*/
     .divProyecto1{
-        /* grid-column: 1/2;
-        grid-row: 1/2; */
         width: 25%;
         height: 35%;
         margin: 0 auto;
@@ -3831,8 +3783,6 @@
 
     /*----- Proyecto 2-----*/
     .divProyecto2{
-        /* grid-column: 2/3;
-        grid-row: 1/2; */
         width: 25%;
         height: 35%;
         margin: 0 auto;
@@ -3889,8 +3839,6 @@
 
     /*----- Proyecto 3 -----*/
     .divProyecto3{
-        /* grid-column: 3/4;
-        grid-row: 1/2; */
         width: 25%;
         height: 35%;
         margin: 0 auto;
@@ -3953,8 +3901,6 @@
 
     /*----- Proyecto 4 -----*/
     .divProyecto4{
-        /* grid-column: 1/2;
-        grid-row: 2/3; */
         width: 25%;
         height: 35%;
         margin: 0 auto;
@@ -4009,8 +3955,6 @@
 
     /*----- Proyecto 5 -----*/
     .divProyecto5{
-        /* grid-column: 2/3;
-        grid-row: 2/3; */
         width: 25%;
         height: 35%;
         margin: 0 auto;
@@ -4065,8 +4009,6 @@
 
     /*----- Proyecto 6 -----*/
     .divProyecto6{
-        /* grid-column: 3/4;
-        grid-row: 2/3; */
         width: 25%;
         height: 35%;
         margin: 0 auto;

@@ -36,6 +36,6 @@ const opcionesMenu = document.getElementById('nav-links');
 let menu = new MenuHamburguesa(toggleButton, navWrapper, opcionesMenu);
 
 // Eventos
-toggleButton.addEventListener('click', () => menu.open())
+toggleButton.addEventListener('click', function() {menu.open()})
 navWrapper.addEventListener('click', (e) => menu.close(e));
 opcionesMenu.addEventListener('click', (e) => menu.closeBurguer(e));
