@@ -280,7 +280,6 @@
         border-radius: 20px;
         background-color: #F2F2F2;
         box-shadow: #8000FF 0px 5px 15px;
-        height: 95%;
     }
 
     .divImgProyecto1{
@@ -912,7 +911,6 @@
         border-radius: 20px;
         background-color: #F2F2F2;
         box-shadow: #8000FF 0px 5px 15px;
-        height: 95%;
     }
 
     .divImgProyecto1{
@@ -972,7 +970,6 @@
         border-radius: 20px;
         background-color: #F2F2F2;
         box-shadow: #8000FF 0px 5px 15px;
-        height: 90%;
     }
 
     .divImgProyecto2{
@@ -1028,7 +1025,6 @@
         border-radius: 20px;
         background-color: #F2F2F2;
         box-shadow: #8000FF 0px 5px 15px;
-        height: 95%;
     }
 
     .divImgProyecto3{
@@ -1086,7 +1082,6 @@
     /*----- Proyecto 4 -----*/
     .divProyecto4{
         width: 83%;
-        height: 95%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -1142,7 +1137,6 @@
     /*----- Proyecto 5 -----*/
     .divProyecto5{
         width: 83%;
-        height: 100%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -1263,6 +1257,7 @@
 }
 
 @media (min-width: 601px) and (max-width: 768px){
+
     *{
         box-sizing: border-box;
         margin: 0;
@@ -2110,12 +2105,12 @@
         margin-top: 2em;
         padding: 1rem;
         width: 100%;
-        height: 1700px;
+        height: 100%;
         margin-bottom: 5em;
         display: flex;
         flex-wrap: wrap;
         column-gap: 0.5rem;
-        row-gap: 2em;
+        row-gap: 5em;
     }
 
     .iconoProyectos{
@@ -2124,8 +2119,7 @@
 
     /*----- Proyecto 1 -----*/
     .divProyecto1{
-        width: 35%;
-        height: 25%;
+        width: 40%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -2188,8 +2182,7 @@
         border-radius: 20px;
         background-color: #F2F2F2;
         box-shadow: #8000FF 0px 5px 15px;
-        width: 35%;
-        height: 25%;
+        width: 40%;
     }
 
     .divImgProyecto2{
@@ -2242,8 +2235,7 @@
         border-radius: 20px;
         background-color: #F2F2F2;
         box-shadow: #8000FF 0px 5px 15px;
-        width: 35%;
-        height: 25%;
+        width: 40%;
     }
 
     .divImgProyecto3{
@@ -2299,8 +2291,7 @@
 
     /*----- Proyecto 4 -----*/
     .divProyecto4{
-        width: 35%;
-        height: 25%;
+        width: 40%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -2357,8 +2348,7 @@
         border-radius: 20px;
         background-color: #F2F2F2;
         box-shadow: #8000FF 0px 5px 15px;
-        width: 35%;
-        height: 25%;
+        width: 40%;
     }
 
     .divImgProyecto5{
@@ -2407,8 +2397,7 @@
 
     /*----- Proyecto 6 -----*/
     .divProyecto6{
-        width: 35%;
-        height: 25%;
+        width: 40%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -2616,12 +2605,12 @@
         margin-top: 2em;
         padding: 1rem;
         width: 100%;
-        height: 1700px;
+        height: 100%;
         margin-bottom: 5em;
         display: flex;
         flex-wrap: wrap;
         column-gap: 0.5rem;
-        row-gap: 2em;
+        row-gap: 5em;
     }
 
     .iconoProyectos{
@@ -2631,7 +2620,6 @@
     /*----- Proyecto 1 -----*/
     .divProyecto1{
         width: 35%;
-        height: 25%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -2695,7 +2683,6 @@
         background-color: #F2F2F2;
         box-shadow: #8000FF 0px 5px 15px;
         width: 35%;
-        height: 25%;
     }
 
     .divImgProyecto2{
@@ -2750,7 +2737,6 @@
         background-color: #F2F2F2;
         box-shadow: #8000FF 0px 5px 15px;
         width: 35%;
-        height: 25%;
     }
 
     .divImgProyecto3{
@@ -2808,7 +2794,6 @@
     /*----- Proyecto 4 -----*/
     .divProyecto4{
         width: 35%;
-        height: 25%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -2868,7 +2853,6 @@
         background-color: #F2F2F2;
         box-shadow: #8000FF 0px 5px 15px;
         width: 35%;
-        height: 25%;
     }
 
     .divImgProyecto5{
@@ -2917,7 +2901,6 @@
     /*----- Proyecto 6 -----*/
     .divProyecto6{
         width: 35%;
-        height: 25%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -3127,11 +3110,12 @@
         margin-top: 2em;
         padding: 1rem;
         width: 100%;
-        height: 1400px;
+        height: 100%;
         margin-bottom: 5em;
         display: flex;
         flex-wrap: wrap;
-        gap: 0.5em;
+        column-gap: 0.5em;
+        row-gap: 5em;
     }
 
     .iconoProyectos{
@@ -3141,7 +3125,6 @@
     /*----- Proyecto 1 -----*/
     .divProyecto1{
         width: 25%;
-        height: 35%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -3205,7 +3188,6 @@
         border-radius: 20px;
         background-color: #F2F2F2;
         box-shadow: #8000FF 0px 5px 15px;
-        height: 35%;
     }
 
     .divImgProyecto2{
@@ -3261,7 +3243,6 @@
         border-radius: 20px;
         background-color: #F2F2F2;
         box-shadow: #8000FF 0px 5px 15px;
-        height: 35%;
     }
 
     .divImgProyecto3{
@@ -3318,7 +3299,6 @@
     /*----- Proyecto 4 -----*/
     .divProyecto4{
         width: 25%;
-        height: 35%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -3372,7 +3352,6 @@
     /*----- Proyecto 5 -----*/
     .divProyecto5{
         width: 25%;
-        height: 35%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -3426,7 +3405,6 @@
     /*----- Proyecto 6 -----*/
     .divProyecto6{
         width: 25%;
-        height: 35%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -3634,14 +3612,14 @@
     /*----- cards -----*/
     .articleProyectos{
         margin-top: 2em;
-        padding: 1rem;
+        padding: 2rem;
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        height: 1600px;
+        height: 100%;
         justify-content: space-around;
         column-gap: 0.5em;
-        margin-bottom: 5em;
+        row-gap: 5em;
     }
 
     .iconoProyectos{
@@ -3651,7 +3629,6 @@
     /*----- Proyecto 1 -----*/
     .divProyecto1{
         width: 25%;
-        height: 35%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -3711,7 +3688,6 @@
     /*----- Proyecto 2-----*/
     .divProyecto2{
         width: 25%;
-        height: 35%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -3767,7 +3743,6 @@
     /*----- Proyecto 3 -----*/
     .divProyecto3{
         width: 25%;
-        height: 35%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -3829,7 +3804,6 @@
     /*----- Proyecto 4 -----*/
     .divProyecto4{
         width: 25%;
-        height: 35%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -3883,7 +3857,6 @@
     /*----- Proyecto 5 -----*/
     .divProyecto5{
         width: 25%;
-        height: 35%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -3937,7 +3910,6 @@
     /*----- Proyecto 6 -----*/
     .divProyecto6{
         width: 25%;
-        height: 35%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
