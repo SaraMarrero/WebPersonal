@@ -261,12 +261,11 @@
     .articleProyectos{
         margin-top: 2em;
         padding: 1rem;
-        display: grid;
+        display: flex;
         width: 100%;
-        height: 3100px;
-        grid-template-columns: repeat(1, 100%);
-        grid-template-rows: repeat(5, auto);
-        grid-row-gap: 2em;
+        height: 100%;
+        row-gap: 2em;
+        flex-wrap: wrap;
         margin-bottom: 5em;
     }
 
@@ -276,8 +275,6 @@
 
     /*----- Proyecto 1 -----*/
     .divProyecto1{
-        grid-column: 1/2;
-        grid-row: 1/2;
         width: 83%;
         margin: 0 auto;
         border-radius: 20px;
@@ -338,8 +335,6 @@
 
     /*----- Proyecto 2 -----*/
     .divProyecto2{
-        grid-column: 1/2;
-        grid-row: 2/3;
         width: 83%;
         margin: 0 auto;
         border-radius: 20px;
@@ -396,8 +391,6 @@
 
     /*----- Proyecto 3 -----*/
     .divProyecto3{
-        grid-column: 1/2;
-        grid-row: 3/4;
         width: 83%;
         margin: 0 auto;
         border-radius: 20px;
@@ -460,8 +453,6 @@
 
     /*----- Proyecto 4 -----*/
     .divProyecto4{
-        grid-column: 1/2;
-        grid-row: 4/5;
         width: 83%;
         height: 95%;
         margin: 0 auto;
@@ -518,8 +509,6 @@
 
     /*----- Proyecto 5 -----*/
     .divProyecto5{
-        grid-column: 1/2;
-        grid-row: 5/6;
         width: 83%;
         height: 100%;
         margin: 0 auto;
@@ -576,8 +565,6 @@
 
     /*----- Proyecto 6 -----*/
     .divProyecto6{
-        grid-column: 1/2;
-        grid-row: 6/7;
         width: 83%;
         height: 100%;
         margin: 0 auto;
@@ -906,12 +893,11 @@
     .articleProyectos{
         margin-top: 2em;
         padding: 1rem;
-        display: grid;
+        display: flex;
+        flex-wrap: wrap;
         width: 100%;
-        height: 3600px;
-        grid-template-columns: repeat(1, 100%);
-        grid-template-rows: repeat(5, auto);
-        grid-row-gap: 2em;
+        height: 100%;
+        row-gap: 3em;
         margin-bottom: 5em;
     }
 
@@ -921,8 +907,6 @@
 
     /*----- Proyecto 1 -----*/
     .divProyecto1{
-        grid-column: 1/2;
-        grid-row: 1/2;
         width: 83%;
         margin: 0 auto;
         border-radius: 20px;
@@ -983,8 +967,6 @@
 
     /*----- Proyecto 2 -----*/
     .divProyecto2{
-        grid-column: 1/2;
-        grid-row: 2/3;
         width: 83%;
         margin: 0 auto;
         border-radius: 20px;
@@ -1041,8 +1023,6 @@
 
     /*----- Proyecto 3 -----*/
     .divProyecto3{
-        grid-column: 1/2;
-        grid-row: 3/4;
         width: 83%;
         margin: 0 auto;
         border-radius: 20px;
@@ -1105,8 +1085,6 @@
 
     /*----- Proyecto 4 -----*/
     .divProyecto4{
-        grid-column: 1/2;
-        grid-row: 4/5;
         width: 83%;
         height: 95%;
         margin: 0 auto;
@@ -1163,8 +1141,6 @@
 
     /*----- Proyecto 5 -----*/
     .divProyecto5{
-        grid-column: 1/2;
-        grid-row: 5/6;
         width: 83%;
         height: 100%;
         margin: 0 auto;
@@ -1221,8 +1197,6 @@
 
     /*----- Proyecto 6 -----*/
     .divProyecto6{
-        grid-column: 1/2;
-        grid-row: 6/7;
         width: 83%;
         height: 100%;
         margin: 0 auto;
@@ -1551,13 +1525,13 @@
     .articleProyectos{
         margin-top: 2em;
         padding: 1rem;
-        display: grid;
+        display: flex;
+        flex-wrap: wrap;
         width: 100%;
-        height: 3800px;
-        grid-template-columns: repeat(1, 100%);
-        grid-template-rows: repeat(5, auto);
-        grid-row-gap: 2em;
+        height: 100%;
+        row-gap: 3em;
         margin-bottom: 5em;
+        background-color: tomato;
     }
 
     .iconoProyectos{
@@ -1566,14 +1540,11 @@
 
     /*----- Proyecto 1 -----*/
     .divProyecto1{
-        grid-column: 1/2;
-        grid-row: 1/2;
         width: 83%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
         box-shadow: #8000FF 0px 5px 15px;
-        height: 100%;
     }
 
     .divImgProyecto1{
@@ -1628,14 +1599,11 @@
 
     /*----- Proyecto 2 -----*/
     .divProyecto2{
-        grid-column: 1/2;
-        grid-row: 2/3;
         width: 83%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
         box-shadow: #8000FF 0px 5px 15px;
-        height: 100%;
     }
 
     .divImgProyecto2{
@@ -1686,14 +1654,11 @@
 
     /*----- Proyecto 3 -----*/
     .divProyecto3{
-        grid-column: 1/2;
-        grid-row: 3/4;
         width: 83%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
         box-shadow: #8000FF 0px 5px 15px;
-        height: 100%;
     }
 
     .divImgProyecto3{
@@ -1750,10 +1715,7 @@
 
     /*----- Proyecto 4 -----*/
     .divProyecto4{
-        grid-column: 1/2;
-        grid-row: 4/5;
         width: 83%;
-        height: 100%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -1807,10 +1769,7 @@
     }
     /*----- Proyecto 5 -----*/
     .divProyecto5{
-        grid-column: 1/2;
-        grid-row: 5/6;
         width: 83%;
-        height: 100%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -1865,10 +1824,7 @@
 
     /*----- Proyecto 6 -----*/
     .divProyecto6{
-        grid-column: 1/2;
-        grid-row: 6/7;
         width: 83%;
-        height: 100%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -2154,13 +2110,14 @@
     .articleProyectos{
         margin-top: 2em;
         padding: 1rem;
-        display: grid;
         width: 100%;
-        height: 1800px;
-        grid-template-columns: repeat(2, 50%);
-        grid-template-rows: repeat(3, auto);
-        grid-row-gap: 2em;
+        height: 1700px;
         margin-bottom: 5em;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 0.5rem;
+        row-gap: 2em;
+        background-color: rgb(0, 255, 13);
     }
 
     .iconoProyectos{
@@ -2169,14 +2126,12 @@
 
     /*----- Proyecto 1 -----*/
     .divProyecto1{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        width: 83%;
+        width: 35%;
+        height: 25%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
         box-shadow: #8000FF 0px 5px 15px;
-        height: 95%;
     }
 
     .divImgProyecto1{
@@ -2200,7 +2155,7 @@
 
     .h2Proyecto1{
         text-align: center;
-        padding: 0.5rem;
+        padding: 0.3rem;
     }
 
     .pProyecto1{
@@ -2213,10 +2168,10 @@
         justify-content: center;
         align-items: center;
         padding: 0.5rem;
+        margin: 1em;
     }
 
     .enlacesProyecto1{
-        margin: 1em;
         color: white;
     }
 
@@ -2231,14 +2186,12 @@
 
     /*----- Proyecto 2 -----*/
     .divProyecto2{
-        grid-column: 2/3;
-        grid-row: 1/2;
-        width: 83%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
         box-shadow: #8000FF 0px 5px 15px;
-        height: 95%;
+        width: 35%;
+        height: 25%;
     }
 
     .divImgProyecto2{
@@ -2262,7 +2215,6 @@
 
     .h2Proyecto2{
         text-align: center;
-        padding: 0.5rem;
     }
 
     .pProyecto2{
@@ -2275,7 +2227,6 @@
         justify-content: center;
         align-items: center;
         padding: 0.5rem;
-        margin: 1em;
     }
 
     .aProyecto2{
@@ -2289,19 +2240,17 @@
 
     /*----- Proyecto 3 -----*/
     .divProyecto3{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        width: 83%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
         box-shadow: #8000FF 0px 5px 15px;
-        height: 95%;
+        width: 35%;
+        height: 25%;
     }
 
     .divImgProyecto3{
         width: 100%;
-        height: 45%;
+        height: 50%;
     }
 
     .imgProyecto3{
@@ -2315,13 +2264,12 @@
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         padding: 0.5rem;
-        height: 55%;
+        height: 50%;
         border-top: 1px solid gray;
     }
 
     .h2Proyecto3{
-        text-align: center;
-        padding: 0.5rem;
+        text-align: center
     }
 
     .pProyecto3{
@@ -2353,10 +2301,8 @@
 
     /*----- Proyecto 4 -----*/
     .divProyecto4{
-        grid-column: 2/3;
-        grid-row: 2/3;
-        width: 83%;
-        height: 95%;
+        width: 35%;
+        height: 25%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -2365,7 +2311,7 @@
 
     .divImgProyecto4{
         width: 100%;
-        height: 50%;
+        height: 60%;
     }
 
     .imgProyecto4{
@@ -2379,17 +2325,16 @@
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         padding: 0.5rem;
-        height: 50%;
+        height: 40%;
     }
 
     .h2Proyecto4{
         text-align: center;
-        padding: 0.5rem;
     }
 
     .pProyecto4{
         text-align: center;
-        padding: 0.5rem;
+        padding: 0.2rem;
     }
 
     .enlacesProyecto4{
@@ -2397,7 +2342,6 @@
         justify-content: center;
         align-items: center;
         padding: 0.5rem;
-        margin: 0.5em;
     }
 
     .aProyecto4{
@@ -2409,21 +2353,19 @@
         margin: 1em;
     }
 
-    /*----- Proyecto 5 -----*/
+    /*----- Proyecto 5-----*/
     .divProyecto5{
-        grid-column: 1/2;
-        grid-row: 3/4;
-        width: 83%;
-        height: 95%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
         box-shadow: #8000FF 0px 5px 15px;
+        width: 35%;
+        height: 25%;
     }
 
     .divImgProyecto5{
         width: 100%;
-        height: 60%;
+        height: 65%;
     }
 
     .imgProyecto5{
@@ -2434,28 +2376,26 @@
     }
 
     .datosProyecto5{
-        height: 40%;
+        height: 35%;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        padding: 0.5rem;
+        
     }
 
     .h2Proyecto5{
         text-align: center;
-        padding: 0.5rem;
     }
 
     .pProyecto5{
         text-align: center;
-        padding: 0.5rem;
+        padding: 0.5em;
     }
 
     .enlacesProyecto5{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0.5rem;
-        margin: 1.5em;
+        padding: 0.2rem;
     }
 
     .aProyecto5{
@@ -2469,10 +2409,8 @@
 
     /*----- Proyecto 6 -----*/
     .divProyecto6{
-        grid-column: 2/3;
-        grid-row: 3/4;
-        width: 83%;
-        height: 95%;
+        width: 35%;
+        height: 25%;
         margin: 0 auto;
         border-radius: 20px;
         background-color: #F2F2F2;
@@ -2481,7 +2419,7 @@
 
     .divImgProyecto6{
         width: 100%;
-        height: 60%;
+        height: 50%;
     }
 
     .imgProyecto6{
@@ -2492,7 +2430,7 @@
     }
 
     .datosProyecto6{
-        height: 40%;
+        height: 50%;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         padding: 0.5rem;
@@ -2505,7 +2443,6 @@
 
     .pProyecto6{
         text-align: center;
-        padding: 0.5rem;
     }
 
     .enlacesProyecto6{
@@ -2513,7 +2450,7 @@
         justify-content: center;
         align-items: center;
         padding: 0.5rem;
-        margin: 1.5em;
+        margin: 1em;
     }
 
     .aProyecto6{
@@ -2681,7 +2618,7 @@
         margin-top: 2em;
         padding: 1rem;
         width: 100%;
-        height: 1800px;
+        height: 1700px;
         margin-bottom: 5em;
         display: flex;
         flex-wrap: wrap;
@@ -2785,7 +2722,7 @@
 
     .h2Proyecto2{
         text-align: center;
-        padding: 0.5rem;
+        padding: 0.3rem;
     }
 
     .pProyecto2{
@@ -2797,7 +2734,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0.5rem;
+        margin: 1em;
     }
 
     .aProyecto2{
@@ -2873,8 +2810,6 @@
 
     /*----- Proyecto 4 -----*/
     .divProyecto4{
-        grid-column: 1/2;
-        grid-row: 2/3;
         width: 35%;
         height: 25%;
         margin: 0 auto;
@@ -2971,7 +2906,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0.5rem;
     }
 
     .aProyecto5{
@@ -3027,7 +2961,6 @@
         justify-content: center;
         align-items: center;
         padding: 0.5rem;
-        margin: 1em;
     }
 
     .aProyecto6{

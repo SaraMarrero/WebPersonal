@@ -30,7 +30,7 @@ export let arrayProyects = [
         id: 4,
         imagen: '../img/ies.jpg',
         nombre: 'IES Ana Luisa Benítez',
-        descripcion: 'Rediseño de la página web del instituto IES Ana Luisa Benitez. La cuál solo estética.',
+        descripcion: 'Rediseño de la página web del instituto IES Ana Luisa Benitez.',
         codigo: 'https://github.com/SaraMarrero/ProyectoWebBasico-IESAnaLuisaBenitez',
         website: 'https://saramarrero.github.io/ProyectoWebBasico-IESAnaLuisaBenitez/'
     },
