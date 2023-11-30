@@ -14,7 +14,7 @@ export let arrayProyects = [
         nombre: 'ShareCar',
         descripcion: 'Este proyecto va sobre una web para compatir coche. En la cuál, sus principales funciones serán crear, leer, actualizar y borrar datos (CRUD).',
         codigo: 'https://github.com/SaraMarrero/ShareCar',
-        website: '#'
+        website: '/html/404.html'
     },
     
     {

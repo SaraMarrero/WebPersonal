@@ -42,7 +42,7 @@ class Ordenar{
                     
                         <div class="enlacesProyecto${e.id}">
                             <p><a href="${e.codigo}" class="aProyecto${e.id}">Código</a></p>
-                            <p><a href="${e.descripcion}" class="aProyecto${e.id}">Website</a></p>
+                            <p><a href="${e.website}" class="aProyecto${e.id}">Website</a></p>
                         </div>
                     </div>
                 </div>
