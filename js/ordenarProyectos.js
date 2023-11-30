@@ -28,7 +28,6 @@ class Ordenar{
         this.limpiarHtml(article);
 
         this.proyects.forEach(e => {
-            console.log(e);
         
             article.innerHTML += `
                 <div class="divProyecto${e.id}">

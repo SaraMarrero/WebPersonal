@@ -51,5 +51,5 @@ export let arrayProyects = [
         descripcion: 'Este pequeño proyecto es pequeña muestra de una página de noticias. La idea del proyecto ha sido sacada de la web Frontend Mentor.',
         codigo: 'https://github.com/SaraMarrero/PaginaNoticias',
         website: 'https://saramarrero.github.io/PaginaNoticias/'
-    },
-]
+    }
+];
