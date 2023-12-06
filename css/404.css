@@ -74,6 +74,6 @@ a{
     background-color: #424242;
 }
 
-.modoOscuro h1, h2{
+.modoOscuro h1, .modoOscuro h2{
     color: white;
 }
