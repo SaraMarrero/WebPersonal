@@ -339,7 +339,6 @@
         border-radius: 20px;
         background-color: #F2F2F2;
         box-shadow: #8000FF 0px 5px 15px;
-        height: 90%;
     }
 
     .divImgProyecto2{
@@ -395,7 +394,6 @@
         border-radius: 20px;
         background-color: #F2F2F2;
         box-shadow: #8000FF 0px 5px 15px;
-        height: 95%;
     }
 
     .divImgProyecto3{
@@ -420,19 +418,16 @@
 
     .h2Proyecto3{
         text-align: center;
-        padding: 0.5rem;
     }
 
     .pProyecto3{
         text-align: center;
-        padding: 0.5rem;
     }
 
     .enlacesProyecto3{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0.5rem;
     }
 
     .enlacesProyecto3{

@@ -22,7 +22,7 @@ class Contacto{
             input.style.border = '2px solid #8000FF';
             msgError.remove();
             form.reset();
-        }, 2000)
+        }, 3000)
     }
 
     camposCompletos(event){
@@ -40,12 +40,18 @@ class Contacto{
             // agrega el mensaje al html
             msgEnvio.textContent = 'Todos los campos son obligatorios';
             table.insertAdjacentElement('afterend', msgEnvio);
-            location.href = "https://saramarrero.github.io/WebPersonal/html/contacto.html";
+
+            setTimeout(function(){
+                location.href = "https://saramarrero.github.io/WebPersonal/html/contacto.html";
+            }, 3000)
     
         } else if(this.nombre !== '' && this.email !== '' && this.asunto !== '' && this.mensaje !== ''){
             if((!this.email.match(regExp))){
                 this.validarDatos(this.email, msgError, form);
-                location.href = "https://saramarrero.github.io/WebPersonal/html/contacto.html";
+                
+                setTimeout(function(){
+                    location.href = "https://saramarrero.github.io/WebPersonal/html/contacto.html";
+                }, 3000)
 
             } else{
                 // Muestra el spinner
@@ -71,6 +77,7 @@ class Contacto{
                 // envía el formulario
                 setTimeout(function(){
                     event.target.form.submit();
+                    console.log('a')
                 }, 2500);
             }
         }
