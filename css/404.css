@@ -4,13 +4,19 @@
     box-sizing: border-box;
 }
 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+
 main{
     width: 80%;
     margin: 0 auto;
     background-color: #F2F2F2;
     border-radius: 10px;
-    margin-top: 10em;
-    /* box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px; */
     box-shadow: rgba(128, 0, 255, 0.4) -5px 5px, rgba(128, 0, 255, 0.3) -10px 10px, rgba(128, 0, 255, 0.2) -15px 15px, rgba(128, 0, 255, 0.1) -20px 20px, rgba(128, 0, 255, 0.05) -25px 25px;
 }
 
@@ -41,7 +47,7 @@ h2{
     height: 100%;
 }
 
-.button{
+.buttonVolver{
     text-align: center;
     margin: 2em;
     padding: 3rem;
@@ -53,4 +59,21 @@ a{
     background-color: #8000FF;
     border-radius: 20px;
     padding: 0.5rem;
+}
+
+.button{
+    display: none;
+}
+
+/*---------- MODO OSCURO ----------*/
+.modoOscuro{
+    background-color: #2E2E2E;
+}
+
+.modoOscuro main{
+    background-color: #424242;
+}
+
+.modoOscuro h1, h2{
+    color: white;
 }
