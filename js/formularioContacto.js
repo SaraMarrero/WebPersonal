@@ -1,12 +1,12 @@
-class Contacto{
-    constructor(nombre, email, asunto, mensaje){
+class Validaciones {
+    constructor(nombre, email, asunto, mensaje) {
         this.nombre = nombre;
         this.email = email;
         this.asunto = asunto;
         this.mensaje = mensaje;
     }
 
-    validarDatos(input, msgError, form){
+    validarDatos(input, msgError, form) {
         input.style.border = '1px solid red';
 
         // modifica la clase dependiendo del mensaje
@@ -25,14 +25,30 @@ class Contacto{
         }, 3000)
     }
 
-    camposCompletos(event){
+    // Muestra el spinner
+    showSpinner() {
+        document.querySelector('.loader').style.display = 'block';
+    }
+
+    // Oculta el spinner
+    hideSpinner() {
+        document.querySelector('.loader').style.display = 'none';
+    }
+}
+
+class Contacto extends Validaciones {
+    constructor(nombre, email, asunto, mensaje) {
+        super(nombre, email, asunto, mensaje);
+    }
+
+    camposCompletos(event) {
         const form = document.querySelector('.form');
         const regExp = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
         const table = document.querySelector('.table');
         const msgEnvio = document.createElement('p');
         const msgError = document.createElement('p');
 
-        if(this.nombre === '' || this.email === '' || this.asunto === '' || this.mensaje === ''){
+        if (this.nombre === '' || this.email === '' || this.asunto === '' || this.mensaje === '') {
             // modifica la clase dependiendo del mensaje
             msgEnvio.classList.remove('valido');
             msgEnvio.classList.add('error');
@@ -44,16 +60,16 @@ class Contacto{
             setTimeout(function(){
                 location.href = "https://saramarrero.github.io/WebPersonal/html/contacto.html";
             }, 3000)
-    
-        } else if(this.nombre !== '' && this.email !== '' && this.asunto !== '' && this.mensaje !== ''){
-            if((!this.email.match(regExp))){
+
+        } else if (this.nombre !== '' && this.email !== '' && this.asunto !== '' && this.mensaje !== '') {
+            if (!this.email.match(regExp)) {
                 this.validarDatos(this.email, msgError, form);
-                
+
                 setTimeout(function(){
                     location.href = "https://saramarrero.github.io/WebPersonal/html/contacto.html";
                 }, 3000)
 
-            } else{
+            } else {
                 // Muestra el spinner
                 this.showSpinner();
 
@@ -65,8 +81,7 @@ class Contacto{
                     msgEnvio.classList.remove('error');
                     msgEnvio.classList.add('valido');
 
-
-                    // agrega el mensaje al html
+                     // agrega el mensaje al html
                     msgEnvio.textContent = 'Se envió correctamente';
                     table.insertAdjacentElement('afterend', msgEnvio);
 
@@ -74,29 +89,19 @@ class Contacto{
                     form.setAttribute('action', 'https://formsubmit.co/saramarreromiranda@gmail.com');
                 }, 2000);
 
-                // envía el formulario
-                setTimeout(function(){
+                // Envía el formulario
+                setTimeout(() => {
                     event.target.form.submit();
-                    console.log('a')
+                    console.log('a');
                 }, 2500);
             }
         }
 
-        // Borra el aviso y reinicia el formulario tras 2 segundos
-        setTimeout(() => { 
+        // Borra el aviso y reinicia el formulario tras 4 segundos
+        setTimeout(() => {
             msgEnvio.remove();
             form.reset();
         }, 4000);
-    }
-
-    // Muestra el spinner
-    showSpinner(){
-        document.querySelector('.loader').style.display = 'block';
-    }
-
-    // Oculta el spinner
-    hideSpinner(){
-        document.querySelector('.loader').style.display = 'none';
     }
 }
 
@@ -111,11 +116,11 @@ const mensaje = document.querySelector('#mensaje');
 
 const buttonEnviar = document.querySelector('#enviar');
 
-buttonEnviar.addEventListener('click', (event) =>{
+buttonEnviar.addEventListener('click', (event) => {
     // Evita el envío predeterminado del formulario
-    event.preventDefault(); 
-
-    // Instancia la clase
+    event.preventDefault();
+    
+     // Instancia la clase
     let formulario = new Contacto(nombre.value, email.value, asunto.value, mensaje.value);
     
     // Valida y envía el correo
