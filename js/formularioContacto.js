@@ -7,6 +7,7 @@ class Validaciones {
     }
 
     validarDatos(input, msgError, form) {
+        console.log(input);
         input.style.border = '1px solid red';
 
         // modifica la clase dependiendo del mensaje
@@ -24,6 +25,10 @@ class Validaciones {
             form.reset();
         }, 3000)
     }
+
+    // camposRellenos(input){
+    //     input.style.border = '2px solid red';
+    // }
 
     // Muestra el spinner
     showSpinner() {
@@ -48,7 +53,7 @@ class Contacto extends Validaciones {
         const msgEnvio = document.createElement('p');
         const msgError = document.createElement('p');
 
-        if (this.nombre === '' || this.email === '' || this.asunto === '' || this.mensaje === '') {
+        if(this.nombre === '' && this.email === '' && this.asunto === '' && this.mensaje === '') {
             // modifica la clase dependiendo del mensaje
             msgEnvio.classList.remove('valido');
             msgEnvio.classList.add('error');
@@ -58,15 +63,21 @@ class Contacto extends Validaciones {
             table.insertAdjacentElement('afterend', msgEnvio);
 
             setTimeout(function(){
-                location.href = "https://saramarrero.github.io/WebPersonal/html/contacto.html";
+                // location.href = "https://saramarrero.github.io/WebPersonal/html/contacto.html";
+                location.href = "/html/contacto.html";
             }, 3000)
 
-        } else if (this.nombre !== '' && this.email !== '' && this.asunto !== '' && this.mensaje !== '') {
-            if (!this.email.match(regExp)) {
+        } 
+        // else if(this.nombre === '' || this.email === '' || this.asunto === '' || this.mensaje === ''){
+
+        // } 
+        else if(this.nombre.value !== '' && this.email.value !== '' && this.asunto.value !== '' && this.mensaje.value !== '') {
+            if (!this.email.value.match(regExp)) {
                 this.validarDatos(this.email, msgError, form);
 
                 setTimeout(function(){
-                    location.href = "https://saramarrero.github.io/WebPersonal/html/contacto.html";
+                    // location.href = "https://saramarrero.github.io/WebPersonal/html/contacto.html";
+                    location.href = "/html/contacto.html";
                 }, 3000)
 
             } else {
@@ -86,7 +97,7 @@ class Contacto extends Validaciones {
                     table.insertAdjacentElement('afterend', msgEnvio);
 
                     // Envía el correo electrónico
-                    form.setAttribute('action', 'https://formsubmit.co/saramarreromiranda@gmail.com');
+                    // form.setAttribute('action', 'https://formsubmit.co/saramarreromiranda@gmail.com');
                 }, 2000);
 
                 // Envía el formulario
@@ -121,7 +132,7 @@ buttonEnviar.addEventListener('click', (event) => {
     event.preventDefault();
     
      // Instancia la clase
-    let formulario = new Contacto(nombre.value, email.value, asunto.value, mensaje.value);
+    let formulario = new Contacto(nombre, email, asunto, mensaje);
     
     // Valida y envía el correo
     formulario.camposCompletos(event);
