@@ -54,8 +54,7 @@ class Contacto extends Validaciones {
             table.insertAdjacentElement('afterend', msgEnvio);
 
             setTimeout(function(){
-                // location.href = "https://saramarrero.github.io/WebPersonal/html/contacto.html";
-                location.href = "/html/contacto.html";
+                location.href = "https://saramarrero.github.io/WebPersonal/html/contacto.html";
             }, 3000)
 
         } else if(this.nombre.value !== '' && this.email.value !== '' && this.asunto.value !== '' && this.mensaje.value !== '') {
@@ -63,8 +62,7 @@ class Contacto extends Validaciones {
                 this.validarDatos(this.email, msgError,  'Formato incorrecto');
 
                 setTimeout(function(){
-                    // location.href = "https://saramarrero.github.io/WebPersonal/html/contacto.html";
-                    location.href = "/html/contacto.html";
+                    location.href = "https://saramarrero.github.io/WebPersonal/html/contacto.html";
                 }, 3000)
 
             } else {
@@ -80,12 +78,12 @@ class Contacto extends Validaciones {
                     msgEnvio.classList.remove('error');
                     msgEnvio.classList.add('valido');
 
-                     // agrega el mensaje al html
+                    // agrega el mensaje al html
                     msgEnvio.textContent = 'Se envió correctamente';
                     table.insertAdjacentElement('afterend', msgEnvio);
 
                     // Envía el correo electrónico
-                    // form.setAttribute('action', 'https://formsubmit.co/saramarreromiranda@gmail.com');
+                    form.setAttribute('action', 'https://formsubmit.co/saramarreromiranda@gmail.com');
                 }, 2000);
 
                 // Envía el formulario
@@ -103,6 +101,7 @@ class Contacto extends Validaciones {
     }
 }
 
+// Valida los campos de manera individual
 function camposVacios(input, msg){
     input.style.border = '1px solid red';
 
@@ -170,7 +169,8 @@ buttonEnviar.addEventListener('click', (event) => {
     // Valida y envía el correo
     formulario.camposCompletos(event);
 
+    // Reinicia el formulario 
     setTimeout(function(){
         form.reset();
-    },3000)
+    },3000);
 });
