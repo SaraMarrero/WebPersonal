@@ -6,8 +6,7 @@ class Validaciones {
         this.mensaje = mensaje;
     }
 
-    validarDatos(input, msgError, form) {
-        console.log(input);
+    validarDatos(input, msgError,msg) {
         input.style.border = '1px solid red';
 
         // modifica la clase dependiendo del mensaje
@@ -15,20 +14,15 @@ class Validaciones {
         msgError.classList.add('error');
 
         // agrega el mensaje al html
-        msgError.textContent = 'Formato incorrecto';
+        msgError.textContent = msg;
         input.insertAdjacentElement('afterend', msgError);
 
         // borra el aviso tras dos segundos
         setTimeout(() => {
             input.style.border = '2px solid #8000FF';
             msgError.remove();
-            form.reset();
-        }, 3000)
+        }, 3000);
     }
-
-    // camposRellenos(input){
-    //     input.style.border = '2px solid red';
-    // }
 
     // Muestra el spinner
     showSpinner() {
@@ -47,13 +41,10 @@ class Contacto extends Validaciones {
     }
 
     camposCompletos(event) {
-        const form = document.querySelector('.form');
         const regExp = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
         const table = document.querySelector('.table');
-        const msgEnvio = document.createElement('p');
-        const msgError = document.createElement('p');
 
-        if(this.nombre === '' && this.email === '' && this.asunto === '' && this.mensaje === '') {
+        if(this.nombre.value === '' && this.email.value === '' && this.asunto.value === '' && this.mensaje.value === '') {
             // modifica la clase dependiendo del mensaje
             msgEnvio.classList.remove('valido');
             msgEnvio.classList.add('error');
@@ -67,13 +58,9 @@ class Contacto extends Validaciones {
                 location.href = "/html/contacto.html";
             }, 3000)
 
-        } 
-        // else if(this.nombre === '' || this.email === '' || this.asunto === '' || this.mensaje === ''){
-
-        // } 
-        else if(this.nombre.value !== '' && this.email.value !== '' && this.asunto.value !== '' && this.mensaje.value !== '') {
+        } else if(this.nombre.value !== '' && this.email.value !== '' && this.asunto.value !== '' && this.mensaje.value !== '') {
             if (!this.email.value.match(regExp)) {
-                this.validarDatos(this.email, msgError, form);
+                this.validarDatos(this.email, msgError,  'Formato incorrecto');
 
                 setTimeout(function(){
                     // location.href = "https://saramarrero.github.io/WebPersonal/html/contacto.html";
@@ -81,6 +68,7 @@ class Contacto extends Validaciones {
                 }, 3000)
 
             } else {
+                buttonEnviar.disabled = false;
                 // Muestra el spinner
                 this.showSpinner();
 
@@ -103,7 +91,6 @@ class Contacto extends Validaciones {
                 // Envía el formulario
                 setTimeout(() => {
                     event.target.form.submit();
-                    console.log('a');
                 }, 2500);
             }
         }
@@ -111,9 +98,28 @@ class Contacto extends Validaciones {
         // Borra el aviso y reinicia el formulario tras 4 segundos
         setTimeout(() => {
             msgEnvio.remove();
-            form.reset();
+            // form.reset();
         }, 4000);
     }
+}
+
+function camposVacios(input, msg){
+    input.style.border = '1px solid red';
+
+    // modifica la clase dependiendo del mensaje
+    msgError.classList.remove('valido');
+    msgError.classList.add('error');
+
+    // agrega el mensaje al html
+    msgError.textContent = msg;
+    input.insertAdjacentElement('afterend', msgError);
+
+    // borra el aviso tras dos segundos
+    setTimeout(() => {
+        input.style.border = '2px solid #8000FF';
+        msgError.remove();
+        buttonEnviar.disabled = false;
+    }, 3000);
 }
 
 // Oculta el spinner
@@ -124,16 +130,46 @@ const nombre = document.querySelector('#nombre');
 const email = document.querySelector('#email');
 const asunto = document.querySelector('#asunto');
 const mensaje = document.querySelector('#mensaje');
+const msgEnvio = document.createElement('p');
+const msgError = document.createElement('p');
+const form = document.querySelector('.form');
 
 const buttonEnviar = document.querySelector('#enviar');
+
+
+nombre.addEventListener('mouseout', ()=>{
+    if(nombre.value === ''){
+        camposVacios(nombre, 'Introduzca un nombre válido', form);
+        buttonEnviar.disabled = true;
+    }
+    
+})
+
+asunto.addEventListener('mouseout', ()=>{
+    if(asunto.value === ''){
+        camposVacios(asunto, 'Introduzca un nombre válido', form);
+        buttonEnviar.disabled = true;
+    }
+})
+
+mensaje.addEventListener('mouseout', ()=>{
+    if(mensaje.value === ''){
+        camposVacios(mensaje, 'Introduzca un nombre válido', form);
+        buttonEnviar.disabled = true;
+    }
+})
 
 buttonEnviar.addEventListener('click', (event) => {
     // Evita el envío predeterminado del formulario
     event.preventDefault();
     
-     // Instancia la clase
+    // Instancia la clase
     let formulario = new Contacto(nombre, email, asunto, mensaje);
     
     // Valida y envía el correo
     formulario.camposCompletos(event);
+
+    setTimeout(function(){
+        form.reset();
+    },3000)
 });
