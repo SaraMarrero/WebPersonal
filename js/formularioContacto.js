@@ -136,28 +136,29 @@ const form = document.querySelector('.form');
 
 const buttonEnviar = document.querySelector('#enviar');
 
-
+// Valida el campo nombre
 nombre.addEventListener('mouseout', ()=>{
     if(nombre.value === ''){
         camposVacios(nombre, 'Introduzca un nombre válido', form);
         buttonEnviar.disabled = true;
     }
-    
-})
+});
 
+// Valida el campo asunto
 asunto.addEventListener('mouseout', ()=>{
     if(asunto.value === ''){
         camposVacios(asunto, 'Introduzca un nombre válido', form);
         buttonEnviar.disabled = true;
     }
-})
+});
 
+// Valida el campo mensaje
 mensaje.addEventListener('mouseout', ()=>{
     if(mensaje.value === ''){
         camposVacios(mensaje, 'Introduzca un nombre válido', form);
         buttonEnviar.disabled = true;
     }
-})
+});
 
 buttonEnviar.addEventListener('click', (event) => {
     // Evita el envío predeterminado del formulario
