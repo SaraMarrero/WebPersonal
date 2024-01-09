@@ -52,27 +52,47 @@
             <form method="POST" class="form" action="#">
                 <table class="table">
                     <tr>
-                        <td>
+                        <td style="display: flex; align-items: center;">
                             <input type="text" class="name" name="nombre" id='nombre' placeholder="Nombre*">
+                            <p class="pNombre" style="padding: 0.5rem;"></p>
                         </td>
                     </tr>
 
                     <tr>
-                        <td>
+                        <td class="tdNombre"></td>
+                    </tr>
+
+                    <tr>
+                        <td style="display: flex; align-items: center;">
                             <input type="email" class="email" name="email" id='email' placeholder="Email*">
+                            <p class="pEmail" style="padding: 0.5rem;"></p>
                         </td>
                     </tr>
 
                     <tr>
-                        <td>
+                        <td class="tdEmail"></td>
+                    </tr>
+
+                    <tr>
+                        <td style="display: flex; align-items: center;">
                             <input type="text" class="asunto" name="asunto" id='asunto' placeholder="Asunto*">
+                            <p class="pAsunto" style="padding: 0.5rem;"></p>
                         </td>
                     </tr>
 
                     <tr>
-                        <td>
+                        <td class="tdAsunto"></td>
+                    </tr>
+
+                    <tr>
+                        <td style="display: flex; align-items: center;">
                             <textarea name="mensaje" class="mensaje" id="mensaje" placeholder="Mensaje*"></textarea>
+                            <p class="pMensaje" style="padding: 0.5rem;"></p>
                         </td>
+                    </tr>
+
+                    <tr>
+                        <td class="tdMensaje"></td>
                     </tr>
 
                     <tr>
@@ -97,7 +117,7 @@
     <hr class="hrFinal">
 
     <!---------- JAVASCRIPT ---------->
-    <script src="../js/formularioContacto.js"></script>
+    <script src="../js/formularioContacto.js" type="module"></script>
     <script src="../js/menuHamburguesa.js"></script>   
     <script src="../js/modoOscuro.js"></script> 
 
