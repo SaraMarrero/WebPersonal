@@ -51,5 +51,14 @@ export let arrayProyects = [
         descripcion: 'Este pequeño proyecto es pequeña muestra de una página de noticias. La idea del proyecto ha sido sacada de la web Frontend Mentor.',
         codigo: 'https://github.com/SaraMarrero/PaginaNoticias',
         website: 'https://saramarrero.github.io/PaginaNoticias/'
+    },
+
+    {
+        id: 7,
+        imagen: '../img/buscadorPixabay.png',
+        nombre: 'Buscador PixabayImagenes',
+        descripcion: 'Pequeño buscador de imágenes pixabay.',
+        codigo: 'https://github.com/SaraMarrero/Proyecto_PixabayImagenes',
+        website: 'https://saramarrero.github.io/Proyecto_PixabayImagenes/'
     }
 ];
