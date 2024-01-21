@@ -1299,6 +1299,65 @@
         margin: 1em;
     }
 
+    /*----- Proyecto 7 -----*/
+    .divProyecto7{
+        width: 83%;
+        margin: 0 auto;
+        border-radius: 20px;
+        background-color: #F2F2F2;
+        box-shadow: #8000FF 0px 5px 15px;
+    }
+
+    .divImgProyecto7{
+        width: 100%;
+        height: 50%;
+    }
+
+    .imgProyecto7{
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .datosProyecto7{
+        height: 50%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 0.5rem;
+    }
+
+    .h2Proyecto7{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .pProyecto7{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .enlacesProyecto7{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+    }
+
+    .enlacesProyecto7{
+        margin: 1em;
+        color: white;
+    }
+
+    .aProyecto7{
+        background-color: gray;
+        border-radius: 20px;
+        color: white;
+        padding: 0.5rem;
+        text-decoration: none;
+        margin: 1em;
+    }
+
     /*----- hr final -----*/
     .hrFinal{
         color: #8000FF;
@@ -1925,6 +1984,65 @@
         margin: 1em;
     }
 
+    /*----- Proyecto 7 -----*/
+    .divProyecto7{
+        width: 83%;
+        margin: 0 auto;
+        border-radius: 20px;
+        background-color: #F2F2F2;
+        box-shadow: #8000FF 0px 5px 15px;
+    }
+
+    .divImgProyecto7{
+        width: 100%;
+        height: 60%;
+    }
+
+    .imgProyecto7{
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .datosProyecto7{
+        height: 40%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 0.5rem;
+    }
+
+    .h2Proyecto7{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .pProyecto7{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .enlacesProyecto7{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+    }
+
+    .enlacesProyecto7{
+        margin: 1em;
+        color: white;
+    }
+
+    .aProyecto7{
+        background-color: gray;
+        border-radius: 20px;
+        color: white;
+        padding: 0.5rem;
+        text-decoration: none;
+        margin: 1em;
+    }
+
     /*----- hr final -----*/
     .hrFinal{
         color: #8000FF;
@@ -2503,6 +2621,65 @@
         margin: 1em;
     }
 
+    /*----- Proyecto 7 -----*/
+    .divProyecto7{
+        width: 40%;
+        margin: 0 auto;
+        border-radius: 20px;
+        background-color: #F2F2F2;
+        box-shadow: #8000FF 0px 5px 15px;
+    }
+
+    .divImgProyecto7{
+        width: 100%;
+        height: 45%;
+    }
+
+    .imgProyecto7{
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .datosProyecto7{
+        height: 55%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 0.5rem;
+    }
+
+    .h2Proyecto7{
+        text-align: center;
+        padding: 0.3rem;
+    }
+
+    .pProyecto7{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .enlacesProyecto7{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+        margin: 1em;
+    }
+
+    .enlacesProyecto7{
+        color: white;
+    }
+
+    .aProyecto7{
+        background-color: gray;
+        border-radius: 20px;
+        color: white;
+        padding: 0.5rem;
+        text-decoration: none;
+        margin: 1em;
+    }
+
     .hrFinal{
         color: #8000FF;
         border: 2px solid;
@@ -2998,6 +3175,65 @@
     }
 
     .aProyecto6{
+        background-color: gray;
+        border-radius: 20px;
+        color: white;
+        padding: 0.5rem;
+        text-decoration: none;
+        margin: 1em;
+    }
+
+    /*----- Proyecto 7 -----*/
+    .divProyecto7{
+        width: 35%;
+        margin: 0 auto;
+        border-radius: 20px;
+        background-color: #F2F2F2;
+        box-shadow: #8000FF 0px 5px 15px;
+    }
+
+    .divImgProyecto7{
+        width: 100%;
+        height: 50%;
+    }
+
+    .imgProyecto7{
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .datosProyecto7{
+        height: 50%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 0.5rem;
+    }
+
+    .h2Proyecto7{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .pProyecto7{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .enlacesProyecto7{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+        margin: 1em;
+    }
+
+    .enlacesProyecto7{
+        color: white;
+    }
+
+    .aProyecto7{
         background-color: gray;
         border-radius: 20px;
         color: white;
@@ -3510,6 +3746,65 @@
         margin: 1em;
     }
 
+    /*----- Proyecto 7 -----*/
+    .divProyecto7{
+        width: 25%;
+        margin: 0 auto;
+        border-radius: 20px;
+        background-color: #F2F2F2;
+        box-shadow: #8000FF 0px 5px 15px;
+    }
+
+    .divImgProyecto7{
+        width: 100%;
+        height: 50%;
+    }
+
+    .imgProyecto7{
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .datosProyecto7{
+        height: 50%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 0.5rem;
+    }
+
+    .h2Proyecto7{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .pProyecto7{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .enlacesProyecto7{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+    }
+
+    .enlacesProyecto7{
+        margin: 1em;
+        color: white;
+    }
+
+    .aProyecto7{
+        background-color: gray;
+        border-radius: 20px;
+        color: white;
+        padding: 0.5rem;
+        text-decoration: none;
+        margin: 1em;
+    }
+
     /*-----  hr final-----*/
     .hrFinal{
         color: #8000FF;
@@ -4008,6 +4303,65 @@
     }
 
     .aProyecto6{
+        background-color: gray;
+        border-radius: 20px;
+        color: white;
+        padding: 0.5rem;
+        text-decoration: none;
+        margin: 1em;
+    }
+
+    /*----- Proyecto 7 -----*/
+    .divProyecto7{
+        width: 25%;
+        margin: 0 auto;
+        border-radius: 20px;
+        background-color: #F2F2F2;
+        box-shadow: #8000FF 0px 5px 15px;
+    }
+
+    .divImgProyecto7{
+        width: 100%;
+        height: 60%;
+    }
+
+    .imgProyecto7{
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .datosProyecto7{
+        height: 40%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 0.5rem;
+    }
+
+    .h2Proyecto7{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .pProyecto7{
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .enlacesProyecto7{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+    }
+
+    .enlacesProyecto7{
+        margin: 1em;
+        color: white;
+    }
+
+    .aProyecto7{
         background-color: gray;
         border-radius: 20px;
         color: white;
