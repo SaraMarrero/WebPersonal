@@ -28,7 +28,7 @@ class Contacto extends Validaciones {
         const table = document.querySelector('.table');
         const regExp = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
 
-        if(this.nombre.value === '' && this.email.value === '' && this.asunto.value === '' && this.mensaje.value === '' || !this.email.value.match(regExp)) {
+        if(this.nombre.value == '' && this.email.value == '' && this.asunto.value == '' && (this.mensaje.value == '' || !this.email.value.match(regExp))) {
             // modifica la clase dependiendo del mensaje
             msgEnvio.classList.remove('valido');
             msgEnvio.classList.add('error');
