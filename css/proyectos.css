@@ -1,4 +1,4 @@
-@media (min-width: 375px) and (max-width: 480px){
+@media (min-width: 320px) and (max-width: 480px){
     *{
         box-sizing: border-box;
         margin: 0;
@@ -3959,7 +3959,7 @@
     }
 
     /*----- cards -----*/
-    .articleProyectos{
+    /* .articleProyectos{
         margin-top: 2em;
         padding: 2rem;
         display: flex;
@@ -3969,7 +3969,7 @@
         justify-content: space-around;
         column-gap: 0.5em;
         row-gap: 5em;
-    }
+    } */
 
     .iconoProyectos{
         display: none;
@@ -4392,6 +4392,15 @@
     border: 1.5px solid;
 }
 
+.cardProyectos{
+    background-color: #F2F2F2; 
+    color: black;
+}
+
+.cardProyectos span{
+    background-color: white;
+}
+
 /*---------- MODO OSCURO ----------*/
 .modoOscuro{
     background-color: #2E2E2E;
@@ -4412,4 +4421,31 @@
 .modoOscuro .datosProyecto1, .modoOscuro .datosProyecto2, .modoOscuro .datosProyecto3, .modoOscuro .datosProyecto4, .modoOscuro .datosProyecto5, .modoOscuro .datosProyecto6  {
     background-color: #424242;
     color: white
+}
+
+.modoOscuro .cardProyectos{
+    background-color: #424242;
+    color: white;
+}
+
+.modoOscuro .cardProyectos span{
+    background-color: #F2F2F2;
+}
+
+/* Scroll en la imagen */
+.image-container {
+    overflow: hidden;
+    position: relative;
+    height: 200px; 
+}
+
+.scroll-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 10s linear; 
+}
+
+.image-container:hover .scroll-image {
+    transform: translateY(-100%); 
 }
