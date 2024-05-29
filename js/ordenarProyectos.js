@@ -56,58 +56,58 @@ class Ordenar{
         <div class="inline-flex flex-wrap items-center gap-2 mt-4 group">
             <span class="cursor-pointer rounded-full border border-gray-900/5 bg-gray-900/5 p-2">
                 <a href="https://developer.mozilla.org/es/docs/Web/HTML">
-                    <img src="/img/html-proyectos.svg" style="width: 27px; height: 27px;">
+                    <img src="../img/html-proyectos.svg" style="width: 27px; height: 27px;">
                 </a>
             </span>
             <span class="cursor-pointer rounded-full border border-gray-900/5 bg-gray-900/5 p-2">
                 <a href="https://developer.mozilla.org/es/docs/Web/CSS">
-                    <img src="/img/css-proyectos.svg" style="width: 27px; height: 27px;">
+                    <img src="../img/css-proyectos.svg" style="width: 27px; height: 27px;">
                 </a>
             </span>
             <span class="cursor-pointer rounded-full border border-gray-900/5 bg-gray-900/5 p-2">
                 <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">
-                    <img src="/img/js-proyectos.svg" style="width: 27px; height: 27px;">
+                    <img src="../img/js-proyectos.svg" style="width: 27px; height: 27px;">
                 </a>
             </span>
             <span class="cursor-pointer rounded-full border border-gray-900/5 bg-gray-900/5 p-2">
                 <a href="https://docs.github.com/es">
-                    <img src="/img/github-proyectos.svg" style="width: 27px; height: 27px;">
+                    <img src="../img/github-proyectos.svg" style="width: 27px; height: 27px;">
                 </a>
             </span>
             ${tecnologias.includes('bootstrap') ? `
             <span class="cursor-pointer rounded-full border border-gray-900/5 bg-gray-900/5 p-2">
                 <a href="https://getbootstrap.com">
-                    <img src="/img/bootstrap-proyectos.svg" style="width: 27px; height: 27px;">
+                    <img src="../img/bootstrap-proyectos.svg" style="width: 27px; height: 27px;">
                 </a>
             </span>` : ''}
             ${tecnologias.includes('ajax') ? `
             <span class="cursor-pointer rounded-full border border-gray-900/5 bg-gray-900/5 p-2">
                 <a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data">
-                    <img src="/img/ajax-proyectos.svg" style="width: 27px; height: 27px;">
+                    <img src="../img/ajax-proyectos.svg" style="width: 27px; height: 27px;">
                 </a>
             </span>` : ''}
             ${tecnologias.includes('jquery') ? `
             <span class="cursor-pointer rounded-full border border-gray-900/5 bg-gray-900/5 p-2">
                 <a href="https://api.jquery.com">
-                    <img src="/img/jquery-proyectos.svg" style="width: 27px; height: 27px;">
+                    <img src="../img/jquery-proyectos.svg" style="width: 27px; height: 27px;">
                 </a>
             </span>` : ''}
             ${tecnologias.includes('php') ? `
             <span class="cursor-pointer rounded-full border border-gray-900/5 bg-gray-900/5 p-2">
                 <a href="https://www.php.net">
-                    <img src="/img/php-proyectos.svg" style="width: 27px; height: 27px;">
+                    <img src="../img/php-proyectos.svg" style="width: 27px; height: 27px;">
                 </a>
             </span>` : ''}
             ${tecnologias.includes('tailwind') ? `
             <span class="cursor-pointer rounded-full border border-gray-900/5 bg-gray-900/5 p-2">
                 <a href="https://tailwindcss.com">
-                    <img src="/img/tailwind-proyectos.svg" style="width: 27px; height: 27px;">
+                    <img src="../img/tailwind-proyectos.svg" style="width: 27px; height: 27px;">
                 </a>
             </span>` : ''}
             ${tecnologias.includes('xampp') ? `
             <span class="cursor-pointer rounded-full border border-gray-900/5 bg-gray-900/5 p-2">
                 <a href="https://www.apachefriends.org/es/index.html">
-                    <img src="/img/xampp-proyectos.svg" style="width: 27px; height: 27px;">
+                    <img src="../img/xampp-proyectos.svg" style="width: 27px; height: 27px;">
                 <a/>
             </span>` : ''}
         </div>
