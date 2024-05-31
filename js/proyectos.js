@@ -15,7 +15,7 @@ export let arrayProyects = [
         nombre: 'ShareCar',
         descripcion: 'Este proyecto va sobre una web para compatir coche. En la cuál, sus principales funciones serán crear, leer, actualizar y borrar datos (CRUD).',
         codigo: 'https://github.com/SaraMarrero/ShareCar',
-        website: 'https://saramarrero.github.io/html/404.html',
+        website: '../html/404.html',
         tecnologias: 'html, css, bootstrap, php, doxygen, github'
     },
     
@@ -75,7 +75,7 @@ export let arrayProyects = [
         nombre: 'Game Play',
         descripcion: 'Web para comprar videojuegos. En el cuál, sus principales funciones serán crear, leer, actualizar y borrar datos (CRUD).',
         codigo: 'https://github.com/SaraMarrero/Game_play',
-        website: '#',
+        website: '../html/404.html',
         tecnologias: 'html, css, javascript, github, php, tailwind, jqery, ajax, pdo, xampp'
     }
 ];
