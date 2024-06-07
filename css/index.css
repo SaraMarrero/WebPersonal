@@ -957,12 +957,12 @@
     width: 40px; 
     height: 40px;
     display: inline-block;
-    background-image: url('/img/sun-fog-svgrepo-com.svg');
+    background-image: url('./img/sol.svg');
     background-size: cover;
 }
 
 .content-input input[type="checkbox"]:checked + .checkbox-image {
-    background-image: url('/img/moon-fog-svgrepo-com.svg');
+    background-image: url('./img/luna.svg');
 }
 
 /*----------  MODO OSCURO ----------*/
