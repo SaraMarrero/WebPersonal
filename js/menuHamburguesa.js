@@ -1,41 +1,41 @@
-class MenuHamburguesa{
-    constructor(toggleButton, navWrapper, opcionesMenu){
-        this.toggleButton = toggleButton;
-        this.navWrapper = navWrapper;
-        this.opcionesMenu = opcionesMenu;
-    }
-
-    // Abre el menú hamburguesa
-    open(){
-        this.toggleButton.classList.toggle("close");
-        this.navWrapper.classList.toggle("show");
-    }
-
-    // Cierra el menú hamburguesa
-    close(e){
-        if (e.target.id === "nav") {
-            this.navWrapper.classList.remove("show");
-            this.toggleButton.classList.remove("close");
-        }
-    }
-
-    closeBurguer(e){
-        if (e.target.id === "menu") {
-            this.navWrapper.classList.remove("show");
-            this.toggleButton.classList.remove("close");
-        }
-    };
-}
-
 // Variables
-const toggleButton = document.getElementById("button-menu");
-const navWrapper = document.getElementById("nav");
-const opcionesMenu = document.getElementById('nav-links');
+const burger = document.querySelectorAll('.navbar-burger');
+const menu = document.querySelectorAll('.navbar-menu');
 
-// Instancia la clase
-let menu = new MenuHamburguesa(toggleButton, navWrapper, opcionesMenu);
+const close = document.querySelectorAll('.navbar-close');
+const backdrop = document.querySelectorAll('.navbar-backdrop');
 
-// Eventos
-toggleButton.addEventListener('click', function() {menu.open()})
-navWrapper.addEventListener('click', (e) => menu.close(e));
-opcionesMenu.addEventListener('click', (e) => menu.closeBurguer(e));
+// Menú hamburguesa
+document.addEventListener('DOMContentLoaded', function() {
+    // Abre el menú 
+    if (burger.length && menu.length) {
+        for (var i = 0; i < burger.length; i++) {
+            burger[i].addEventListener('click', function() {
+                for (var j = 0; j < menu.length; j++) {
+                    menu[j].classList.toggle('hidden');
+                }
+            });
+        }
+    }
+
+    // Cierra el menú
+    if (close.length) {
+        for (var i = 0; i < close.length; i++) {
+            close[i].addEventListener('click', function() {
+                for (var j = 0; j < menu.length; j++) {
+                    menu[j].classList.toggle('hidden');
+                }
+            });
+        }
+    }
+
+    if (backdrop.length) {
+        for (var i = 0; i < backdrop.length; i++) {
+            backdrop[i].addEventListener('click', function() {
+                for (var j = 0; j < menu.length; j++) {
+                    menu[j].classList.toggle('hidden');
+                }
+            });
+        }
+    }
+});

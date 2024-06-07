@@ -4,17 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="icon" href="./img/logo.png">
     <title>Web Personal</title>
 </head>
-<body id="body">
+<body id="body" class="w-11/12 lg:w-4/5 m-auto">
     <noscript>
         <h1>JavaScript no está habilitado. Por favor, habilítelo para continuar.</h1>
     </noscript>
     <!---------- HEADER ---------->
-    <header>
+    <header> 
+        <!---------- MENU NORMAL --------->
+        <nav class="relative flex justify-between items-center">
+            <!----- Buttton menú hamburguesa ----->
+            <div class="lg:hidden p-1">
+                <button class="navbar-burger flex items-center text-black-600" style="width: 50px;">
+                    <img src="/img/menu-svgrepo-com.svg">
+                </button>
+            </div>
+
+            <a class="bg-customPurple rounded-lg text-white p-1" href="#">Sara Marrero Miranda</a>
+
+            <!----- Muestra las consolas en el header ---->
+            <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+                <li><a class='text-md font-medium text-customPurple bg-customPurpleHover p-2' href='#'>Formación</a></li>
+                <li><a class='text-md font-medium text-customPurple bg-customPurpleHover p-2' href='#'>Experiencia</a></li>
+                <li><a class='text-md font-medium text-customPurple bg-customPurpleHover p-2' href='#'>Proyectos</a></li>
+                <li><a class='text-md font-medium text-customPurple bg-customPurpleHover p-2' href='#'>Skills</a></li>
+                <li><a class='text-md font-medium text-customPurple bg-customPurpleHover p-2' href='#'>Contacto</a></li>
+            </ul>
+
+            <!----- Botón cambio color ------>
+            <section class="button p-2">
+                <label class="content-input">
+                    <input type="checkbox" name="buttonLuz" id="buttonLuz">
+                    <span class="checkbox-image"></span>
+                </label>
+            </section>
+            
+            
+            <!----- MENU HAMBURGUESA ----->
+            <div class="navbar-menu relative z-50 hidden">
+                <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+                    <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+                        <div class="flex items-center mb-8">
+                            <a class="mr-auto text-xl font-bold leading-none" href="#">Sara Marrero Miranda</a>
+                            <button class="navbar-close">
+                                <svg class="h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#8000FF">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!----- Muestra las consolas en el header ----->
+                        <div>
+                            <ul>
+                                <li><a class='ml-3 text-sm font-medium text-customPurple' href='#'>Formación</a></li>
+                                <li><hr class="hr-burguer"></li>
+
+                                <li><a class='ml-3 font-medium text-customPurple' href='#'>Experiencia</a></li>
+                                <li><hr class="hr-burguer"></li>
+
+                                <li><a class='ml-3 font-medium text-customPurple' href='#'>Proyectos</a></li>
+                                <li><hr class="hr-burguer"></li>
+
+                                <li><a class='ml-3 font-medium text-customPurple' href='#'>Skills</a></li>
+                                <li><hr class="hr-burguer"></li>
+                                
+                                <li><a class='ml-3 font-medium text-customPurple' href='#'>Contacto</a></li>
+                                <li><hr class="hr-burguer"></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </nav>   
+    </header>
+    <!-- <header>
         <p class="nombre">Sara Marrero Miranda</p>
 
         <nav id="nav" class="main-nav">
@@ -44,7 +111,7 @@
                 <i></i>
             </label>
         </section> 
-    </header>
+    </header> -->
 
     <main>
         <!---------- SECTION 1 ---------->
