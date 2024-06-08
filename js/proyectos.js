@@ -73,8 +73,18 @@ export let arrayProyects = [
         id: 8,
         imagen: '../img/gameplay.png',
         nombre: 'Game Play',
-        descripcion: 'Web para comprar videojuegos. En el cuál, sus principales funciones serán crear, leer, actualizar y borrar datos (CRUD).',
+        descripcion: 'Web para comprar videojuegos.',
         codigo: 'https://github.com/SaraMarrero/Game_play',
+        website: '../html/404.html',
+        tecnologias: 'html, css, javascript, github, php, tailwind, jqery, ajax, pdo, xampp'
+    },
+
+    {
+        id: 9,
+        imagen: '../img/bookiverso.png',
+        nombre: 'Bookiverso',
+        descripcion: 'Web para descargar libros gratos. Proyecto final del ciclo Desarrollo de aplicaciones web.',
+        codigo: 'https://github.com/SaraMarrero/Bookiverso',
         website: '../html/404.html',
         tecnologias: 'html, css, javascript, github, php, tailwind, jqery, ajax, pdo, xampp'
     }
