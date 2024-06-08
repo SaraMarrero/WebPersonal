@@ -1,247 +1,19 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 @media (min-width: 375px) and (max-width: 480px){
-    *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    body{
-        width: 95%;
-        margin: 0 auto;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
-    /*---------- HEADER ----------*/
-    header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    header > *{
-		order: 0;
-	}
-
-    .nombre{
-        background-color:#8000FF;
-        color: white;
-        padding: 0.5rem;
-        border-radius: 10px;
-        font-size: 16px;
-        order: 2;
-    }
-
-    nav{
-		order: 1;
-		margin-left: 0.5em; 
-	}
-
     .hr{
         background-color: #8000FF;
         border: hidden;
         padding: 0.1rem;
     }
-
-    #hr{
-        background-color: black;
-        width: 60%;
-        border: hidden;
-        padding: 0.1rem;
-        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    }
-
-    .menu{
-        text-decoration: none;
-        color: #8000FF;
-        padding: 1rem;
-    } 
-
-    .main-nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100%;
-        margin-left: -100%;
-        transition: all 0.2s linear;
-        background-color: rgba(0, 0, 0, 0.7);
-        z-index: 100;
-    }
-    
-    .main-nav.show {
-        margin-left: 0;
-    }
-    
-    .nav-links {
-        background-color: #F2F2F2;
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        height: 100%;
-        align-items: center;
-    }
-    
-    .link-item {
-        margin-top: 2rem;
-        color: #8000FF;
-        text-decoration: none;
-        font-weight: bold;
-        position: relative;
-    }
-
-    .link-item:first-child{
-        margin-top: 5em;
-    }
-    
-    .link-item::after {
-        position: absolute;
-        content: "";
-        bottom: -5px;
-        left: 0;
-        width: 0%;
-        height: 3px;
-        transition: 0.3s ease all;
-    }
-    
-    .link-item:hover::after {
-        width: 100%;
-    }
-    
-    .button-menu {
-        z-index: 200;
-        width: 40px;
-        height: 40px;
-        border: none;
-        display: flex;
-        background: none;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .button-menu span {
-        width: 90%;
-        height: 3px;
-        margin-top: 0.5em;
-        position: relative;
-        background: #8000FF;
-        border-radius: 3px;
-        transform-origin: 4px 0px;
-        transition: all 0.2s linear;
-    }
-    
-    .button-menu.close span {
-        opacity: 1;
-        transform: rotate(45deg) translate(0px, 0px);
-        background: #8000FF;
-    }
-    
-    .button-menu.close span:nth-child(2) {
-        transform: rotate(-45deg) translate(-8px, 5px);
-    }
-    
-    .button-menu.close span:nth-child(3) {
-        display: none;
-    }
-    
-    @media screen and (min-width: 768px) {
-        .button-menu {
-            display: none;
-        }
-        
-        .main-logo {
-            flex-basis: 30%;
-        }
-        
-        .main-nav {
-            position: static;
-            margin-left: 0;
-            flex-basis: 70%;
-            height: 100%;
-        }
-        
-        .nav-links {
-            width: 100%;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: flex-end;
-            background: white;
-        }
-        
-        .link-item {
-            display: inline-block;
-            margin-top: 0;
-            margin-right: 2rem;
-        }
-    }
-    
-    /*----- botón para cambiar el color del body -----*/
-    .button{
-        order: 3;
-    }
-
-	.content-input input,
-	.content-select select{
-		appearance: none;
-		-webkit-appearance: none;
-		-moz-appearance: none;
-	}
-
-	.content-input input{
-		visibility: hidden;
-		position: absolute;
-		right: 0;
-	}
-
-	.content-input{
-		position: relative;
-		margin-bottom: 30px;
-		padding:5px 0 20px 60px;
-		display: block;
-	}
-
-	.content-input input + i{
-		background: #f0f0f0;
-		border:2px solid rgba(0,0,0,0.2);
-		position: absolute; 
-		left: 0;
-		top: 0;
-	}
-
-	.content-input input[type=checkbox ] + i{
-		width: 52px;
-		height: 30px;
-		border-radius: 15px;
-	}
-
-	.content-input input[type=checkbox] + i:before{
-		content: ''; 
-		width: 26px;
-		height: 26px;
-		background: #fff;
-		border-radius: 50%;
-		position: absolute;
-		z-index: 1;
-		left: 0px;
-		top: 0px;
-		-webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
-		box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
-	}
-
-	.content-input input[type=checkbox]:checked + i:before{
-		left: 22px;
-		-webkit-box-shadow: -3px 0 3px 0 rgba(0,0,0,0.2);
-		box-shadow: 3px 0 -3px 0 rgba(0,0,0,0.2);
-	}
-
-	.content-input input[type=checkbox]:checked + i{
-        background: #8000FF;
-	}
-
-	.content-input{
-		float: right;
-		margin: 0.5em;
-	}
 
     /*---------- FORMACIÓN ----------*/
     .formacion{
@@ -354,250 +126,12 @@
 }
 
 @media (min-width: 481px) and (max-width: 600px){
-    *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    body{
-        width: 85%;
-        margin: 0 auto;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
-    /*---------- HEADER ----------*/
-    header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    header > *{
-		order: 0;
-	}
-
-    .nombre{
-        background-color:#8000FF;
-        color: white;
-        padding: 0.5rem;
-        border-radius: 10px;
-        font-size: 16px;
-        order: 2;
-    }
-
-    nav{
-		order: 1;
-		margin-left: 0.5em; 
-	}
-
-    #hr{
-        background-color: black;
-        width: 60%;
-        border: hidden;
-        padding: 0.1rem;
-        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    }
-
     .hr{
         color: #8000FF;
         border: 1px solid;
         width: 80%;
         margin: 0 auto;
     }
-
-    .menu{
-        text-decoration: none;
-        color: #8000FF;
-        padding: 1rem;
-    } 
-
-    .main-nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100%;
-        margin-left: -100%;
-        transition: all 0.2s linear;
-        background-color: rgba(0, 0, 0, 0.7);
-        z-index: 100;
-    }
-    
-    .main-nav.show {
-        margin-left: 0;
-    }
-    
-    .nav-links {
-        background-color: #F2F2F2;
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        height: 100%;
-        align-items: center;
-    }
-    
-    .link-item {
-        margin-top: 2rem;
-        color: #8000FF;
-        text-decoration: none;
-        font-weight: bold;
-        position: relative;
-    }
-
-    .link-item:first-child{
-        margin-top: 5em;
-    }
-    
-    .link-item::after {
-        position: absolute;
-        content: "";
-        bottom: -5px;
-        left: 0;
-        width: 0%;
-        height: 3px;
-        transition: 0.3s ease all;
-    }
-    
-    .link-item:hover::after {
-        width: 100%;
-    }
-    
-    .button-menu {
-        z-index: 200;
-        width: 40px;
-        height: 40px;
-        border: none;
-        display: flex;
-        background: none;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .button-menu span {
-        width: 90%;
-        height: 3px;
-        margin-top: 0.5em;
-        position: relative;
-        background: #8000FF;
-        border-radius: 3px;
-        transform-origin: 4px 0px;
-        transition: all 0.2s linear;
-    }
-    
-    .button-menu.close span {
-        opacity: 1;
-        transform: rotate(45deg) translate(0px, 0px);
-        background: #8000FF;
-    }
-    
-    .button-menu.close span:nth-child(2) {
-        transform: rotate(-45deg) translate(-8px, 5px);
-    }
-    
-    .button-menu.close span:nth-child(3) {
-        display: none;
-    }
-    
-    @media screen and (min-width: 768px) {
-        .button-menu {
-            display: none;
-        }
-        
-        .main-logo {
-            flex-basis: 30%;
-        }
-        
-        .main-nav {
-            position: static;
-            margin-left: 0;
-            flex-basis: 70%;
-            height: 100%;
-        }
-        
-        .nav-links {
-            width: 100%;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: flex-end;
-            background: white;
-        }
-        
-        .link-item {
-            display: inline-block;
-            margin-top: 0;
-            margin-right: 2rem;
-        }
-    }
-    
-    /*----- botón para cambiar el color del body -----*/
-    .button{
-        order: 3;
-    }
-
-	.content-input input,
-	.content-select select{
-		appearance: none;
-		-webkit-appearance: none;
-		-moz-appearance: none;
-	}
-
-	.content-input input{
-		visibility: hidden;
-		position: absolute;
-		right: 0;
-	}
-
-	.content-input{
-		position: relative;
-		margin-bottom: 30px;
-		padding:5px 0 20px 60px;
-		display: block;
-	}
-
-	.content-input input + i{
-		background: #f0f0f0;
-		border:2px solid rgba(0,0,0,0.2);
-		position: absolute; 
-		left: 0;
-		top: 0;
-	}
-
-	.content-input input[type=checkbox ] + i{
-		width: 52px;
-		height: 30px;
-		border-radius: 15px;
-	}
-
-	.content-input input[type=checkbox] + i:before{
-		content: ''; 
-		width: 26px;
-		height: 26px;
-		background: #fff;
-		border-radius: 50%;
-		position: absolute;
-		z-index: 1;
-		left: 0px;
-		top: 0px;
-		-webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
-		box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
-	}
-
-	.content-input input[type=checkbox]:checked + i:before{
-		left: 22px;
-		-webkit-box-shadow: -3px 0 3px 0 rgba(0,0,0,0.2);
-		box-shadow: 3px 0 -3px 0 rgba(0,0,0,0.2);
-	}
-
-	.content-input input[type=checkbox]:checked + i{
-        background: #8000FF;
-	}
-
-	.content-input{
-		float: right;
-		margin: 0.5em;
-	}
 
     /*---------- FORMACIÓN ----------*/
     .formacion{
@@ -710,250 +244,12 @@
 }
 
 @media (min-width: 601px) and (max-width: 768px){
-    *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    body{
-        width: 85%;
-        margin: 0 auto;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
-    /*---------- HEADER ----------*/
-    header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    header > *{
-		order: 0;
-	}
-
-    .nombre{
-        background-color:#8000FF;
-        color: white;
-        padding: 0.5rem;
-        border-radius: 10px;
-        font-size: 16px;
-        order: 2;
-    }
-
-    nav{
-		order: 1;
-		margin-left: 0.5em; 
-	}
-
-    #hr{
-        background-color: black;
-        width: 60%;
-        border: hidden;
-        padding: 0.1rem;
-        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    }
-
     .hr{
         color: #8000FF;
         border: 1px solid;
         width: 80%;
         margin: 0 auto;
     }
-
-    .menu{
-        text-decoration: none;
-        color: #8000FF;
-        padding: 1rem;
-    } 
-
-    .main-nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100%;
-        margin-left: -100%;
-        transition: all 0.2s linear;
-        background-color: rgba(0, 0, 0, 0.7);
-        z-index: 100;
-    }
-    
-    .main-nav.show {
-        margin-left: 0;
-    }
-    
-    .nav-links {
-        background-color: #F2F2F2;
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        height: 100%;
-        align-items: center;
-    }
-    
-    .link-item {
-        margin-top: 2rem;
-        color: #8000FF;
-        text-decoration: none;
-        font-weight: bold;
-        position: relative;
-    }
-
-    .link-item:first-child{
-        margin-top: 5em;
-    }
-    
-    .link-item::after {
-        position: absolute;
-        content: "";
-        bottom: -5px;
-        left: 0;
-        width: 0%;
-        height: 3px;
-        transition: 0.3s ease all;
-    }
-    
-    .link-item:hover::after {
-        width: 100%;
-    }
-    
-    .button-menu {
-        z-index: 200;
-        width: 40px;
-        height: 40px;
-        border: none;
-        display: flex;
-        background: none;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .button-menu span {
-        width: 90%;
-        height: 3px;
-        margin-top: 0.5em;
-        position: relative;
-        background: #8000FF;
-        border-radius: 3px;
-        transform-origin: 4px 0px;
-        transition: all 0.2s linear;
-    }
-    
-    .button-menu.close span {
-        opacity: 1;
-        transform: rotate(45deg) translate(0px, 0px);
-        background: #8000FF;
-    }
-    
-    .button-menu.close span:nth-child(2) {
-        transform: rotate(-45deg) translate(-8px, 5px);
-    }
-    
-    .button-menu.close span:nth-child(3) {
-        display: none;
-    }
-    
-    @media screen and (min-width: 768px) {
-        .button-menu {
-            display: none;
-        }
-        
-        .main-logo {
-            flex-basis: 30%;
-        }
-        
-        .main-nav {
-            position: static;
-            margin-left: 0;
-            flex-basis: 70%;
-            height: 100%;
-        }
-        
-        .nav-links {
-            width: 100%;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: flex-end;
-            background: white;
-        }
-        
-        .link-item {
-            display: inline-block;
-            margin-top: 0;
-            margin-right: 2rem;
-        }
-    }
-    
-    /*----- botón para cambiar el color del body -----*/
-    .button{
-        order: 3;
-    }
-
-	.content-input input,
-	.content-select select{
-		appearance: none;
-		-webkit-appearance: none;
-		-moz-appearance: none;
-	}
-
-	.content-input input{
-		visibility: hidden;
-		position: absolute;
-		right: 0;
-	}
-
-	.content-input{
-		position: relative;
-		margin-bottom: 30px;
-		padding:5px 0 20px 60px;
-		display: block;
-	}
-
-	.content-input input + i{
-		background: #f0f0f0;
-		border:2px solid rgba(0,0,0,0.2);
-		position: absolute; 
-		left: 0;
-		top: 0;
-	}
-
-	.content-input input[type=checkbox ] + i{
-		width: 52px;
-		height: 30px;
-		border-radius: 15px;
-	}
-
-	.content-input input[type=checkbox] + i:before{
-		content: ''; 
-		width: 26px;
-		height: 26px;
-		background: #fff;
-		border-radius: 50%;
-		position: absolute;
-		z-index: 1;
-		left: 0px;
-		top: 0px;
-		-webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
-		box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
-	}
-
-	.content-input input[type=checkbox]:checked + i:before{
-		left: 22px;
-		-webkit-box-shadow: -3px 0 3px 0 rgba(0,0,0,0.2);
-		box-shadow: 3px 0 -3px 0 rgba(0,0,0,0.2);
-	}
-
-	.content-input input[type=checkbox]:checked + i{
-        background: #8000FF;
-	}
-
-	.content-input{
-		float: right;
-		margin: 0.5em;
-	}
 
     /*---------- FORMACIÓN ----------*/
     .formacion{
@@ -1066,200 +362,12 @@
 }
 
 @media (min-width: 769px) and (max-width: 900px){
-    *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    body{
-        width: 85%;
-        margin: 0 auto;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
-    /*---------- HEADER ----------*/
-    header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .nombre{
-        background-color:#8000FF;
-        color: white;
-        padding: 0.5rem;
-        border-radius: 10px;
-        font-size: 16px;
-    }
-
-    #hr{
-        display: none;
-    }
-
     .hr{
         color: #8000FF;
         border: 1px solid;
         width: 80%;
         margin: 0 auto;
     }
-
-    .link-item{
-        text-decoration: none;
-        color: #8000FF;
-        padding: 1rem;
-    }
-
-    .actual{
-        background-color: #8000FF;
-        color: white;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        
-    }
-
-    .link-item:hover{
-        background-color: #8000ffa3;
-        color: white;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-
-    .button-menu{
-        display: none;
-    }
-    
-    /*----- botón para cambiar el color del body -----*/
-	.content-input input,
-	.content-select select{
-		appearance: none;
-		-webkit-appearance: none;
-		-moz-appearance: none;
-	}
-
-	.content-input input{
-		visibility: hidden;
-		position: absolute;
-		right: 0;
-	}
-
-	.content-input{
-		position: relative;
-		margin-bottom: 30px;
-		padding:5px 0 20px 60px;
-		display: block;
-	}
-
-	.content-input input + i{
-		background: #f0f0f0;
-		border:2px solid rgba(0,0,0,0.2);
-		position: absolute; 
-		left: 0;
-		top: 0;
-	}
-
-	.content-input input[type=checkbox ] + i{
-		width: 52px;
-		height: 30px;
-		border-radius: 15px;
-	}
-
-	.content-input input[type=checkbox] + i:before{
-		content: ''; 
-		width: 26px;
-		height: 26px;
-		background: #fff;
-		border-radius: 50%;
-		position: absolute;
-		z-index: 1;
-		left: 0px;
-		top: 0px;
-		-webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
-		box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
-	}
-
-	.content-input input[type=checkbox]:checked + i:before{
-		left: 22px;
-		-webkit-box-shadow: -3px 0 3px 0 rgba(0,0,0,0.2);
-		box-shadow: 3px 0 -3px 0 rgba(0,0,0,0.2);
-	}
-
-	.content-input input[type=checkbox]:checked + i{
-        background: #8000FF;
-	}
-
-	.content-input{
-		float: right;
-		margin: 0.5em;
-	}
-    
-    /*----- botón para cambiar el color del body -----*/
-    .button{
-        order: 3;
-    }
-
-	.content-input input,
-	.content-select select{
-		appearance: none;
-		-webkit-appearance: none;
-		-moz-appearance: none;
-	}
-
-	.content-input input{
-		visibility: hidden;
-		position: absolute;
-		right: 0;
-	}
-
-	.content-input{
-		position: relative;
-		margin-bottom: 30px;
-		padding:5px 0 20px 60px;
-		display: block;
-	}
-
-	.content-input input + i{
-		background: #f0f0f0;
-		border:2px solid rgba(0,0,0,0.2);
-		position: absolute; 
-		left: 0;
-		top: 0;
-	}
-
-	.content-input input[type=checkbox ] + i{
-		width: 52px;
-		height: 30px;
-		border-radius: 15px;
-	}
-
-	.content-input input[type=checkbox] + i:before{
-		content: ''; 
-		width: 26px;
-		height: 26px;
-		background: #fff;
-		border-radius: 50%;
-		position: absolute;
-		z-index: 1;
-		left: 0px;
-		top: 0px;
-		-webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
-		box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
-	}
-
-	.content-input input[type=checkbox]:checked + i:before{
-		left: 22px;
-		-webkit-box-shadow: -3px 0 3px 0 rgba(0,0,0,0.2);
-		box-shadow: 3px 0 -3px 0 rgba(0,0,0,0.2);
-	}
-
-	.content-input input[type=checkbox]:checked + i{
-        background: #8000FF;
-	}
-
-	.content-input{
-		float: right;
-		margin: 0.5em;
-	}
 
     /*---------- FORMACIÓN ----------*/
     .formacion{
@@ -1369,132 +477,12 @@
 }
 
 @media (min-width: 901px) and (max-width: 1200px){
-    *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    body{
-        width: 85%;
-        margin: 0 auto;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
-    /*---------- HEADER ----------*/
-    header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .nombre{
-        background-color:#8000FF;
-        color: white;
-        padding: 0.5rem;
-        border-radius: 10px;
-        font-size: 16px;
-    }
-
-    #hr{
-        display: none;
-    }
-
     .hr{
         color: #8000FF;
         border: 1px solid;
         width: 80%;
         margin: 0 auto;
     }
-
-    .link-item{
-        text-decoration: none;
-        color: #8000FF;
-        padding: 1rem;
-    }
-
-    .actual{
-        background-color: #8000FF;
-        color: white;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        
-    }
-
-    .link-item:hover{
-        background-color: #8000ffa3;
-        color: white;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-
-    .button-menu{
-        display: none;
-    }
-    
-    /*----- botón para cambiar el color del body -----*/
-	.content-input input,
-	.content-select select{
-		appearance: none;
-		-webkit-appearance: none;
-		-moz-appearance: none;
-	}
-
-	.content-input input{
-		visibility: hidden;
-		position: absolute;
-		right: 0;
-	}
-
-	.content-input{
-		position: relative;
-		margin-bottom: 30px;
-		padding:5px 0 20px 60px;
-		display: block;
-	}
-
-	.content-input input + i{
-		background: #f0f0f0;
-		border:2px solid rgba(0,0,0,0.2);
-		position: absolute; 
-		left: 0;
-		top: 0;
-	}
-
-	.content-input input[type=checkbox ] + i{
-		width: 52px;
-		height: 30px;
-		border-radius: 15px;
-	}
-
-	.content-input input[type=checkbox] + i:before{
-		content: ''; 
-		width: 26px;
-		height: 26px;
-		background: #fff;
-		border-radius: 50%;
-		position: absolute;
-		z-index: 1;
-		left: 0px;
-		top: 0px;
-		-webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
-		box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
-	}
-
-	.content-input input[type=checkbox]:checked + i:before{
-		left: 22px;
-		-webkit-box-shadow: -3px 0 3px 0 rgba(0,0,0,0.2);
-		box-shadow: 3px 0 -3px 0 rgba(0,0,0,0.2);
-	}
-
-	.content-input input[type=checkbox]:checked + i{
-        background: #8000FF;
-	}
-
-	.content-input{
-		float: right;
-		margin: 0.5em;
-	}
 
     /*---------- FORMACIÓN ----------*/
     .formacion{
@@ -1604,132 +592,12 @@
 }
 
 @media (min-width: 1201px) and (max-width: 1440px){
-    *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    body{
-        width: 85%;
-        margin: 0 auto;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
-    /*---------- HEADER ----------*/
-    header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .nombre{
-        background-color:#8000FF;
-        color: white;
-        padding: 0.5rem;
-        border-radius: 10px;
-        font-size: 16px;
-    }
-
-    #hr{
-        display: none;
-    }
-
     .hr{
         color: #8000FF;
         border: 1px solid;
         width: 80%;
         margin: 0 auto;
     }
-
-    .link-item{
-        text-decoration: none;
-        color: #8000FF;
-        padding: 1rem;
-    }
-
-    .actual{
-        background-color: #8000FF;
-        color: white;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        
-    }
-
-    .link-item:hover{
-        background-color: #8000ffa3;
-        color: white;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-
-    .button-menu{
-        display: none;
-    }
-    
-    /*----- botón para cambiar el color del body -----*/
-	.content-input input,
-	.content-select select{
-		appearance: none;
-		-webkit-appearance: none;
-		-moz-appearance: none;
-	}
-
-	.content-input input{
-		visibility: hidden;
-		position: absolute;
-		right: 0;
-	}
-
-	.content-input{
-		position: relative;
-		margin-bottom: 30px;
-		padding:5px 0 20px 60px;
-		display: block;
-	}
-
-	.content-input input + i{
-		background: #f0f0f0;
-		border:2px solid rgba(0,0,0,0.2);
-		position: absolute; 
-		left: 0;
-		top: 0;
-	}
-
-	.content-input input[type=checkbox ] + i{
-		width: 52px;
-		height: 30px;
-		border-radius: 15px;
-	}
-
-	.content-input input[type=checkbox] + i:before{
-		content: ''; 
-		width: 26px;
-		height: 26px;
-		background: #fff;
-		border-radius: 50%;
-		position: absolute;
-		z-index: 1;
-		left: 0px;
-		top: 0px;
-		-webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
-		box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
-	}
-
-	.content-input input[type=checkbox]:checked + i:before{
-		left: 22px;
-		-webkit-box-shadow: -3px 0 3px 0 rgba(0,0,0,0.2);
-		box-shadow: 3px 0 -3px 0 rgba(0,0,0,0.2);
-	}
-
-	.content-input input[type=checkbox]:checked + i{
-        background: #8000FF;
-	}
-
-	.content-input{
-		float: right;
-		margin: 0.5em;
-	}
 
     /*---------- FORMACIÓN ----------*/
     .formacion{
@@ -1831,133 +699,12 @@
 }
 
 @media (min-width: 1441px){
-    *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    body{
-        width: 85%;
-        margin: 0 auto;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
-    /*---------- HEADER ----------*/
-    header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .nombre{
-        background-color:#8000FF;
-        color: white;
-        padding: 0.5rem;
-        border-radius: 10px;
-        font-size: 16px;
-        text-align: center;
-    }
-
-    #hr{
-        display: none;
-    }
-
     .hr{
         width: 50%;
         margin: 0 auto;
         color: #8000FF;
         border: 2px solid;
     }
-
-    .link-item{
-        text-decoration: none;
-        color: #8000FF;
-        padding: 1rem;
-    }
-
-    .actual{
-        background-color: #8000FF;
-        color: white;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        
-    }
-
-    .link-item:hover{
-        background-color: #8000ffa3;
-        color: white;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-
-    .button-menu{
-        display: none;
-    }
-    
-    /*----- botón para cambiar el color del body -----*/
-	.content-input input,
-	.content-select select{
-		appearance: none;
-		-webkit-appearance: none;
-		-moz-appearance: none;
-	}
-
-	.content-input input{
-		visibility: hidden;
-		position: absolute;
-		right: 0;
-	}
-
-	.content-input{
-		position: relative;
-		margin-bottom: 30px;
-		padding:5px 0 20px 60px;
-		display: block;
-	}
-
-	.content-input input + i{
-		background: #f0f0f0;
-		border:2px solid rgba(0,0,0,0.2);
-		position: absolute; 
-		left: 0;
-		top: 0;
-	}
-
-	.content-input input[type=checkbox ] + i{
-		width: 52px;
-		height: 30px;
-		border-radius: 15px;
-	}
-
-	.content-input input[type=checkbox] + i:before{
-		content: ''; 
-		width: 26px;
-		height: 26px;
-		background: #fff;
-		border-radius: 50%;
-		position: absolute;
-		z-index: 1;
-		left: 0px;
-		top: 0px;
-		-webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
-		box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
-	}
-
-	.content-input input[type=checkbox]:checked + i:before{
-		left: 22px;
-		-webkit-box-shadow: -3px 0 3px 0 rgba(0,0,0,0.2);
-		box-shadow: 3px 0 -3px 0 rgba(0,0,0,0.2);
-	}
-
-	.content-input input[type=checkbox]:checked + i{
-        background: #8000FF;
-	}
-
-	.content-input{
-		float: right;
-		margin: 0.5em;
-	}
 
     /*---------- FORMACIÓN ----------*/
     .formacion{
@@ -2061,6 +808,47 @@
         font-size: 20px;
         font-weight: bold;
     }
+}
+
+.bg-customPurpleHover:hover{
+    background-color: #8000FF;
+    color: white;
+    border-radius: 15px;
+}
+
+.text-customPurple{
+    color: #8000FF;
+}
+
+.bg-customPurple{
+    background-color: #8000FF;
+}
+
+.hr-burguer{
+    background-color: black;
+    width: 60%;
+    border: hidden;
+    padding: 0.1rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    margin-bottom: 2em;
+}
+
+
+/*---------- BUTTON MODO OSCURO ----------*/
+.content-input input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-image {
+    width: 40px; 
+    height: 40px;
+    display: inline-block;
+    background-image: url('../img/sol.svg');
+    background-size: cover;
+}
+
+.content-input input[type="checkbox"]:checked + .checkbox-image {
+    background-image: url('../img/luna.svg');
 }
 
 /*---------- MODO OSCURO ----------*/

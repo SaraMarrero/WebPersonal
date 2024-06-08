@@ -1,14 +1,14 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 @media (min-width: 375px) and (max-width: 480px){
-    *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    body{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
     /*---------- SECTION 1 ----------*/
     .sectionUno{
         margin-top: 2em;
@@ -127,16 +127,6 @@
 }
 
 @media (min-width: 481px) and (max-width: 600px){
-    *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    body{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
     /*---------- SECTION 1 ----------*/
     .sectionUno{
         margin-top: 2em;
@@ -255,16 +245,6 @@
 }
 
 @media (min-width: 601px) and (max-width: 768px){
-    *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    body{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
     /*---------- SECTION 1 ----------*/
     .sectionUno{
         margin-top: 2em;
@@ -384,16 +364,6 @@
 }
 
 @media (min-width: 769px) and (max-width: 900px){
-    *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    body{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
     /*---------- SECTION 1 ----------*/
     .sectionUno{
         margin-top: 2em;
@@ -460,6 +430,7 @@
 
     .memoji{
         width: 55%;
+        margin: 0 auto;
     }
 
     .derecha{
@@ -517,16 +488,6 @@
 }
 
 @media (min-width: 901px) and (max-width: 1200px){
-    *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    body{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
     /*---------- SECTION 1 ----------*/
     .sectionUno{
         margin-top: 2em;
@@ -651,16 +612,6 @@
 }
 
 @media (min-width: 1201px) and (max-width: 1440px){
-    *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    body{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
     /*---------- SECTION 1 ----------*/
     .sectionUno{
         margin-top: 2em;
@@ -787,22 +738,12 @@
 }
 
 @media (min-width: 1441px){
-    *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    body{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
     /*---------- SECTION 1 ----------*/
     .sectionUno{
         margin-top: 2em;
         margin-bottom: 3em;
         width: 100%;
-        height: 600px;
+        height: 550px;
         display: grid;
         grid-template-columns: repeat(4, 25%);
         grid-template-rows: repeat(2, 50%);
@@ -925,8 +866,6 @@
 .bg-customPurpleHover:hover{
     background-color: #8000FF;
     color: white;
-    /* border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px; */
     border-radius: 15px;
 }
 
