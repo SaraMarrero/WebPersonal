@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/*---------- MEDIA QUERIES ----------*/
+
+.bg-customPurpleHover:hover{
+    background-color: #8000FF;
+    color: white;
+    border-radius: 15px;
+}
+
+.text-customPurple{
+    color: #8000FF;
+}
+
+.bg-customPurple{
+    background-color: #8000FF;
+}
+
+.hr-burguer{
+    background-color: black;
+    width: 60%;
+    border: hidden;
+    padding: 0.1rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    margin-bottom: 2em;
+}
+
+
+/*---------- BUTTON MODO OSCURO ----------*/
+.content-input input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-image {
+    width: 40px; 
+    height: 40px;
+    display: inline-block;
+    background-image: url('../img/sol.svg');
+    background-size: cover;
+}
+
+.content-input input[type="checkbox"]:checked + .checkbox-image {
+    background-image: url('../img/luna.svg');
+}
