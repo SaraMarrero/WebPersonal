@@ -3,7 +3,7 @@ Este es un pequeño proyecto que muestra un poco de mí, algunos de los proyecto
 
 # 📸 Página principal
 
-![Pagina principal](./img/paginaPrincipal.png)
+![Pagina principal](./img/paginaPrincipal.jpg)
 
 
 
