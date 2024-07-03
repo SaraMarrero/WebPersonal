@@ -3,7 +3,7 @@ Este es un pequeño proyecto que muestra un poco de mí, algunos de los proyecto
 
 # 📸 Página principal
 
-![Pagina principal](./img/paginaPrincipal.jpg)
+![Pagina principal](./img/paginaPrincipal.png)
 
 
 
@@ -16,5 +16,5 @@ Para llevar a cabo la realización de este proyecto, he utilizado:
 * Ajax
 * Github
 
-# Autora
+# 👤Autora
 * Sara Marrero Miranda
