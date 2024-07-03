@@ -16,5 +16,5 @@ Para llevar a cabo la realización de este proyecto, he utilizado:
 * Ajax
 * Github
 
-# 👤Autora
+# 👩🏻‍💻Autora
 * Sara Marrero Miranda
