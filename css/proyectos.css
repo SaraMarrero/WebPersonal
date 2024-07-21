@@ -2704,19 +2704,6 @@ body{
         border: 2px solid;
     }
 
-    /*----- cards -----*/
-    /* .articleProyectos{
-        margin-top: 2em;
-        padding: 2rem;
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 100%;
-        justify-content: space-around;
-        column-gap: 0.5em;
-        row-gap: 5em;
-    } */
-
     .iconoProyectos{
         display: none;
     }
@@ -3127,6 +3114,7 @@ body{
     }
 }
 
+/*---------- HEADER ----------*/
 .bg-customPurpleHover:hover{
     background-color: #8000FF;
     color: white;
@@ -3149,7 +3137,6 @@ body{
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     margin-bottom: 2em;
 }
-
 
 /*---------- BUTTON MODO OSCURO ----------*/
 .content-input input[type="checkbox"] {
