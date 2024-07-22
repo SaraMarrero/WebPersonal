@@ -24,13 +24,11 @@ body{
     }
 
     .div_info_practicas{
-        width: 75%;
         padding-left: 0.5rem;
     }
 
     .div_info_practicas > h1{
         font-size: 17px;
-        margin-bottom: -5px;
     }
 
     .div_info_practicas > h3{
@@ -38,8 +36,6 @@ body{
     }
 
     .div_info_practicas > p:first-of-type{
-        padding-top: 0.5rem;
-        margin-bottom: -5px;
         font-size: 13px;
     }
 
@@ -48,19 +44,16 @@ body{
     }
 
     .div_info_practicas > p:nth-of-type(3){
-        padding-top: 0.5rem;
         font-size: 9px;
         padding-bottom: 1em;
     }
 
     /*----- Experiencia -----*/
     .div_trabajo1{
-        width: 100%;
         height: 100%;
         grid-row: 4/6;
         grid-column: 1/2;
-        background-color: #F2F2F2;
-        display: flex;
+        text-align: left;
     }
 
     .div_info_trabajo1{
@@ -78,8 +71,6 @@ body{
     }
 
     .div_info_trabajo1 > p:first-of-type{
-        padding-top: 0.5rem;
-        margin-bottom: -5px;
         font-size: 13px;
     }
 
@@ -91,16 +82,6 @@ body{
         padding-top: 0.5rem;
         font-size: 9px;
         padding-bottom: 1em;
-    }
-
-    /*----- hr final -----*/
-    .hrFinal{
-        color: #8000FF;
-        border: 2px solid;
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 3em;
-        margin-bottom: 3em;
     }
 }
 
@@ -123,66 +104,15 @@ body{
         height: 100%;
     }
 
-    .div_info_practicas{
-        width: 75%;
-        padding-left: 1.5rem;
-    }
-
-    .div_info_practicas > h1{
-        font-size: 20px;
-        margin-bottom: -5px;
-    }
-
-    .div_info_practicas > p:first-of-type{
-        padding-top: 0.5rem;
-        margin-bottom: -5px;
-    }
-
-    .div_info_practicas > p:nth-of-type(3){
-        padding-top: 0.5rem;
-        font-size: 13px;
-    }
-
     /*----- Experiencia -----*/
     .div_trabajo1{
-        width: 100%;
         height: 160px;
         grid-row: 2/3;
         grid-column: 1/6;
-        background-color: #F2F2F2;
-        display: flex;
-        align-items: center;
-        text-align: right;
-    }
-
-    .div_info_trabajo1{
-        width: 75%;
-        padding-right: 1.5rem;
     }
 
     .div_info_trabajo1 > h1{
         font-size: 20px;
-        margin-bottom: -5px;
-    }
-
-    .div_info_trabajo1 > p:first-of-type{
-        padding-top: 0.5rem;
-        margin-bottom: -5px;
-    }
-
-    .div_info_trabajo1 > p:nth-of-type(3){
-        padding-top: 0.5rem;
-        font-size: 13px;
-    }
-
-    /*----- hr final -----*/
-    .hrFinal{
-        color: #8000FF;
-        border: 2px solid;
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 3em;
-        margin-bottom: 3em;
     }
 }
 
@@ -204,66 +134,11 @@ body{
         height: 100%;
     }
 
-    .div_info_practicas{
-        width: 75%;
-        padding-left: 1.5rem;
-    }
-
-    .div_info_practicas > h1{
-        font-size: 20px;
-        margin-bottom: -5px;
-    }
-
-    .div_info_practicas > p:first-of-type{
-        padding-top: 0.5rem;
-        margin-bottom: -5px;
-    }
-
-    .div_info_practicas > p:nth-of-type(3){
-        padding-top: 0.5rem;
-        font-size: 13px;
-    }
-
     /*----- Experiencia -----*/
     .div_trabajo1{
-        width: 100%;
         height: 200px;
         grid-row: 2/3;
         grid-column: 1/6;
-        background-color: #F2F2F2;
-        display: flex;
-        align-items: center;
-        text-align: right;
-    }
-
-    .div_info_trabajo1{
-        width: 75%;
-        padding-right: 1.5rem;
-    }
-
-    .div_info_trabajo1 > h1{
-        font-size: 20px;
-        margin-bottom: -5px;
-    }
-
-    .div_info_trabajo1 > p:first-of-type{
-        padding-top: 0.5rem;
-        margin-bottom: -5px;
-    }
-
-    .div_info_trabajo1 > p:nth-of-type(3){
-        padding-top: 0.5rem;
-        font-size: 13px;
-    }
-
-    /*----- hr final -----*/
-    .hrFinal{
-        color: #8000FF;
-        border: 2px solid;
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 3em;
-        margin-bottom: 3em;
     }
 }
 
@@ -282,73 +157,15 @@ body{
         grid-column: 1/5;
     }
 
-
-
     .div_img > img{
-      
         height: 100%;
-    }
-
-    .div_info_practicas{
-        width: 75%;
-        padding-left: 1.5rem;
-    }
-
-    .div_info_practicas > h1{
-        font-size: 20px;
-        margin-bottom: -5px;
-    }
-
-    .div_info_practicas > p:first-of-type{
-        padding-top: 0.5rem;
-        margin-bottom: -5px;
-    }
-
-    .div_info_practicas > p:nth-of-type(3){
-        padding-top: 0.5rem;
-        font-size: 13px;
     }
 
     /*----- Experiencia -----*/
     .div_trabajo1{
-        width: 100%;
         height: 200px;
         grid-row: 2/3;
         grid-column: 2/6;
-        background-color: #F2F2F2;
-        display: flex;
-        align-items: center;
-        text-align: right;
-    }
-
-    .div_info_trabajo1{
-        width: 75%;
-        padding-right: 1.5rem;
-    }
-
-    .div_info_trabajo1 > h1{
-        font-size: 20px;
-        margin-bottom: -5px;
-    }
-
-    .div_info_trabajo1 > p:first-of-type{
-        padding-top: 0.5rem;
-        margin-bottom: -5px;
-    }
-
-    .div_info_trabajo1 > p:nth-of-type(3){
-        padding-top: 0.5rem;
-        font-size: 13px;
-    }
-
-    /*----- hr final -----*/
-    .hrFinal{
-        color: #8000FF;
-        border: 2px solid;
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 3em;
-        margin-bottom: 3em;
     }
 }
 
@@ -367,71 +184,15 @@ body{
         grid-column: 1/4;
     }
 
-
     .div_img > img{
         height: 100%;
     }
 
-    .div_info_practicas{
-        width: 75%;
-        padding-left: 1.5rem;
-    }
-
-    .div_info_practicas > h1{
-        font-size: 20px;
-        margin-bottom: -5px;
-    }
-
-    .div_info_practicas > p:first-of-type{
-        padding-top: 0.5rem;
-        margin-bottom: -5px;
-    }
-
-    .div_info_practicas > p:nth-of-type(3){
-        padding-top: 0.5rem;
-        font-size: 13px;
-    }
-
     /*----- Experiencia -----*/
     .div_trabajo1{
-        width: 100%;
         height: 200px;
         grid-row: 2/3;
         grid-column: 2/5;
-        background-color: #F2F2F2;
-        display: flex;
-        align-items: center;
-        text-align: right;
-    }
-
-    .div_info_trabajo1{
-        width: 75%;
-        padding-right: 1.5rem;
-    }
-
-    .div_info_trabajo1 > h1{
-        font-size: 20px;
-        margin-bottom: -5px;
-    }
-
-    .div_info_trabajo1 > p:first-of-type{
-        padding-top: 0.5rem;
-        margin-bottom: -5px;
-    }
-
-    .div_info_trabajo1 > p:nth-of-type(3){
-        padding-top: 0.5rem;
-        font-size: 13px;
-    }
-
-    /*----- hr final -----*/
-    .hrFinal{
-        color: #8000FF;
-        border: 2px solid;
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 3em;
-        margin-bottom: 3em;
     }
 }
 
@@ -505,6 +266,64 @@ body{
     object-fit: cover;
 }
 
+.div_info_practicas{
+    width: 75%;
+    padding-left: 1.5rem;
+}
+
+.div_info_practicas > h1{
+    font-size: 20px;
+    margin-bottom: -5px;
+}
+
+.div_info_practicas > p:first-of-type{
+    padding-top: 0.5rem;
+    margin-bottom: -5px;
+}
+
+.div_info_practicas > p:nth-of-type(3){
+    padding-top: 0.5rem;
+    font-size: 13px;
+}
+
+/*----- Experiencia -----*/
+.div_trabajo1{
+    width: 100%;
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+.div_info_trabajo1{
+    width: 75%;
+    padding-right: 1.5rem;
+}
+
+.div_info_trabajo1 > h1{
+    font-size: 20px;
+    margin-bottom: -5px;
+}
+
+.div_info_trabajo1 > p:first-of-type{
+    padding-top: 0.5rem;
+    margin-bottom: -5px;
+}
+
+.div_info_trabajo1 > p:nth-of-type(3){
+    padding-top: 0.5rem;
+    font-size: 13px;
+}
+
+/*----- hr final -----*/
+.hrFinal{
+    color: #8000FF;
+    border: 2px solid;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
 
 /*---------- BUTTON MODO OSCURO ----------*/
 .content-input input[type="checkbox"] {
